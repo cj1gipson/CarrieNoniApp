@@ -22,7 +22,6 @@ struct tabBarView: View {
             
             ZStack{
                 
-                
                 switch selectedIndex{
                 case 0:
                     NavigationView{

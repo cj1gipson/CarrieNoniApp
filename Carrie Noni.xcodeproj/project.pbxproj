@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52DBBFCF279CB4CA004742D8 /* NaturalNoni.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBBFCE279CB4CA004742D8 /* NaturalNoni.swift */; };
 		951BB1402791CBD500744B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BB13F2791CBD500744B16 /* Main.storyboard */; };
 		951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BB1412791D55B00744B16 /* NSAttributedString.swift */; };
 		952AFD8C278CC2E6009D6F15 /* Carrie_NoniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52DBBFCE279CB4CA004742D8 /* NaturalNoni.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaturalNoni.swift; sourceTree = "<group>"; };
 		951BB13F2791CBD500744B16 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		951BB1412791D55B00744B16 /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
 		952AFD88278CC2E6009D6F15 /* Carrie Noni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carrie Noni.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				952AFD8D278CC2E6009D6F15 /* ContentView.swift */,
 				95CDB11427909A1800A43119 /* TabBarView.swift */,
 				95CDB11627909D9B00A43119 /* ShopView.swift */,
+				52DBBFCE279CB4CA004742D8 /* NaturalNoni.swift */,
 				95CDB1182790A0BA00A43119 /* Nflunece.swift */,
 				952AFD8F278CC2E7009D6F15 /* Assets.xcassets */,
 				952AFD94278CC2E7009D6F15 /* Info.plist */,
@@ -285,6 +288,7 @@
 				95CDB11727909D9B00A43119 /* ShopView.swift in Sources */,
 				952AFD8C278CC2E6009D6F15 /* Carrie_NoniApp.swift in Sources */,
 				95BBF3142792379B00460158 /* NoniJuice.swift in Sources */,
+				52DBBFCF279CB4CA004742D8 /* NaturalNoni.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
