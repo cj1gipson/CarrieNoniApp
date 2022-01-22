@@ -80,6 +80,7 @@ struct noniJuiceView: View {
                                     .clipped()
                             }.padding(.bottom, -2.0)
                         HStack(spacing: 3){
+                            ZStack{
                             Image("")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -88,7 +89,51 @@ struct noniJuiceView: View {
                                 .clipped()
                                 .padding(.leading, -4.0)
                                 .padding(.trailing, 7.0)
+                                
+                                Image(systemName: "megaphone.fill")
+                                    .imageScale(.large)
+                                    .padding(.bottom, 140.0)
+                                        .padding(0.0)
+                                        .font(Font.system(size:30, weight: .heavy))
+                                    .foregroundColor(Color.black)
+                                        
+                                        
+                                        Text("Media Personality")
+                                            .font(.title2)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(Color.black)
+                                            .multilineTextAlignment(.center)
+                                            .padding(.bottom, 35.0)
+                                            .padding(.trailing, 15.0)
+                                        
+                                        
+                                        Text("- CurlFest")
+                                            .font(.callout)
+                                            .fontWeight(.regular)
+                                            .foregroundColor(Color.black)
+                                            .multilineTextAlignment(.leading)
+                                            .padding(.top, 50.0)
+                                            .padding(.trailing, 100.0)
+                                            
+                                        
+                                        Text("- Summerfest")
+                                            .font(.callout)
+                                            .fontWeight(.regular)
+                                            .foregroundColor(Color.black)
+                                            .multilineTextAlignment(.leading)
+                                            .padding(.top,100.0)
+                                            .padding(.trailing, 73.0)
+                                
+                                Text("- WLMC (Rico Love)")
+                                    .font(.callout)
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color.black)
+                                    .multilineTextAlignment(.leading)
+                                    .padding(.top,150.0)
+                                    .padding(.trailing, 30.0)
+                            }
                             
+                            ZStack{
                             Image("")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -97,9 +142,44 @@ struct noniJuiceView: View {
                                 .clipped()
                                 .padding(.leading, -4.0)
                                 .padding(.trailing, -4.0)
+                                
+                            Image(systemName: "mic.fill")
+                                .imageScale(.large)
+                                .padding(.bottom, 133.0)
+                                    .padding(0.0)
+                                    .font(Font.system(size:30, weight: .heavy))
+                                    .foregroundColor(Color(NJColor1))
+                                    
+                                    
+                                    Text("Radio")
+                                        .font(.title2)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(Color(NJColor1))
+                                        .multilineTextAlignment(.center)
+                                        .padding(.bottom, 55.0)
+                                    
+                                    Text("- 101.7 The Truth Producer/ Personailty")
+                                        .font(.callout)
+                                        .fontWeight(.regular)
+                                        .foregroundColor(Color(NJColor1))
+                                        .multilineTextAlignment(.leading)
+                                        .padding(.top, 40.0)
+                                        .padding(.trailing, 12.0)
+                                        
+                                    
+                                    Text("- 103.7 Kiss FM (Intern)")
+                                        .font(.callout)
+                                        .fontWeight(.regular)
+                                        .foregroundColor(Color(NJColor1))
+                                        .multilineTextAlignment(.leading)
+                                        .padding(.top,120.0)
+                                
+                                
                         }.padding(.bottom, -2.0)
+                        }
                         
                         HStack(spacing: 3){
+                            ZStack{
                             Image("")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -108,15 +188,94 @@ struct noniJuiceView: View {
                                 .clipped()
                                 .padding(.leading, -4.0)
                                 .padding(.trailing, 7.0)
+                                
+                            Image(systemName: "pencil")
+                                .imageScale(.large)
+                                .padding(.bottom, 120.0)
+                                .padding(0.0)
+                                .font(Font.system(size:35, weight: .heavy))
+                                .foregroundColor(Color(NJColor1))
+                                
+                                
+                                Text("Journalist")
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color(NJColor1))
+                                    .multilineTextAlignment(.center)
+                                    .padding(.bottom, 35.0)
+                                
+                                Text("- Milwaukee Journal Sentinel")
+                                    .font(.callout)
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color(NJColor1))
+                                    .multilineTextAlignment(.leading)
+                                    .padding(.top, 50.0)
+                                    .padding(.trailing, 15.0)
+                                    
+                                
+                                Text("- CopyWrite Magazine ")
+                                    .font(.callout)
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color(NJColor1))
+                                    .multilineTextAlignment(.leading)
+                                    .padding(.top,140.0)
+                                
+                            }
                             
+                            
+                            ZStack{
                             Image("")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width:192, height: 195, alignment: .center)
+                                .frame(width:192, height: 195, alignment: .top)
                                 .background(Color(NJColor1))
                                 .clipped()
                                 .padding(.leading, -4.0)
                                 .padding(.trailing, -4.0)
+                                
+                                Image(systemName: "play.tv")
+                                    .imageScale(.large)
+                                    .padding(.bottom, 120.0)
+                                        .padding(0.0)
+                                        .font(Font.system(size:30, weight: .heavy))
+                                    .foregroundColor(Color.black)
+                                        
+                                        
+                                        Text("Host")
+                                            .font(.title2)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(Color.black)
+                                            .multilineTextAlignment(.center)
+                                            .padding(.bottom, 35.0)
+                                            .padding(.trailing, 15.0)
+                                        
+                                        
+                                        Text("- MATC Now!")
+                                            .font(.callout)
+                                            .fontWeight(.regular)
+                                            .foregroundColor(Color.black)
+                                            .multilineTextAlignment(.leading)
+                                            .padding(.top, 50.0)
+                                            .padding(.trailing, 70.0)
+                                            
+                                        
+                                        Text("- Hip-Hop & Health")
+                                            .font(.callout)
+                                            .fontWeight(.regular)
+                                            .foregroundColor(Color.black)
+                                            .multilineTextAlignment(.leading)
+                                            .padding(.top,100.0)
+                                            .padding(.trailing, 26.0)
+                                
+                                Text("- N'fluence")
+                                    .font(.callout)
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color.black)
+                                    .multilineTextAlignment(.leading)
+                                    .padding(.top,150.0)
+                                    .padding(.trailing, 85.0)
+ 
+                        }
                         }
                             
                     }
@@ -161,11 +320,29 @@ struct feed2: View {
                 
         }
         Spacer()
+            
+            HStack{
+                Text("ABOUT THE JUICE!")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(/*@START_MENU_TOKEN@*/[.top, .leading, .trailing]/*@END_MENU_TOKEN@*/)
+            }
+            
+            HStack{
+                Text("Noni Juice is THAT girl for all things entertainment, fun, and exciting!")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.black)
+                    .multilineTextAlignment(.center)
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            }
         
         HStack{
             Image("Title9")
                 .resizable()
-                .frame(width:250, height: 35, alignment: .center)
+                .frame(width:250, height: 25, alignment: .center)
                 .background(Color(CNColor3))
                 .clipped()
         }
@@ -188,7 +365,7 @@ struct feed2: View {
             HStack{
                 Image("Title10")
                     .resizable()
-                    .frame(width:250, height: 30, alignment: .center)
+                    .frame(width:250, height: 25, alignment: .center)
                     .background(Color(CNColor3))
                     .clipped()
             }
@@ -245,7 +422,7 @@ struct feed2: View {
         HStack{
             Image("Title11")
                 .resizable()
-                .frame(width:220, height: 50, alignment: .center)
+                .frame(width:180, height: 37, alignment: .center)
                 .background(Color(CNColor3))
                 .clipped()
         }
@@ -366,7 +543,7 @@ struct feed2: View {
         HStack{
             Image("Title12")
                 .resizable()
-                .frame(width:250, height: 38, alignment: .center)
+                .frame(width:250, height: 35, alignment: .center)
                 .background(Color(CNColor3))
                 .clipped()
         }

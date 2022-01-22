@@ -14,7 +14,7 @@ import AVKit
 struct tabBarView: View {
     
     @State var selectedIndex = 2
-    let icons = ["hair", "Juice", "home4", "nfluence","shop"
+    let icons = ["NaturalNoni2", "Juice", "home4", "Nfluence-1","shop"
     ]
     var body: some View {
         
@@ -26,11 +26,10 @@ struct tabBarView: View {
                 switch selectedIndex{
                 case 0:
                     NavigationView{
-                        
+                        NaturalNoniView()
                     }
                 case 1:
                     NavigationView{
-                       
                         noniJuiceView()
                     }
                 case 2:
