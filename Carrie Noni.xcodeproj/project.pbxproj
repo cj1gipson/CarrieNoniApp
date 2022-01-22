@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		951BB1402791CBD500744B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BB13F2791CBD500744B16 /* Main.storyboard */; };
+		951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BB1412791D55B00744B16 /* NSAttributedString.swift */; };
+		952AFD8C278CC2E6009D6F15 /* Carrie_NoniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */; };
+		952AFD8E278CC2E6009D6F15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952AFD8D278CC2E6009D6F15 /* ContentView.swift */; };
+		952AFD90278CC2E7009D6F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952AFD8F278CC2E7009D6F15 /* Assets.xcassets */; };
+		952AFD93278CC2E7009D6F15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952AFD92278CC2E7009D6F15 /* Preview Assets.xcassets */; };
+		952AFD9E278CC2E7009D6F15 /* Carrie_NoniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952AFD9D278CC2E7009D6F15 /* Carrie_NoniTests.swift */; };
+		952AFDA9278CC2E7009D6F15 /* Carrie_NoniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952AFDA8278CC2E7009D6F15 /* Carrie_NoniUITests.swift */; };
+		95BBF3142792379B00460158 /* NoniJuice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBF3132792379B00460158 /* NoniJuice.swift */; };
+		95CDB11527909A1800A43119 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CDB11427909A1800A43119 /* TabBarView.swift */; };
+		95CDB11727909D9B00A43119 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CDB11627909D9B00A43119 /* ShopView.swift */; };
+		95CDB1192790A0BA00A43119 /* Nflunece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CDB1182790A0BA00A43119 /* Nflunece.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		952AFD9A278CC2E7009D6F15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 952AFD80278CC2E6009D6F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 952AFD87278CC2E6009D6F15;
+			remoteInfo = "Carrie Noni";
+		};
+		952AFDA5278CC2E7009D6F15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 952AFD80278CC2E6009D6F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 952AFD87278CC2E6009D6F15;
+			remoteInfo = "Carrie Noni";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		951BB13F2791CBD500744B16 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		951BB1412791D55B00744B16 /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		952AFD88278CC2E6009D6F15 /* Carrie Noni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carrie Noni.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrie_NoniApp.swift; sourceTree = "<group>"; };
+		952AFD8D278CC2E6009D6F15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		952AFD8F278CC2E7009D6F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		952AFD92278CC2E7009D6F15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		952AFD94278CC2E7009D6F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		952AFD99278CC2E7009D6F15 /* Carrie NoniTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carrie NoniTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		952AFD9D278CC2E7009D6F15 /* Carrie_NoniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrie_NoniTests.swift; sourceTree = "<group>"; };
+		952AFD9F278CC2E7009D6F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		952AFDA4278CC2E7009D6F15 /* Carrie NoniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carrie NoniUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		952AFDA8278CC2E7009D6F15 /* Carrie_NoniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrie_NoniUITests.swift; sourceTree = "<group>"; };
+		952AFDAA278CC2E7009D6F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BBF3132792379B00460158 /* NoniJuice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoniJuice.swift; sourceTree = "<group>"; };
+		95CDB11427909A1800A43119 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		95CDB11627909D9B00A43119 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		95CDB1182790A0BA00A43119 /* Nflunece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nflunece.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		952AFD85278CC2E6009D6F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952AFD96278CC2E7009D6F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952AFDA1278CC2E7009D6F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		952AFD7F278CC2E6009D6F15 = {
+			isa = PBXGroup;
+			children = (
+				952AFD8A278CC2E6009D6F15 /* Carrie Noni */,
+				952AFD9C278CC2E7009D6F15 /* Carrie NoniTests */,
+				952AFDA7278CC2E7009D6F15 /* Carrie NoniUITests */,
+				952AFD89278CC2E6009D6F15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		952AFD89278CC2E6009D6F15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				952AFD88278CC2E6009D6F15 /* Carrie Noni.app */,
+				952AFD99278CC2E7009D6F15 /* Carrie NoniTests.xctest */,
+				952AFDA4278CC2E7009D6F15 /* Carrie NoniUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		952AFD8A278CC2E6009D6F15 /* Carrie Noni */ = {
+			isa = PBXGroup;
+			children = (
+				95BBF3132792379B00460158 /* NoniJuice.swift */,
+				952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */,
+				952AFD8D278CC2E6009D6F15 /* ContentView.swift */,
+				95CDB11427909A1800A43119 /* TabBarView.swift */,
+				95CDB11627909D9B00A43119 /* ShopView.swift */,
+				95CDB1182790A0BA00A43119 /* Nflunece.swift */,
+				952AFD8F278CC2E7009D6F15 /* Assets.xcassets */,
+				952AFD94278CC2E7009D6F15 /* Info.plist */,
+				952AFD91278CC2E7009D6F15 /* Preview Content */,
+				951BB13F2791CBD500744B16 /* Main.storyboard */,
+				951BB1412791D55B00744B16 /* NSAttributedString.swift */,
+			);
+			path = "Carrie Noni";
+			sourceTree = "<group>";
+		};
+		952AFD91278CC2E7009D6F15 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				952AFD92278CC2E7009D6F15 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		952AFD9C278CC2E7009D6F15 /* Carrie NoniTests */ = {
+			isa = PBXGroup;
+			children = (
+				952AFD9D278CC2E7009D6F15 /* Carrie_NoniTests.swift */,
+				952AFD9F278CC2E7009D6F15 /* Info.plist */,
+			);
+			path = "Carrie NoniTests";
+			sourceTree = "<group>";
+		};
+		952AFDA7278CC2E7009D6F15 /* Carrie NoniUITests */ = {
+			isa = PBXGroup;
+			children = (
+				952AFDA8278CC2E7009D6F15 /* Carrie_NoniUITests.swift */,
+				952AFDAA278CC2E7009D6F15 /* Info.plist */,
+			);
+			path = "Carrie NoniUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		952AFD87278CC2E6009D6F15 /* Carrie Noni */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952AFDAD278CC2E7009D6F15 /* Build configuration list for PBXNativeTarget "Carrie Noni" */;
+			buildPhases = (
+				952AFD84278CC2E6009D6F15 /* Sources */,
+				952AFD85278CC2E6009D6F15 /* Frameworks */,
+				952AFD86278CC2E6009D6F15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Carrie Noni";
+			productName = "Carrie Noni";
+			productReference = 952AFD88278CC2E6009D6F15 /* Carrie Noni.app */;
+			productType = "com.apple.product-type.application";
+		};
+		952AFD98278CC2E7009D6F15 /* Carrie NoniTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952AFDB0278CC2E7009D6F15 /* Build configuration list for PBXNativeTarget "Carrie NoniTests" */;
+			buildPhases = (
+				952AFD95278CC2E7009D6F15 /* Sources */,
+				952AFD96278CC2E7009D6F15 /* Frameworks */,
+				952AFD97278CC2E7009D6F15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				952AFD9B278CC2E7009D6F15 /* PBXTargetDependency */,
+			);
+			name = "Carrie NoniTests";
+			productName = "Carrie NoniTests";
+			productReference = 952AFD99278CC2E7009D6F15 /* Carrie NoniTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		952AFDA3278CC2E7009D6F15 /* Carrie NoniUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 952AFDB3278CC2E7009D6F15 /* Build configuration list for PBXNativeTarget "Carrie NoniUITests" */;
+			buildPhases = (
+				952AFDA0278CC2E7009D6F15 /* Sources */,
+				952AFDA1278CC2E7009D6F15 /* Frameworks */,
+				952AFDA2278CC2E7009D6F15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				952AFDA6278CC2E7009D6F15 /* PBXTargetDependency */,
+			);
+			name = "Carrie NoniUITests";
+			productName = "Carrie NoniUITests";
+			productReference = 952AFDA4278CC2E7009D6F15 /* Carrie NoniUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		952AFD80278CC2E6009D6F15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					952AFD87278CC2E6009D6F15 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					952AFD98278CC2E7009D6F15 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 952AFD87278CC2E6009D6F15;
+					};
+					952AFDA3278CC2E7009D6F15 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 952AFD87278CC2E6009D6F15;
+					};
+				};
+			};
+			buildConfigurationList = 952AFD83278CC2E6009D6F15 /* Build configuration list for PBXProject "Carrie Noni" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 952AFD7F278CC2E6009D6F15;
+			productRefGroup = 952AFD89278CC2E6009D6F15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				952AFD87278CC2E6009D6F15 /* Carrie Noni */,
+				952AFD98278CC2E7009D6F15 /* Carrie NoniTests */,
+				952AFDA3278CC2E7009D6F15 /* Carrie NoniUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		952AFD86278CC2E6009D6F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				951BB1402791CBD500744B16 /* Main.storyboard in Resources */,
+				952AFD93278CC2E7009D6F15 /* Preview Assets.xcassets in Resources */,
+				952AFD90278CC2E7009D6F15 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952AFD97278CC2E7009D6F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952AFDA2278CC2E7009D6F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		952AFD84278CC2E6009D6F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952AFD8E278CC2E6009D6F15 /* ContentView.swift in Sources */,
+				951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */,
+				95CDB1192790A0BA00A43119 /* Nflunece.swift in Sources */,
+				95CDB11527909A1800A43119 /* TabBarView.swift in Sources */,
+				95CDB11727909D9B00A43119 /* ShopView.swift in Sources */,
+				952AFD8C278CC2E6009D6F15 /* Carrie_NoniApp.swift in Sources */,
+				95BBF3142792379B00460158 /* NoniJuice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952AFD95278CC2E7009D6F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952AFD9E278CC2E7009D6F15 /* Carrie_NoniTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		952AFDA0278CC2E7009D6F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952AFDA9278CC2E7009D6F15 /* Carrie_NoniUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		952AFD9B278CC2E7009D6F15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 952AFD87278CC2E6009D6F15 /* Carrie Noni */;
+			targetProxy = 952AFD9A278CC2E7009D6F15 /* PBXContainerItemProxy */;
+		};
+		952AFDA6278CC2E7009D6F15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 952AFD87278CC2E6009D6F15 /* Carrie Noni */;
+			targetProxy = 952AFDA5278CC2E7009D6F15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		952AFDAB278CC2E7009D6F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		952AFDAC278CC2E7009D6F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		952AFDAE278CC2E7009D6F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Carrie Noni/Preview Content\"";
+				DEVELOPMENT_TEAM = YU4J972W6Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Carrie Noni/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coreygipson.Carrie-Noni";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		952AFDAF278CC2E7009D6F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Carrie Noni/Preview Content\"";
+				DEVELOPMENT_TEAM = YU4J972W6Z;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Carrie Noni/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coreygipson.Carrie-Noni";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		952AFDB1278CC2E7009D6F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YU4J972W6Z;
+				INFOPLIST_FILE = "Carrie NoniTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coreygipson.Carrie-NoniTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carrie Noni.app/Carrie Noni";
+			};
+			name = Debug;
+		};
+		952AFDB2278CC2E7009D6F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YU4J972W6Z;
+				INFOPLIST_FILE = "Carrie NoniTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coreygipson.Carrie-NoniTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carrie Noni.app/Carrie Noni";
+			};
+			name = Release;
+		};
+		952AFDB4278CC2E7009D6F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YU4J972W6Z;
+				INFOPLIST_FILE = "Carrie NoniUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coreygipson.Carrie-NoniUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Carrie Noni";
+			};
+			name = Debug;
+		};
+		952AFDB5278CC2E7009D6F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YU4J972W6Z;
+				INFOPLIST_FILE = "Carrie NoniUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coreygipson.Carrie-NoniUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Carrie Noni";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		952AFD83278CC2E6009D6F15 /* Build configuration list for PBXProject "Carrie Noni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952AFDAB278CC2E7009D6F15 /* Debug */,
+				952AFDAC278CC2E7009D6F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952AFDAD278CC2E7009D6F15 /* Build configuration list for PBXNativeTarget "Carrie Noni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952AFDAE278CC2E7009D6F15 /* Debug */,
+				952AFDAF278CC2E7009D6F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952AFDB0278CC2E7009D6F15 /* Build configuration list for PBXNativeTarget "Carrie NoniTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952AFDB1278CC2E7009D6F15 /* Debug */,
+				952AFDB2278CC2E7009D6F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		952AFDB3278CC2E7009D6F15 /* Build configuration list for PBXNativeTarget "Carrie NoniUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				952AFDB4278CC2E7009D6F15 /* Debug */,
+				952AFDB5278CC2E7009D6F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 952AFD80278CC2E6009D6F15 /* Project object */;
+}
