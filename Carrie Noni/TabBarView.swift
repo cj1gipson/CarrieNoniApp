@@ -10,7 +10,6 @@ import SwiftUI
 import WebKit
 import AVKit
 
-
 struct tabBarView: View {
     
     @State var selectedIndex = 2
