@@ -42,7 +42,7 @@ struct shopview: View {
             }
             .padding()
             ZStack{
-                Color.white
+                Color.black
                 VStack{
                 ScrollView(.vertical){
                     VStack{
@@ -52,7 +52,7 @@ struct shopview: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width:390, height: 250, alignment: .center)
-                                    .background(Color(CNColor3))
+                                    .background(Color.black)
                                     .clipped()
                             }
                         Spacer()
