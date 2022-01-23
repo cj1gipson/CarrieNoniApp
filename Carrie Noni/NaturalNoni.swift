@@ -142,7 +142,7 @@ struct feed3: View {
         HStack{
             Image("Title15")
                 .resizable()
-                .frame(width:270, height: 20, alignment: .center)
+                .frame(width:270, height: 22, alignment: .center)
                 .background(Color(CNColor3))
                 .clipped()
                 .padding(.vertical, 11.0)
