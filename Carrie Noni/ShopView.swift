@@ -2,7 +2,7 @@
 //  ShopView.swift
 //  Carrie Noni
 //
-//  Created by Corey Gipson on 1/13/22.
+//  Created by Corey Gipson & DeAngelo Stewart on 1/13/22.
 //
 
 import Foundation

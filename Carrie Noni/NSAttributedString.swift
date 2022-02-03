@@ -2,7 +2,7 @@
 //  NSAttributedString.swift
 //  Carrie Noni
 //
-//  Created by Corey Gipson on 1/14/22.
+//  Created by Corey Gipson & DeAngelo Stewart on 1/14/22.
 //
 
 import Foundation

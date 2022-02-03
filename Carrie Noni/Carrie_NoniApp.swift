@@ -2,7 +2,7 @@
 //  Carrie_NoniApp.swift
 //  Carrie Noni
 //
-//  Created by Corey Gipson on 1/10/22.
+//  Created by Corey Gipson & DeAngelo Stewart on 1/10/22.
 //
 
 import SwiftUI
