@@ -42,11 +42,14 @@ struct noniJuiceView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         VStack{
             HStack{
-                
+                Button(action: {
+                    
+                }) {
                 Image("Menu")
                     .imageScale(.large)
                     .font(Font.system(size:30, weight: .heavy))
                     .foregroundColor(Color(CNColor1))
+                }
                 
                 Spacer()
                 
@@ -58,10 +61,14 @@ struct noniJuiceView: View {
                 
                 Spacer()
                 
+                Button(action: {
+                    
+                }) {
                 Image(systemName: "message.circle")
                     .imageScale(.large)
                     .font(Font.system(size:25, weight: .heavy))
                     .foregroundColor(Color(CNColor1))
+                }
             }
             .padding()
             
@@ -550,37 +557,57 @@ struct feed2: View {
         .padding(.vertical)
         
         HStack{
-            Image("NJInsta")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
-                
             
-            Image("NJBook2")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
+            Button(action: {
+                
+            }) {
+                
+                Image("NJInsta")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
+            
+                
+            Button(action: {
+                
+            }) {
+                Image("NJBook2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
             
         }
         
         HStack{
-            Image("NJTwitter2")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
             
-            Image("NJYT")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
+            Button(action: {
+                
+            }) {
+                Image("NJTwitter2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
+            
+            Button(action: {
+                
+            }) {
+                Image("NJYT")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
+
         }.padding(.bottom, 35.0)
         
     }

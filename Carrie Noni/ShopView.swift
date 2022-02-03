@@ -19,11 +19,14 @@ struct shopview: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         VStack{
             HStack{
-                
+                Button(action: {
+                    
+                }) {
                 Image("Menu")
                     .imageScale(.large)
                     .font(Font.system(size:30, weight: .heavy))
                     .foregroundColor(Color(CNColor1))
+                }
                 
                 Spacer()
                 
@@ -35,10 +38,14 @@ struct shopview: View {
                 
                 Spacer()
                 
+                Button(action: {
+                    
+                }) {
                 Image(systemName: "message.circle")
                     .imageScale(.large)
                     .font(Font.system(size:25, weight: .heavy))
                     .foregroundColor(Color(CNColor1))
+                }
             }
             .padding()
             ZStack{

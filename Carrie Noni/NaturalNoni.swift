@@ -34,11 +34,14 @@ struct NaturalNoniView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         VStack{
             HStack{
-                
+                Button(action: {
+                    
+                }) {
                 Image("Menu")
                     .imageScale(.large)
                     .font(Font.system(size:30, weight: .heavy))
                     .foregroundColor(Color(CNColor1))
+                }
                 
                 Spacer()
                 
@@ -50,10 +53,14 @@ struct NaturalNoniView: View {
                 
                 Spacer()
                 
+                Button(action: {
+                    
+                }) {
                 Image(systemName: "message.circle")
                     .imageScale(.large)
                     .font(Font.system(size:25, weight: .heavy))
                     .foregroundColor(Color(CNColor1))
+                }
             }
             .padding()
             
@@ -297,37 +304,57 @@ struct feed3: View {
         }
         
         HStack{
-            Image("CNInsta")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
-                
             
-            Image("CNBook2")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
+            Button(action: {
+                
+            }) {
+                
+                Image("CNInsta")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
+            
+                
+            Button(action: {
+                
+            }) {
+                Image("CNBook2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
             
         }
         
         HStack{
-            Image("CNTwitter2")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
             
-            Image("CNYT")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
+            Button(action: {
+                
+            }) {
+                Image("CNTwitter2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
+            
+            Button(action: {
+                
+            }) {
+                Image("CNYT")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
+
         }.padding(.bottom, 35.0)
         
     }
