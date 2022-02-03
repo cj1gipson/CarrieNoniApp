@@ -34,11 +34,14 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         VStack{
             HStack{
-                
+                Button(action: {
+                    
+                }) {
                 Image("Menu")
                     .imageScale(.large)
                     .font(Font.system(size:30, weight: .heavy))
                     .foregroundColor(Color(CNColor1))
+                }
                 
                 Spacer()
                 
@@ -50,10 +53,14 @@ struct ContentView: View {
                 
                 Spacer()
                 
+                Button(action: {
+                    
+                }) {
                 Image(systemName: "message.circle")
                     .imageScale(.large)
                     .font(Font.system(size:25, weight: .heavy))
                     .foregroundColor(Color(CNColor1))
+                }
             }
             .padding()
             
@@ -96,8 +103,6 @@ struct feed: View {
     var body: some View {
     
 
-        let url = URL(string:"https://video.wixstatic.com/video/fbc0c1_b1ba0524050043a58ef9089c09a8b736/1080p/mp4/file.mp4")!
-        
         HStack{
             Text("Carrie Noni is a digital savvy millennial journalist with a passion for entertainment, hair, and everything in between!")
                 .font(.title2)
@@ -127,18 +132,18 @@ struct feed: View {
         }
         
         HStack{
-            VideoPlayer(player: AVPlayer(url:url), videoOverlay: {
-                Image("mediaReel")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 358, height: 300)
-                    .scaledToFit()
-                    .padding()
+            Button(action: {
                 
-            })
-                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .padding(.horizontal)
-                .cornerRadius(30)
+            }) {
+            Image("mediaReel")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width:350, height: 250, alignment: .center)
+                .background(Color.purple)
+                .clipped()
+                .cornerRadius(12)
+                .padding(.bottom, 20.0)
+        }.padding(.top, 7.0)
         }
         HStack{
             Image("Title2")
@@ -184,37 +189,57 @@ struct feed: View {
         }
         
         HStack{
-            Image("CNInsta")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
-                
             
-            Image("CNBook2")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
+            Button(action: {
+                
+            }) {
+                
+                Image("CNInsta")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
+            
+                
+            Button(action: {
+                
+            }) {
+                Image("CNBook2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
             
         }
         
         HStack{
-            Image("CNTwitter2")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
             
-            Image("CNYT")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:180, height: 180, alignment: .center)
-                .clipped()
-                .cornerRadius(12)
+            Button(action: {
+                
+            }) {
+                Image("CNTwitter2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
+            
+            Button(action: {
+                
+            }) {
+                Image("CNYT")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height: 180, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12)
+            }
+
         }.padding(.bottom, 35.0)
         
     }

@@ -20,11 +20,14 @@ struct NfluenceView: View {
                 .edgesIgnoringSafeArea(.all)
         VStack{
             HStack{
-                
+                Button(action: {
+                    
+                }) {
                 Image("Menu")
                     .imageScale(.large)
                     .font(Font.system(size:30, weight: .heavy))
                     .foregroundColor(Color(CNColor1))
+                }
                 
                 Spacer()
                 
@@ -36,10 +39,14 @@ struct NfluenceView: View {
                 
                 Spacer()
                 
+                Button(action: {
+                    
+                }) {
                 Image(systemName: "message.circle")
                     .imageScale(.large)
                     .font(Font.system(size:25, weight: .heavy))
                     .foregroundColor(Color(CNColor1))
+                }
             }
             .padding()
             ZStack{
@@ -100,7 +107,9 @@ struct NfluenceView: View {
                             .frame(width: 380)
                             .padding(.bottom, 20.0)
                         
-                        
+                        Button(action: {
+                            
+                        }) {
                         Image("WaveInt")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
@@ -110,6 +119,7 @@ struct NfluenceView: View {
                             .cornerRadius(12)
                             .padding(.bottom, 20.0)
                     }.padding(.top, 7.0)
+                    }
                      
                     
                         
@@ -150,7 +160,9 @@ struct NfluenceView: View {
                         ScrollView(.horizontal){
                         HStack{
 
-                            
+                            Button(action: {
+                                
+                            }) {
                             Image("WinterNfluence")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -159,8 +171,11 @@ struct NfluenceView: View {
                                 .clipped()
                                 .cornerRadius(12)
                                 .overlay(ImageOverlay5(), alignment: .bottomTrailing)
+                            }
 
-                            
+                            Button(action: {
+                                
+                            }) {
                             Image("FallNfluence")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -169,7 +184,11 @@ struct NfluenceView: View {
                                 .clipped()
                                 .cornerRadius(12)
                                 .overlay(ImageOverlay6(), alignment: .bottomTrailing)
+                            }
                             
+                            Button(action: {
+                                
+                            }) {
                             Image("SummerNfluence")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -178,7 +197,11 @@ struct NfluenceView: View {
                                 .clipped()
                                 .cornerRadius(12)
                                 .overlay(ImageOverlay7(), alignment: .bottomTrailing)
+                            }
                             
+                            Button(action: {
+                                
+                            }) {
                             Image("nfluenceep1")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -187,6 +210,7 @@ struct NfluenceView: View {
                                 .clipped()
                                 .cornerRadius(12)
                                 .overlay(ImageOverlay8(), alignment: .bottomTrailing)
+                            }
                         }
                             
                             
@@ -202,6 +226,9 @@ struct NfluenceView: View {
                         
                         ScrollView(.horizontal){
                         HStack{
+                            Button(action: {
+                                
+                            }) {
                             Image("LeeksInt")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -209,7 +236,11 @@ struct NfluenceView: View {
                                 .background(Color.purple)
                                 .clipped()
                                 .cornerRadius(12)
+                            }
                             
+                            Button(action: {
+                                
+                            }) {
                             Image("EliInt")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -218,7 +249,11 @@ struct NfluenceView: View {
                                 .clipped()
                                 .cornerRadius(12)
                             
+                            }
                             
+                            Button(action: {
+                                
+                            }) {
                             Image("ErnieInt")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -226,7 +261,11 @@ struct NfluenceView: View {
                                 .background(Color.purple)
                                 .clipped()
                                 .cornerRadius(12)
+                            }
                             
+                            Button(action: {
+                                
+                            }) {
                             Image("WaveInt")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
@@ -234,6 +273,7 @@ struct NfluenceView: View {
                                 .background(Color.purple)
                                 .clipped()
                                 .cornerRadius(12)
+                            }
                         }
                         }.padding(.bottom, 20.0)
                         .padding(.top, 10.0)
@@ -275,6 +315,9 @@ struct NfluenceView: View {
                         
                         ScrollView(.horizontal){
                             HStack{
+                                Button(action: {
+                                    
+                                }) {
                                 Image("Leeks")
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
@@ -285,7 +328,11 @@ struct NfluenceView: View {
                                     .clipped()
                                     .cornerRadius(12)
                                     .overlay(ImageOverlay4(), alignment: .bottomTrailing)
+                                }
                                 
+                                Button(action: {
+                                    
+                                }) {
                                 Image("Eli")
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
@@ -296,7 +343,11 @@ struct NfluenceView: View {
                                     .clipped()
                                     .cornerRadius(12)
                                     .overlay(ImageOverlay3(), alignment: .bottomTrailing)
+                                }
                                 
+                                Button(action: {
+                                    
+                                }) {
                                 Image("ERNIEZ")
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
@@ -307,6 +358,12 @@ struct NfluenceView: View {
                                     .clipped()
                                     .cornerRadius(12)
                                     .overlay(ImageOverlay(), alignment: .bottomTrailing)
+                                    
+                                }
+                                
+                                Button(action: {
+                                    
+                                }) {
                                 Image("CAMWILL")
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
@@ -317,6 +374,7 @@ struct NfluenceView: View {
                                     .clipped()
                                     .cornerRadius(12)
                                     .overlay(ImageOverlay2(), alignment: .bottomTrailing)
+                                }
                                 
                                 
 
@@ -375,37 +433,57 @@ struct NfluenceView: View {
                             .padding(.bottom, 20.0)
                         
                         HStack{
-                            Image("NInsta")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width:180, height: 180, alignment: .center)
-                                .clipped()
-                                .cornerRadius(12)
-                                
                             
-                            Image("NBook")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width:180, height: 180, alignment: .center)
-                                .clipped()
-                                .cornerRadius(12)
+                            Button(action: {
+                                
+                            }) {
+                                
+                                Image("NInsta")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width:180, height: 180, alignment: .center)
+                                    .clipped()
+                                    .cornerRadius(12)
+                            }
+                            
+                                
+                            Button(action: {
+                                
+                            }) {
+                                Image("NBook")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width:180, height: 180, alignment: .center)
+                                    .clipped()
+                                    .cornerRadius(12)
+                            }
                             
                         }
                         
                         HStack{
-                            Image("NTwitter")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width:180, height: 180, alignment: .center)
-                                .clipped()
-                                .cornerRadius(12)
                             
-                            Image("NYT")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width:180, height: 180, alignment: .center)
-                                .clipped()
-                                .cornerRadius(12)
+                            Button(action: {
+                                
+                            }) {
+                                Image("NTwitter")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width:180, height: 180, alignment: .center)
+                                    .clipped()
+                                    .cornerRadius(12)
+                            }
+                            
+                            Button(action: {
+                                
+                            }) {
+                                Image("NYT")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width:180, height: 180, alignment: .center)
+                                    .clipped()
+                                    .cornerRadius(12)
+                            }
+
                         }.padding(.bottom, 35.0)
                             
                     }

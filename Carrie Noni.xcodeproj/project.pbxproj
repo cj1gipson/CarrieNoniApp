@@ -20,6 +20,7 @@
 		95CDB11527909A1800A43119 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CDB11427909A1800A43119 /* TabBarView.swift */; };
 		95CDB11727909D9B00A43119 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CDB11627909D9B00A43119 /* ShopView.swift */; };
 		95CDB1192790A0BA00A43119 /* Nflunece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CDB1182790A0BA00A43119 /* Nflunece.swift */; };
+		95DF028A27AB7099004DC2C9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF028927AB7099004DC2C9 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		95CDB11427909A1800A43119 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		95CDB11627909D9B00A43119 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		95CDB1182790A0BA00A43119 /* Nflunece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nflunece.swift; sourceTree = "<group>"; };
+		95DF028927AB7099004DC2C9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		952AFD8A278CC2E6009D6F15 /* Carrie Noni */ = {
 			isa = PBXGroup;
 			children = (
+				95DF028927AB7099004DC2C9 /* LoginView.swift */,
 				95BBF3132792379B00460158 /* NoniJuice.swift */,
 				952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */,
 				952AFD8D278CC2E6009D6F15 /* ContentView.swift */,
@@ -284,6 +287,7 @@
 				952AFD8E278CC2E6009D6F15 /* ContentView.swift in Sources */,
 				951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */,
 				95CDB1192790A0BA00A43119 /* Nflunece.swift in Sources */,
+				95DF028A27AB7099004DC2C9 /* LoginView.swift in Sources */,
 				95CDB11527909A1800A43119 /* TabBarView.swift in Sources */,
 				95CDB11727909D9B00A43119 /* ShopView.swift in Sources */,
 				952AFD8C278CC2E6009D6F15 /* Carrie_NoniApp.swift in Sources */,
