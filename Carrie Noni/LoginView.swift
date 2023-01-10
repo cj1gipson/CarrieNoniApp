@@ -229,8 +229,8 @@ struct Login : View {
 struct SignUp : View {
     
     @State var email = ""
+    @State var UserName = ""
     @State var pass = ""
-    @State var Repass = ""
     @Binding var index : Int
     
     var body: some View{
@@ -271,7 +271,7 @@ struct SignUp : View {
                     HStack(spacing:15){
                         Image(systemName: "eye.slash.fill")
                             .foregroundColor(.white)
-                        SecureField("Password", text: self.$pass)
+                        SecureField("UserName", text: self.$UserName)
                     }
                     
                     Divider().background(Color.white.opacity(0.5))
@@ -283,7 +283,7 @@ struct SignUp : View {
                     HStack(spacing:15){
                         Image(systemName: "eye.slash.fill")
                             .foregroundColor(.white)
-                        SecureField("Password", text: self.$Repass)
+                        SecureField("Password", text: self.$pass)
                     }
                     
                     Divider().background(Color.white.opacity(0.5))

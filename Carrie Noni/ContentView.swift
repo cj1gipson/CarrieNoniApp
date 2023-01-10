@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  Carrie Noni
@@ -8,6 +9,11 @@
 import SwiftUI
 import WebKit
 import AVKit
+
+// Start the Breakout for a controller
+
+
+
 let CNColor1 = UIColor(red:211/255.0,
                        green: 80/255.0,
                        blue: 124/255.0,

@@ -41,7 +41,8 @@ struct tabBarView: View {
 
                 default:
                     NavigationView{
-                        shopview()
+                        LoginView()
+                        //shopview()
                     }
                 }
             }
