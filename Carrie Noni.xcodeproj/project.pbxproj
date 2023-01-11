@@ -454,7 +454,7 @@
 				DEVELOPMENT_TEAM = YU4J972W6Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Carrie Noni/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,7 +476,7 @@
 				DEVELOPMENT_TEAM = YU4J972W6Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Carrie Noni/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

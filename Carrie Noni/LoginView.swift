@@ -145,7 +145,7 @@ struct Login : View {
                         Capsule()
                             .fill(self.index == 0 ? Color(CNColor2) : Color.clear)
                             .frame(width: 100, height: 5)
-                            .padding(.top,5)
+                            .padding(.top,78)
                             .padding(.trailing, 230.0)
                     }
 
@@ -228,6 +228,8 @@ struct Login : View {
 
 struct SignUp : View {
     
+    @State var firstName = ""
+    @State var lastName = ""
     @State var email = ""
     @State var UserName = ""
     @State var pass = ""
@@ -249,11 +251,27 @@ struct SignUp : View {
                         Capsule()
                             .fill(self.index == 1 ? Color(CNColor3) : Color.clear)
                             .frame(width: 100, height: 5)
+                    }
+                    
+                }.padding(.top,20)
+                
+                VStack{
+                    HStack(spacing:15){
+                        Image(systemName: "envelope.fill")
+                            .foregroundColor(.white)
+                        TextField("First Name", text: self.$firstName)
+                        
+                        HStack(spacing:15){
+                            TextField("Last Name", text: self.$lastName)
+                        }
                         
                     }
                     
+                    Divider().background(Color.white.opacity(0.5))
                     
-                }.padding(.top,20)
+                }
+                .padding(.horizontal)
+                .padding(.top, 40)
                 
                 VStack{
                     HStack(spacing:15){
@@ -271,7 +289,7 @@ struct SignUp : View {
                     HStack(spacing:15){
                         Image(systemName: "eye.slash.fill")
                             .foregroundColor(.white)
-                        SecureField("UserName", text: self.$UserName)
+                        TextField("UserName", text: self.$UserName)
                     }
                     
                     Divider().background(Color.white.opacity(0.5))
