@@ -6,20 +6,18 @@ const server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'text/plain');
     res.end('Hello World\n');
 });
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
 
-var mysql = require('mysql');
+var mysql = require('mysql2');
 
-////////////////////////////////////////////////////////////////////////////////
-//THIS IS THE DATABASE CONNECTION!!!! YOUR MYSQL INFOMATION GOES HERE //////////////
+//////////////////////////////////////////////////////////////////////////////
+//THIS IS THE DATABASE CONNECTION!!!! YOUR MYSQL INFOMATION GOES HERE ///
 ////////////////////////////////////////////////////////////////////////////////
 
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "X35!SiCk"
+  password: "password",
+  database: "DeTest"
 });
 
 con.connect(function(err) {
@@ -32,15 +30,20 @@ con.connect(function(err) {
     //////////////////////////////////////////////////////////
     
     var usesql = "USE DeTest";
+
     var sql = "Select * From Testusers";
-    
-    con.query(usesql, function (err, result) {
-        if (err) throw err;
-        console.log("Query Completed Using db:");
-      });
+  
     
     con.query(sql, function (err, result) {
         if (err) throw err;
-        console.log("Query Completed :");
+        console.log("Query Completed : "+ result);
       });
+});
+
+
+
+
+
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
 });
