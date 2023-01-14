@@ -29,18 +29,27 @@ con.connect(function(err) {
     //Query specific to my table. Change tto fit your table
     //////////////////////////////////////////////////////////
     
-    var usesql = "USE DeTest";
-
     var sql = "Select * From Testusers";
   
     
     con.query(sql, function (err, result) {
         if (err) throw err;
-        console.log("Query Completed : "+ result);
+        console.log("Query Completed : "+ JSON.stringify(result));
+
       });
 });
 
+function AddUser(){
+    
+    var sql = "Select * From Testusers";
+  
+    
+    con.query(sql, function (err, result) {
+        if (err) throw err;
+        console.log("Query Completed : "+ JSON.stringify(result));
 
+      });
+}
 
 
 

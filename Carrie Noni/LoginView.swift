@@ -328,6 +328,7 @@ struct SignUp : View {
             Button(action: {
                 
             }) {
+                //print("Button clicked");
                 Text("SIGNUP")
                     .foregroundColor(.white)
                     .fontWeight(.bold)
