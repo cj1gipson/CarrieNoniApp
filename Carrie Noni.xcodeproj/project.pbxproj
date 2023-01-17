@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52DB14B02971AB70000BD7D2 /* NoniController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB14AF2971AB6F000BD7D2 /* NoniController.swift */; };
 		52DBBFCF279CB4CA004742D8 /* NaturalNoni.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBBFCE279CB4CA004742D8 /* NaturalNoni.swift */; };
 		951BB1402791CBD500744B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BB13F2791CBD500744B16 /* Main.storyboard */; };
 		951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BB1412791D55B00744B16 /* NSAttributedString.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52DB14AF2971AB6F000BD7D2 /* NoniController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoniController.swift; sourceTree = "<group>"; };
 		52DBBFCE279CB4CA004742D8 /* NaturalNoni.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaturalNoni.swift; sourceTree = "<group>"; };
 		951BB13F2791CBD500744B16 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		951BB1412791D55B00744B16 /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		952AFD8A278CC2E6009D6F15 /* Carrie Noni */ = {
 			isa = PBXGroup;
 			children = (
+				52DB14AF2971AB6F000BD7D2 /* NoniController.swift */,
 				95DF028927AB7099004DC2C9 /* LoginView.swift */,
 				95BBF3132792379B00460158 /* NoniJuice.swift */,
 				952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */,
@@ -291,6 +294,7 @@
 				95CDB11527909A1800A43119 /* TabBarView.swift in Sources */,
 				95CDB11727909D9B00A43119 /* ShopView.swift in Sources */,
 				952AFD8C278CC2E6009D6F15 /* Carrie_NoniApp.swift in Sources */,
+				52DB14B02971AB70000BD7D2 /* NoniController.swift in Sources */,
 				95BBF3142792379B00460158 /* NoniJuice.swift in Sources */,
 				52DBBFCF279CB4CA004742D8 /* NaturalNoni.swift in Sources */,
 			);
