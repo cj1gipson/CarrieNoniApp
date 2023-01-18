@@ -226,6 +226,20 @@ struct Login : View {
         }
     }
 
+func present(
+    _ viewControllerToPresent: UIViewController,
+    animated flag: Bool,
+    completion: (() -> Void)? = nil
+){ print("Buttonnnn");}
+
+func alertB(){
+    // Create a new alert
+    var dialogMessage = UIAlertController(title: "Attention", message: "I am an alert message you cannot dissmiss.", preferredStyle: .alert)
+
+    // Present alert to user
+    present(dialogMessage, animated: true, completion: nil);
+}
+
 struct SignUp : View {
     
     @State var firstName = ""
@@ -234,6 +248,8 @@ struct SignUp : View {
     @State var UserName = ""
     @State var pass = ""
     @Binding var index : Int
+
+    
     
     var body: some View{
         ZStack(alignment: .bottom ){
@@ -336,7 +352,8 @@ struct SignUp : View {
                     .padding(.horizontal,50)
                     .background(Color(CNColor1))
                     .clipShape(Capsule())
-                    .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5)
+                    .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5);
+
             }
             .offset(y: 25)
             .opacity(self.index == 1 ? 1 : 0)
