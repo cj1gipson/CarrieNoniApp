@@ -16,8 +16,8 @@ var mysql = require('mysql2');
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "password",
-  database: "DeTest"
+  password: "MoneyTeam",
+  database: "test2"
 });
 
 con.connect(function(err) {
@@ -26,10 +26,10 @@ con.connect(function(err) {
   console.log("Running Query......");
 
     //////////////////////////////////////////////////////////
-    //Query specific to my table. Change tto fit your table
+    //Query specific to my table. Change to fit your table
     //////////////////////////////////////////////////////////
     
-    var sql = "Select * From Testusers";
+    var sql = "Select * From users";
   
     
     con.query(sql, function (err, result) {
@@ -41,7 +41,7 @@ con.connect(function(err) {
 
 function AddUser(){
     
-    var sql = "Select * From Testusers";
+    var sql = "Select * From users";
   
     
     con.query(sql, function (err, result) {
