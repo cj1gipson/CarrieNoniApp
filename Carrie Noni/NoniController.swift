@@ -10,7 +10,7 @@ import Foundation
 class NoniViewController{
     
     func NoniViewController(){
-        print(LoginView.)
+        print("LoginView");
     }
     
 }

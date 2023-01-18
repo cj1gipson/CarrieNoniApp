@@ -344,7 +344,6 @@ struct SignUp : View {
             Button(action: {
                 
             }) {
-                //print("Button clicked");
                 Text("SIGNUP")
                     .foregroundColor(.white)
                     .fontWeight(.bold)
@@ -353,8 +352,12 @@ struct SignUp : View {
                     .background(Color(CNColor1))
                     .clipShape(Capsule())
                     .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5);
-
+                
             }
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///Trying to find out how to make a change on the button click
+        ///simple console print for now
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
             .offset(y: 25)
             .opacity(self.index == 1 ? 1 : 0)
             .padding(.top, 320.0)
