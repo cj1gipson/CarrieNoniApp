@@ -234,7 +234,7 @@ func present(
 
 func alertB(){
     // Create a new alert
-    var dialogMessage = UIAlertController(title: "Attention", message: "I am an alert message you cannot dissmiss.", preferredStyle: .alert)
+    let dialogMessage = UIAlertController(title: "Attention", message: "I am an alert message you cannot dissmiss.", preferredStyle: .alert)
 
     // Present alert to user
     present(dialogMessage, animated: true, completion: nil);
@@ -341,9 +341,7 @@ struct SignUp : View {
             .padding(.horizontal, 20)
            
             
-            Button(action: {
-                
-            }) {
+        Button(action: {print("Wow so simple!")}) {
                 Text("SIGNUP")
                     .foregroundColor(.white)
                     .fontWeight(.bold)
@@ -361,9 +359,10 @@ struct SignUp : View {
             .offset(y: 25)
             .opacity(self.index == 1 ? 1 : 0)
             .padding(.top, 320.0)
-            
-           
+        
+        
         }
+    
     }
 
 
