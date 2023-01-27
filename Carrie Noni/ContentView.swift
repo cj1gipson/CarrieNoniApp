@@ -29,79 +29,18 @@ let CNColor3 = UIColor(red:255/255.0,
                        blue: 255/255.0,
                        alpha: 1)
 
+let gradient = Gradient(colors: [Color("Light-Blue"), Color("Dark-Blue")])
+
 
 struct ContentView: View {
     var body: some View {
-        
-        
-        
-        ZStack{
-            Color.black
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-        VStack{
-            HStack{
-                Button(action: {
-                    
-                }) {
-                Image("Menu")
-                    .imageScale(.large)
-                    .font(Font.system(size:30, weight: .heavy))
-                    .foregroundColor(Color(CNColor1))
-                }
-                
-                Spacer()
-                
-                Image("cn")
-                    .imageScale(.large)
-                    .padding(.leading, 0.0)
-                    .font(Font.system(size:45, weight: .heavy))
-                    .foregroundColor(Color(CNColor1))
-                
-                Spacer()
-                
-                Button(action: {
-                    
-                }) {
-                Image(systemName: "message.circle")
-                    .imageScale(.large)
-                    .font(Font.system(size:25, weight: .heavy))
-                    .foregroundColor(Color(CNColor1))
-                }
-            }
-            .padding()
-            
-            
-            ZStack{
-                Color.white
-                VStack{
-                ScrollView(.vertical){
-                    VStack{
-                            HStack(spacing: 3){
-                                Image("Carrie1")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width:390, height: 250, alignment: .center)
-                                    .background(Color(CNColor1))
-                                    .clipped()
-                            }
-                            
-                    }
-                    .padding(.top, 5.0)
-                    
-                    feed()
-                    Spacer()
-                    
-                }
-                    
-                }
-            }
-            .padding(.bottom, -34.0)
-            
-        }
-            
-            Spacer()
-            
-        }
+        //------------------------- Background -----------------------------
+        RoundedRectangle(cornerRadius: 25.0)
+            .fill(
+                RadialGradient(gradient: gradient, center: .topLeading, startRadius: 5, endRadius: 250)
+            )
+            .overlay(Color("Dark-Blue")).opacity(0.6)
+            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
 
