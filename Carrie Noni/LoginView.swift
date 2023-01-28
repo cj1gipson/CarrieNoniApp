@@ -226,6 +226,9 @@ struct Login : View {
         }
     }
 
+// Maybe some of this math should be in another file
+
+
 func present(
     _ viewControllerToPresent: UIViewController,
     animated flag: Bool,
@@ -235,9 +238,15 @@ func present(
 func alertB(){
     // Create a new alert
     let dialogMessage = UIAlertController(title: "Attention", message: "I am an alert message you cannot dissmiss.", preferredStyle: .alert)
-
+    print("Buttonnnn!!!");
+    
     // Present alert to user
     present(dialogMessage, animated: true, completion: nil);
+}
+
+
+func newUser(){
+    
 }
 
 struct SignUp : View {
@@ -341,7 +350,7 @@ struct SignUp : View {
             .padding(.horizontal, 20)
            
             
-        Button(action: {print("Wow so simple!")}) {
+        Button(action: {print("Wow so simple!!", firstName , " " ,lastName, " ", UserName, " ", pass, " ", email); alertB()}) {
                 Text("SIGNUP")
                     .foregroundColor(.white)
                     .fontWeight(.bold)

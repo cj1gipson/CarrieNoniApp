@@ -16,8 +16,8 @@ var mysql = require('mysql2');
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "MoneyTeam",
-  database: "test2"
+  password: "Password7Des",
+  database: "NewDb"
 });
 
 con.connect(function(err) {
@@ -29,7 +29,7 @@ con.connect(function(err) {
     //Query specific to my table. Change to fit your table
     //////////////////////////////////////////////////////////
     
-    var sql = "Select * From users";
+    var sql = "Select * From NewTable";
   
     
     con.query(sql, function (err, result) {
