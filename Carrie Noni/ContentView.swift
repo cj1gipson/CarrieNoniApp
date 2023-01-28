@@ -34,13 +34,47 @@ let gradient = Gradient(colors: [Color("Light-Blue"), Color("Dark-Blue")])
 
 struct ContentView: View {
     var body: some View {
-        //------------------------- Background -----------------------------
-        RoundedRectangle(cornerRadius: 25.0)
-            .fill(
-                RadialGradient(gradient: gradient, center: .topLeading, startRadius: 5, endRadius: 250)
-            )
-            .overlay(Color("Dark-Blue")).opacity(0.6)
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        ZStack{
+            //------------------------- Background -----------------------------
+            RoundedRectangle(cornerRadius: 25.0)
+                .fill(
+                    RadialGradient(gradient: gradient, center: .topLeading, startRadius: 5, endRadius: 250)
+                )
+                .overlay(Color("Dark-Blue")).opacity(0.6)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            //-------------------------- Welcome ------------------------------
+            HStack{
+                VStack(alignment: .leading){
+                    Text("Welcome")
+                        .font(.system(size: 15, weight: .light))
+                    Text("Carrie Noni App")
+                        .font(.system(size: 30, weight: .bold))
+                    Spacer()
+                }
+                .padding()
+                Spacer()
+            }
+            .padding(.leading)
+            
+            HStack{
+                VStack(alignment: .leading){
+                    Image("Carrie24")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width:60, height: 60, alignment: .center)
+                        .clipped()
+                        .cornerRadius(20)
+                }
+                .padding()
+                Spacer()
+            }
+            .padding(.leading, 280.0)
+            .padding(.bottom, 672.0)
+
+          
+
+        }
     }
 }
 
