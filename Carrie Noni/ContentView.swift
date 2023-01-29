@@ -66,17 +66,25 @@ struct ContentView: View {
                 .padding(.top)
                 Spacer()
                 VStack(alignment: .leading){
+                    
+                    Button(action: {
+                        
+                    }) {
                     Image("Carrie24")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width:60, height: 60, alignment: .center)
                         .clipped()
                         .cornerRadius(20)
+                    }
                 }
-                .padding(.leading, 50.0)
+                .padding(.leading, 90.0)
                 Spacer()
             }
             .padding(.leading)
+            .padding(.bottom, 40.0)
+                
+            //-------------------------- Feed ------------------------------
             
             feed()
             }
@@ -87,40 +95,69 @@ struct ContentView: View {
 
 struct feed: View {
     var body: some View {
-    
+        
+        //-------------------------- Trending ------------------------------
+        VStack{
+            HStack{
+                Text("Trending")
+                    .font(.system(size: 21, weight: .bold))
+                    .padding(.trailing, 170.0)
+                
+                Button(action: {
+                    
+                }) {
+
+                Text("View More")
+                    .foregroundColor(Color("Pink"))
+                }
+                
+            }
         ScrollView(.horizontal){
+            
         HStack{
+            
             VideoView(videoID: "moY_h85RZ6g")
-                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(minWidth: 10, idealWidth: 210, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 240, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(12)
-                .padding(.horizontal, 20.0)
+                .overlay(Image("Carrie24")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width:210, height: 240, alignment: .center)
+                    .clipped()
+                    .cornerRadius(12))
+                .padding(.leading, 20.0)
+                .padding(.trailing, 10.0)
+                
+                    
             
             VideoView(videoID: "JQAJOlYYZ4g")
-                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(minWidth: 10, idealWidth: 210, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 240, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(12)
-                .padding(.horizontal, 24)
+                .padding(.trailing, 10.0)
+                
             
             VideoView(videoID: "Zw57CgDOU1o")
-                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(minWidth: 10, idealWidth: 210, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 240, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(12)
-                .padding(.horizontal, 24)
+                .padding(.trailing, 10.0)
+
             
             VideoView(videoID: "7dAQXvUDzM8")
-                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(minWidth: 10, idealWidth: 210, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 240, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(12)
-                .padding(.horizontal, 24)
+                .padding(.trailing, 10.0)
         }
+            }
         
         }
-        
-        HStack{
-            Image("Title6")
-                .resizable()
-                .padding(.top, 8.0)
-                .frame(width:260, height: 45, alignment: .center)
-                .background(Color(CNColor3))
-                .clipped()
-        }
+        //-------------------------- Recommended ------------------------------
+        VStack{
+            HStack{
+                Text("Recommended")
+                    .font(.system(size: 21, weight: .bold))
+                    .padding(.trailing, 200.0)
+            }
+        }.padding(.top, 40.0)
         
         HStack{
             
