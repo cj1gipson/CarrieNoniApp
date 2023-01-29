@@ -31,9 +31,9 @@ let CNColor3 = UIColor(red:255/255.0,
 
 let gradient = Gradient(colors: [Color("Light-Blue"), Color("Dark-Blue")])
 
-
 struct ContentView: View {
     var body: some View {
+        
         ZStack{
             //------------------------- Background -----------------------------
             RoundedRectangle(cornerRadius: 25.0)
@@ -44,20 +44,27 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
             //-------------------------- Welcome ------------------------------
+            ScrollView(){
             HStack{
                 VStack(alignment: .leading){
+                    HStack{
                     Text("Welcome")
                         .font(.system(size: 15, weight: .light))
-                    Text("Carrie Noni App")
+                        .padding(.leading)
+                    Image("World2")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width:40, height: 30, alignment: .center)
+                        .clipped()
+                    }.padding(.bottom, -18.0)
+                        .padding(.leading, 5.0)
+                    Text("Juice World")
                         .font(.system(size: 30, weight: .bold))
+                        .padding(.leading)
                     Spacer()
                 }
-                .padding()
+                .padding(.top)
                 Spacer()
-            }
-            .padding(.leading)
-            
-            HStack{
                 VStack(alignment: .leading){
                     Image("Carrie24")
                         .resizable()
@@ -66,73 +73,21 @@ struct ContentView: View {
                         .clipped()
                         .cornerRadius(20)
                 }
-                .padding()
+                .padding(.leading, 50.0)
                 Spacer()
             }
-            .padding(.leading, 280.0)
-            .padding(.bottom, 672.0)
-
-          
-
+            .padding(.leading)
+            
+            feed()
+            }
         }
     }
 }
 
+
 struct feed: View {
     var body: some View {
     
-
-        HStack{
-            Text("Carrie Noni is a digital savvy millennial journalist with a passion for entertainment, hair, and everything in between!")
-                .font(.title2)
-                .fontWeight(.bold)
-                .foregroundColor(Color(CNColor2))
-                .multilineTextAlignment(.center)
-                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-        }
-        
-        HStack{
-            Image("Carrie4")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width:350, height: 500, alignment: .center)
-                .background(Color(CNColor1))
-                .clipped()
-                
-        }
-        Spacer()
-        
-        HStack{
-            Image("Title1")
-                .resizable()
-                .frame(width:250, height: 55, alignment: .center)
-                .background(Color(CNColor3))
-                .clipped()
-        }
-        
-        HStack{
-            Button(action: {
-                
-            }) {
-            Image("mediaReel")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width:350, height: 250, alignment: .center)
-                .background(Color.purple)
-                .clipped()
-                .cornerRadius(12)
-                .padding(.bottom, 20.0)
-        }.padding(.top, 7.0)
-        }
-        HStack{
-            Image("Title2")
-                .resizable()
-                .padding(.top, 8.0)
-                .frame(width:200, height: 45, alignment: .center)
-                .background(Color(CNColor3))
-                .clipped()
-            
-        }
         ScrollView(.horizontal){
         HStack{
             VideoView(videoID: "moY_h85RZ6g")
