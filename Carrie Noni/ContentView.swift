@@ -116,15 +116,12 @@ struct feed: View {
             
         HStack{
             
-            VideoView(videoID: "moY_h85RZ6g")
-                .frame(minWidth: 10, idealWidth: 210, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 240, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            Image("Carrie24")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width:210, height: 240, alignment: .center)
+                .clipped()
                 .cornerRadius(12)
-                .overlay(Image("Carrie24")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width:210, height: 240, alignment: .center)
-                    .clipped()
-                    .cornerRadius(12))
                 .padding(.leading, 20.0)
                 .padding(.trailing, 10.0)
                 

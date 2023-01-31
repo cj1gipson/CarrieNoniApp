@@ -46,9 +46,7 @@ struct tabBarView: View {
                     }
                 }
             }
-            .padding(.top, -150.0)
-            //Divider()
-                
+            //.padding(.top, -150.0)
                 //.background(Color(CNColor1))
             HStack(spacing: -9.0){
                 ForEach(0..<5, id: \.self){number in
@@ -56,13 +54,14 @@ struct tabBarView: View {
                     Button(action:{self.selectedIndex = number}, label: {
                         Image(icons[number])
                             .font(.system(size: 40, weight: .regular, design: .default)).padding().padding(.horizontal, -6.0)
-                            .foregroundColor(selectedIndex == number ? .white : Color("Pink"))
+                            .foregroundColor(selectedIndex == number ? Color("Pink") : Color("Dark-Blue-1"))
                         
                     })
                     Spacer()
                 }
                
-            }
+            }.background(Color("Dark-Blue"))
+            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
         }
     }
