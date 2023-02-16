@@ -113,10 +113,10 @@
 		952AFD8A278CC2E6009D6F15 /* Carrie Noni */ = {
 			isa = PBXGroup;
 			children = (
+				952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */,
 				52DB14AF2971AB6F000BD7D2 /* NoniController.swift */,
 				95DF028927AB7099004DC2C9 /* LoginView.swift */,
 				95BBF3132792379B00460158 /* NoniJuice.swift */,
-				952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */,
 				952AFD8D278CC2E6009D6F15 /* ContentView.swift */,
 				95CDB11427909A1800A43119 /* TabBarView.swift */,
 				95CDB11627909D9B00A43119 /* ShopView.swift */,
