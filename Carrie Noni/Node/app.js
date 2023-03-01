@@ -39,7 +39,7 @@ con.connect(function(err) {
       });
 });
 
-function AddUser(){
+function AddUser(String){
     
     var sql = "Select * From NewTable";
   

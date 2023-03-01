@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52517F5729AEE0F5006AF9F4 /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52517F5629AEE0F5006AF9F4 /* CreateUser.swift */; };
+		52517F5929AEE1BD006AF9F4 /* CD_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52517F5829AEE1BD006AF9F4 /* CD_API.swift */; };
 		52DB14B02971AB70000BD7D2 /* NoniController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB14AF2971AB6F000BD7D2 /* NoniController.swift */; };
 		52DBBFCF279CB4CA004742D8 /* NaturalNoni.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBBFCE279CB4CA004742D8 /* NaturalNoni.swift */; };
 		951BB1402791CBD500744B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BB13F2791CBD500744B16 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52517F5629AEE0F5006AF9F4 /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateUser.swift; path = API/CreateUser.swift; sourceTree = "<group>"; };
+		52517F5829AEE1BD006AF9F4 /* CD_API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CD_API.swift; path = API/CD_API.swift; sourceTree = "<group>"; };
 		52DB14AF2971AB6F000BD7D2 /* NoniController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoniController.swift; sourceTree = "<group>"; };
 		52DBBFCE279CB4CA004742D8 /* NaturalNoni.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaturalNoni.swift; sourceTree = "<group>"; };
 		951BB13F2791CBD500744B16 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				952AFD91278CC2E7009D6F15 /* Preview Content */,
 				951BB13F2791CBD500744B16 /* Main.storyboard */,
 				951BB1412791D55B00744B16 /* NSAttributedString.swift */,
+				52517F5629AEE0F5006AF9F4 /* CreateUser.swift */,
+				52517F5829AEE1BD006AF9F4 /* CD_API.swift */,
 			);
 			path = "Carrie Noni";
 			sourceTree = "<group>";
@@ -297,6 +303,8 @@
 				52DB14B02971AB70000BD7D2 /* NoniController.swift in Sources */,
 				95BBF3142792379B00460158 /* NoniJuice.swift in Sources */,
 				52DBBFCF279CB4CA004742D8 /* NaturalNoni.swift in Sources */,
+				52517F5729AEE0F5006AF9F4 /* CreateUser.swift in Sources */,
+				52517F5929AEE1BD006AF9F4 /* CD_API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

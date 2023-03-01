@@ -124,7 +124,7 @@ struct CShape1 : Shape {
 }
 
 struct Login : View {
-    
+    //@State private var name: String = "Pimpin"
     @State var email = ""
     @State var pass = ""
     @State var Repass = ""
@@ -341,7 +341,7 @@ struct SignUp : View {
             .padding(.horizontal, 20)
            
             
-        Button(action: {print("Wow so simple!")}) {
+        Button(action: {print("Wow so simple!" + UserName)}) {
                 Text("SIGNUP")
                     .foregroundColor(.white)
                     .fontWeight(.bold)
