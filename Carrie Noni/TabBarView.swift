@@ -48,7 +48,7 @@ struct tabBarView: View {
             }
             //.padding(.top, -150.0)
                 //.background(Color(CNColor1))
-            HStack(spacing: -9.0){
+            HStack(spacing: -35.0){
                 ForEach(0..<5, id: \.self){number in
                     Spacer()
                     Button(action:{self.selectedIndex = number}, label: {
