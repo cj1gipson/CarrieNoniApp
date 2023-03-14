@@ -226,9 +226,14 @@ struct feed: View {
                     }.padding(.trailing, 240.0)
                     
                     VStack{
-                        Text("Whats Poppin Series")
+                        Text("Whats Poppin")
                             .fontWeight(.semibold)
-                            .padding(.leading, 75.0)
+                            .padding(.leading, 25.0)
+                            .foregroundColor(.white)
+                        Text("Series")
+                            .fontWeight(.semibold)
+                            .padding(.leading, -35.0)
+                            .padding(.top, 0.1)
                             .foregroundColor(.white)
                     }
                 }.padding(.bottom, 5.0)
@@ -253,9 +258,14 @@ struct feed: View {
                     }.padding(.trailing, 240.0)
                     
                     VStack{
-                        Text(" Nfluence Series")
+                        Text(" Nfluence")
                             .fontWeight(.semibold)
-                            .padding(.leading, 40.0)
+                            .padding(.leading, -18.0)
+                            .foregroundColor(.white)
+                        Text("Series")
+                            .fontWeight(.semibold)
+                            .padding(.leading, -35.0)
+                            .padding(.top, 0.1)
                             .foregroundColor(.white)
                     }
                 }.padding(.bottom, 5.0)
@@ -280,9 +290,14 @@ struct feed: View {
                     }.padding(.trailing, 240.0)
                     
                     VStack{
-                        Text("Bucks Ambassador")
+                        Text("Bucks")
                             .fontWeight(.semibold)
-                            .padding(.leading, 65.0)
+                            .padding(.leading, -35.0)
+                            .foregroundColor(.white)
+                        Text("Ambassador")
+                            .fontWeight(.semibold)
+                            .padding(.leading, 18.0)
+                            .padding(.top, 0.1)
                             .foregroundColor(.white)
                     }
                 }.padding(.bottom, 5.0)
@@ -358,7 +373,7 @@ struct feed: View {
                         .foregroundColor(Color("Faded-Blue"))
                         .opacity(0.7)
                     VStack{
-                        Image("Carrie19")
+                        Image("Carrie17")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width:125, height: 125, alignment: .center)
