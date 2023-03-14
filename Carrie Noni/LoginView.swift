@@ -341,7 +341,7 @@ struct SignUp : View {
             .padding(.horizontal, 20)
            
             
-        Button(action: {print("Wow so simple!" + UserName)}) {
+        Button(action: {print("Wow so simple!!!" + UserName); CD_API() }) {
                 Text("SIGNUP")
                     .foregroundColor(.white)
                     .fontWeight(.bold)
