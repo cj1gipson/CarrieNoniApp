@@ -178,6 +178,62 @@ struct feed: View {
                 }
             }.padding(.top, 40.0)
             
+            
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    Rectangle()
+                        .frame(width: 360, height: 120)
+                        .cornerRadius(12)
+                        .foregroundColor(Color("Faded-Blue"))
+                        .opacity(0.7)
+                    VStack{
+                        Image("Pull-Up")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:130, height: 125, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 240.0)
+                    
+                    VStack{
+                        Text("Pull-Up Series")
+                            .fontWeight(.semibold)
+                            .padding(.leading, 35.0)
+                            .foregroundColor(.white)
+                    }
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    Rectangle()
+                        .frame(width: 360, height: 120)
+                        .cornerRadius(12)
+                        .foregroundColor(Color("Faded-Blue"))
+                        .opacity(0.7)
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:125, height: 125, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 240.0)
+                    
+                    VStack{
+                        Text("Whats Poppin Series")
+                            .fontWeight(.semibold)
+                            .padding(.leading, 75.0)
+                            .foregroundColor(.white)
+                    }
+                }.padding(.bottom, 5.0)
+            }
+            
             Button(action: {
                 
             }) {
@@ -197,118 +253,9 @@ struct feed: View {
                     }.padding(.trailing, 240.0)
                     
                     VStack{
-                        Text("Nfluence Ep. 1")
+                        Text(" Nfluence Series")
                             .fontWeight(.semibold)
-                            .padding(.leading, 25.0)
-                            .foregroundColor(.white)
-                    }
-                }.padding(.bottom, 5.0)
-            }
-            Button(action: {
-                
-            }) {
-                ZStack{
-                    Rectangle()
-                        .frame(width: 360, height: 120)
-                        .cornerRadius(12)
-                        .foregroundColor(Color("Faded-Blue"))
-                        .opacity(0.7)
-                    VStack{
-                        Image("Carrie5")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width:125, height: 125, alignment: .center)
-                            .clipped()
-                            .cornerRadius(20)
-                    }.padding(.trailing, 240.0)
-                    
-                    VStack{
-                        Text("Nfluence Ep. 2")
-                            .fontWeight(.semibold)
-                            .padding(.leading, 25.0)
-                            .foregroundColor(.white)
-                    }
-                }.padding(.bottom, 5.0)
-            }
-            Button(action: {
-                
-            }) {
-                ZStack{
-                    Rectangle()
-                        .frame(width: 360, height: 120)
-                        .cornerRadius(12)
-                        .foregroundColor(Color("Faded-Blue"))
-                        .opacity(0.7)
-                    VStack{
-                        Image("Carrie2")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width:120, height: 120, alignment: .center)
-                            .clipped()
-                            .cornerRadius(20)
-                    }.padding(.trailing, 240.0)
-                    
-                    VStack{
-                        Text("Hip-Hop and Health")
-                            .fontWeight(.semibold)
-                            .padding(.leading, 70.0)
-                            .foregroundColor(.white)
-                    }
-                }.padding(.bottom, 5.0)
-            }
-            
-            Button(action: {
-                
-            }) {
-                ZStack{
-                    Rectangle()
-                        .frame(width: 360, height: 120)
-                        .cornerRadius(12)
-                        .foregroundColor(Color("Faded-Blue"))
-                        .opacity(0.7)
-                    VStack{
-                        Image("Carrie20")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width:120, height: 120, alignment: .center)
-                            .clipped()
-                            .cornerRadius(20)
-                    }.padding(.trailing, 240.0)
-                    
-                    VStack{
-                        Text("Taylor Bennett")
-                            .fontWeight(.semibold)
-                            .padding(.leading, 25.0)
-                            .foregroundColor(.white)
-                    }
-                }.padding(.bottom, 5.0)
-            }
-        }
-        
-        Group{
-            
-            Button(action: {
-                
-            }) {
-                ZStack{
-                    Rectangle()
-                        .frame(width: 360, height: 120)
-                        .cornerRadius(12)
-                        .foregroundColor(Color("Faded-Blue"))
-                        .opacity(0.7)
-                    VStack{
-                        Image("Carrie3")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width:120, height: 120, alignment: .center)
-                            .clipped()
-                            .cornerRadius(20)
-                    }.padding(.trailing, 240.0)
-                    
-                    VStack{
-                        Text("CopyWrite")
-                            .fontWeight(.semibold)
-                            .padding(.leading, 7.0)
+                            .padding(.leading, 40.0)
                             .foregroundColor(.white)
                     }
                 }.padding(.bottom, 5.0)
@@ -327,7 +274,7 @@ struct feed: View {
                         Image("Carrie1")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width:120, height: 120, alignment: .center)
+                            .frame(width:125, height: 125, alignment: .center)
                             .clipped()
                             .cornerRadius(20)
                     }.padding(.trailing, 240.0)
@@ -335,11 +282,16 @@ struct feed: View {
                     VStack{
                         Text("Bucks Ambassador")
                             .fontWeight(.semibold)
-                            .padding(.leading, 55.0)
+                            .padding(.leading, 65.0)
                             .foregroundColor(.white)
                     }
                 }.padding(.bottom, 5.0)
             }
+            
+        }
+        
+        Group{
+            
             Button(action: {
                 
             }) {
@@ -350,44 +302,18 @@ struct feed: View {
                         .foregroundColor(Color("Faded-Blue"))
                         .opacity(0.7)
                     VStack{
-                        Image("Carrie12")
+                        Image("The-Truth")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width:120, height: 120, alignment: .center)
+                            .frame(width:125, height: 125, alignment: .center)
                             .clipped()
                             .cornerRadius(20)
                     }.padding(.trailing, 240.0)
                     
                     VStack{
-                        Text("Curl Fest")
+                        Text("The Truth")
                             .fontWeight(.semibold)
-                            .padding(.leading, 1.0)
-                            .foregroundColor(.white)
-                    }
-                }.padding(.bottom, 5.0)
-            }
-            Button(action: {
-                
-            }) {
-                ZStack{
-                    Rectangle()
-                        .frame(width: 360, height: 120)
-                        .cornerRadius(12)
-                        .foregroundColor(Color("Faded-Blue"))
-                        .opacity(0.7)
-                    VStack{
-                        Image("Carrie19")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width:120, height: 120, alignment: .center)
-                            .clipped()
-                            .cornerRadius(20)
-                    }.padding(.trailing, 240.0)
-                    
-                    VStack{
-                        Text("Black Ink")
-                            .fontWeight(.semibold)
-                            .padding(.leading, 1.0)
+                            .padding(.leading, 2.0)
                             .foregroundColor(.white)
                     }
                 }.padding(.bottom, 5.0)
@@ -403,18 +329,47 @@ struct feed: View {
                         .foregroundColor(Color("Faded-Blue"))
                         .opacity(0.7)
                     VStack{
-                        Image("Carrie24")
+                        Image("Carrie3")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width:120, height: 120, alignment: .center)
+                            .frame(width:125, height: 125, alignment: .center)
                             .clipped()
                             .cornerRadius(20)
                     }.padding(.trailing, 240.0)
                     
                     VStack{
-                        Text("Millennials Tour")
+                        Text("CopyWrite")
                             .fontWeight(.semibold)
-                            .padding(.leading, 25.0)
+                            .padding(.leading, 7.0)
+                            .foregroundColor(.white)
+                    }
+                }.padding(.bottom, 5.0)
+            }
+            
+            
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    Rectangle()
+                        .frame(width: 360, height: 120)
+                        .cornerRadius(12)
+                        .foregroundColor(Color("Faded-Blue"))
+                        .opacity(0.7)
+                    VStack{
+                        Image("Carrie19")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:125, height: 125, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 240.0)
+                    
+                    VStack{
+                        Text("Freelance")
+                            .fontWeight(.semibold)
+                            .padding(.leading, 1.0)
                             .foregroundColor(.white)
                     }
                 }.padding(.bottom, 5.0)
