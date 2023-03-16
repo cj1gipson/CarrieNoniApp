@@ -12,19 +12,28 @@ func CD_API(){
     
     print("In CD API")
 // URL for API
-    let url = URL(string: "https://bit.ly/2LMtByx")!
+    let url = URL(string: "http://127.0.0.1:3000/")!
 
     var request = URLRequest(url: url)
+    
 // setting the HTTP method to GET but could be PUT
+    
     request.httpMethod = "GET"
+    
     print("URL \(url)")
-// chnage header fields for the request
+    
+// change header fields for the request
+    ////////////////////////////////////////////////
+    
     request.allHTTPHeaderFields = [
         "X-API-Key": "123456789"
     ]
+    
     request.setValue("application/png", forHTTPHeaderField: "Content-Type")
+    
     let task = URLSession.shared.dataTask(with: url){ data, response, error in
         if let data = data {
+            print("data from url \(data)")
             let image = UIImage(data: data)
             print("image \(String(describing: image))")
 
@@ -34,6 +43,12 @@ func CD_API(){
     }
     task.resume()
 }
+
+
+
+
+
+
 
 func RequestJ(){
     let url = URL(string: "https://bit.ly/3sspdFO")!
