@@ -33,7 +33,7 @@ func CD_API(){
     
     let task = URLSession.shared.dataTask(with: url){ data, response, error in
         if let data = data {
-            print("data from url \(data)")
+            print("data from url \(data.description)")
             let image = UIImage(data: data)
             print("image \(String(describing: image))")
 
