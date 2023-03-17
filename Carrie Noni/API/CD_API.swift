@@ -12,7 +12,7 @@ func CD_API(){
     
     print("In CD API")
 // URL for API
-    let url = URL(string: "http://127.0.0.1:3000/")!
+    let url = URL(string: "http://127.0.0.1:4000/")!
 
     var request = URLRequest(url: url)
     
@@ -43,9 +43,6 @@ func CD_API(){
     }
     task.resume()
 }
-
-
-
 
 
 

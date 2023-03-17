@@ -1,11 +1,28 @@
 const http = require('http');
-const hostname = localhost;
+const hostname = "127.0.0.1";
 const port = 3000;
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World\n');
-});
+//http server
+//const server = http.createServer((req, res) => {
+//    res.statusCode = 200;
+//    res.setHeader('Content-Type', 'text/plain');
+//    res.end('Carrie says hello\n');
+//});
+
+//express server
+//var displaying on the site page when you start server and go there.
+const express = require('express');
+const app = express();
+var CDMessage = "Gonna get it!!";
+app.get('/', (req,res)=>{
+    //200 code means it is ok
+    //res.sendStatus(200);
+    res.send(CDMessage);
+})
+
+app.listen(4000, ()=>{
+    console.log("express server running")
+    console.log(`Server running at http://${hostname}:4000/`);
+})
 
 var mysql = require('mysql2');
 
@@ -39,6 +56,7 @@ con.connect(function(err) {
       });
 });
 
+
 function AddUser(String){
     
     var sql = "Select * From NewTable";
@@ -53,6 +71,6 @@ function AddUser(String){
 
 
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
+//server.listen(port, hostname, () => {
+  //  console.log(`Server running at http://${hostname}:${port}/`);
+//});
