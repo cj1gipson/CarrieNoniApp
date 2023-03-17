@@ -59,51 +59,41 @@ struct ContentView: View {
                 .overlay(Color("Dark-Blue")).opacity(0.6)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
-            //-------------------------- Welcome ------------------------------
-            ScrollView(){
-            HStack{
-                VStack(alignment: .leading){
+            //-------------------------- Header ------------------------------
+           
+                VStack{
                     HStack{
-                    Text("Welcome")
-                        .font(.system(size: 15, weight: .light))
-                        .padding(.leading)
-                    Image("World2")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width:40, height: 30, alignment: .center)
-                        .clipped()
-                    }.padding(.bottom, -18.0)
-                        .padding(.leading, 5.0)
-                    Text("Juice World")
-                        .font(.system(size: 30, weight: .bold))
-                        .padding(.leading)
-                    Spacer()
-                }
-                .padding(.top)
-                Spacer()
-                VStack(alignment: .leading){
-                    
-                    Button(action: {
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Image("cn")
+                            .imageScale(.large)
+                            .padding(.leading, 65.0)
+                            .font(Font.system(size:45, weight: .heavy))
+                            .foregroundColor(Color("Pink"))
+                            .shadow(color: Color("Pink"), radius: 3)
+                        Spacer()
+                        Spacer()
+                        Button(action: {
+                            
+                        }) {
+                        Image("Menu")
+                            .imageScale(.large)
+                            .font(Font.system(size:30, weight: .heavy))
+                            .foregroundColor(Color("Faded-Blue"))
+                            .padding(.leading, 30.0)
+                        }
                         
-                    }) {
-                    Image("Carrie24")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width:60, height: 60, alignment: .center)
-                        .clipped()
-                        .cornerRadius(20)
+                        Spacer()
+                    }
+                    .padding(.bottom, 10.0)
+                    
+                //-------------------------- Feed ------------------------------
+                    ScrollView(){
+                        feed()
                     }
                 }
-                .padding(.leading, 90.0)
-                Spacer()
-            }
-            .padding(.leading)
-            .padding(.bottom, 40.0)
-                
-            //-------------------------- Feed ------------------------------
-            
-            feed()
-            }
+
         }
     }
 }
@@ -165,6 +155,7 @@ struct feed: View {
         }
         
             }
+            .padding(.top, 20.0)
         
         }
         //-------------------------- Recommended ------------------------------
