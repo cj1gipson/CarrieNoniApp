@@ -72,11 +72,6 @@ struct mainFeed: View {
             
         VStack{
             ZStack{
-                Image("Black-N")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .overlay(Color.black)
-                    .opacity(1.0)
                 VStack{
                 ScrollView(.vertical){
                     VStack{
@@ -312,16 +307,19 @@ struct mainFeed: View {
                                 .font(Font.system(size:17, weight: .heavy))
                                 .foregroundColor(Color("Color-2"))
                                 .padding(.trailing, 130.0)
+                                .shadow(color: Color("Color-2"), radius: 2.5)
                                 
                         }
                         .padding(.bottom, 5.0)
                         .padding(.top, 5.0)
+                        .padding(.trailing, 50.0)
                         
                         Divider()
                             .padding(.bottom, 2.0)
-                            .background(Color("Color-4"))
+                            .background(Color("Pink"))
                             .frame(width: 380)
                             .padding(.bottom, 20.0)
+                            .shadow(color: Color("Pink"), radius: 3)
                         
                         ScrollView(.horizontal){
                             HStack{
@@ -392,32 +390,6 @@ struct mainFeed: View {
                             
                         }
                     }
-                    
-                    VStack{
-                    HStack{
-                        Text("GAMES")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("Color-2"))
-                            .multilineTextAlignment(.leading)
-                            .lineLimit(nil)
-                            
-                        Image(systemName: "gamecontroller.fill")
-                            .imageScale(.large)
-                            .font(Font.system(size:17, weight: .heavy))
-                            .foregroundColor(Color("Color-2"))
-                            .padding(.trailing, 230.0)
-                        
-                        }
-                        
-                        Divider()
-                            .padding(.bottom, 2.0)
-                            .background(Color("Color-4"))
-                            .frame(width: 380)
-                            .padding(.bottom, 20.0)
-                            
-                    }
-                    
                   
                     VStack{
                     HStack{
@@ -438,9 +410,10 @@ struct mainFeed: View {
                         
                         Divider()
                             .padding(.bottom, 2.0)
-                            .background(Color("Color-4"))
+                            .background(Color("Pink"))
                             .frame(width: 380)
                             .padding(.bottom, 20.0)
+                            .shadow(color: Color("Pink"), radius: 3)
                         
                         HStack{
                             

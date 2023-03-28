@@ -119,9 +119,17 @@ struct feed: View {
 
                     Text("View More")
                         .foregroundColor(Color("Pink"))
+                        .shadow(color: Color("Pink"), radius: 3)
                     }
                     
                 }
+                Divider()
+                    .padding(.bottom, 2.0)
+                    .background(Color("Pink"))
+                    .frame(width: 380)
+                    .padding(.bottom, 10.0)
+                    .shadow(color: Color("Pink"), radius: 3)
+                
             ScrollView(.horizontal){
                 
             HStack{
@@ -168,6 +176,13 @@ struct feed: View {
                         .padding(.trailing, 200.0)
                 }
             }.padding(.top, 40.0)
+                .padding(.trailing, 5.0)
+            Divider()
+                .padding(.bottom, 2.0)
+                .background(Color("Pink"))
+                .frame(width: 380)
+                .padding(.bottom, 10.0)
+                .shadow(color: Color("Pink"), radius: 3)
             
             
             
@@ -391,6 +406,13 @@ struct feed: View {
                     .padding(.trailing, 200.0)
             }
         }.padding(.top, 40.0)
+            .padding(.trailing, 80.0)
+        Divider()
+            .padding(.bottom, 2.0)
+            .background(Color("Pink"))
+            .frame(width: 380)
+            .padding(.bottom, 10.0)
+            .shadow(color: Color("Pink"), radius: 3)
         
         
         
