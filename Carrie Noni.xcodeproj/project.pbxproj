@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		52517F5729AEE0F5006AF9F4 /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52517F5629AEE0F5006AF9F4 /* CreateUser.swift */; };
 		52517F5929AEE1BD006AF9F4 /* CD_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52517F5829AEE1BD006AF9F4 /* CD_API.swift */; };
+		5271236829D293D8006C0F76 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5271236729D293D8006C0F76 /* landmarkData.json */; };
+		5271236A29D2941F006C0F76 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271236929D2941F006C0F76 /* Landmark.swift */; };
+		5271236C29D2975D006C0F76 /* Modeldata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271236B29D2975D006C0F76 /* Modeldata.swift */; };
 		52DB14B02971AB70000BD7D2 /* NoniController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB14AF2971AB6F000BD7D2 /* NoniController.swift */; };
 		52DBBFCF279CB4CA004742D8 /* NaturalNoni.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBBFCE279CB4CA004742D8 /* NaturalNoni.swift */; };
 		951BB1402791CBD500744B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BB13F2791CBD500744B16 /* Main.storyboard */; };
@@ -46,6 +49,9 @@
 /* Begin PBXFileReference section */
 		52517F5629AEE0F5006AF9F4 /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateUser.swift; path = API/CreateUser.swift; sourceTree = "<group>"; };
 		52517F5829AEE1BD006AF9F4 /* CD_API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CD_API.swift; path = API/CD_API.swift; sourceTree = "<group>"; };
+		5271236729D293D8006C0F76 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		5271236929D2941F006C0F76 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		5271236B29D2975D006C0F76 /* Modeldata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modeldata.swift; sourceTree = "<group>"; };
 		52DB14AF2971AB6F000BD7D2 /* NoniController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoniController.swift; sourceTree = "<group>"; };
 		52DBBFCE279CB4CA004742D8 /* NaturalNoni.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaturalNoni.swift; sourceTree = "<group>"; };
 		951BB13F2791CBD500744B16 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5271236D29D297C2006C0F76 /* Reources */ = {
+			isa = PBXGroup;
+			children = (
+				5271236929D2941F006C0F76 /* Landmark.swift */,
+			);
+			path = Reources;
+			sourceTree = "<group>";
+		};
+		5271236E29D297DA006C0F76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5271236B29D2975D006C0F76 /* Modeldata.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		952AFD7F278CC2E6009D6F15 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +139,7 @@
 		952AFD8A278CC2E6009D6F15 /* Carrie Noni */ = {
 			isa = PBXGroup;
 			children = (
+				5271236729D293D8006C0F76 /* landmarkData.json */,
 				952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */,
 				52DB14AF2971AB6F000BD7D2 /* NoniController.swift */,
 				95DF028927AB7099004DC2C9 /* LoginView.swift */,
@@ -133,6 +156,8 @@
 				951BB1412791D55B00744B16 /* NSAttributedString.swift */,
 				52517F5629AEE0F5006AF9F4 /* CreateUser.swift */,
 				52517F5829AEE1BD006AF9F4 /* CD_API.swift */,
+				5271236E29D297DA006C0F76 /* Model */,
+				5271236D29D297C2006C0F76 /* Reources */,
 			);
 			path = "Carrie Noni";
 			sourceTree = "<group>";
@@ -267,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				951BB1402791CBD500744B16 /* Main.storyboard in Resources */,
+				5271236829D293D8006C0F76 /* landmarkData.json in Resources */,
 				952AFD93278CC2E7009D6F15 /* Preview Assets.xcassets in Resources */,
 				952AFD90278CC2E7009D6F15 /* Assets.xcassets in Resources */,
 			);
@@ -293,12 +319,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5271236A29D2941F006C0F76 /* Landmark.swift in Sources */,
 				952AFD8E278CC2E6009D6F15 /* ContentView.swift in Sources */,
 				951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */,
 				95CDB1192790A0BA00A43119 /* Nflunece.swift in Sources */,
 				95DF028A27AB7099004DC2C9 /* LoginView.swift in Sources */,
 				95CDB11527909A1800A43119 /* TabBarView.swift in Sources */,
 				95CDB11727909D9B00A43119 /* ShopView.swift in Sources */,
+				5271236C29D2975D006C0F76 /* Modeldata.swift in Sources */,
 				952AFD8C278CC2E6009D6F15 /* Carrie_NoniApp.swift in Sources */,
 				52DB14B02971AB70000BD7D2 /* NoniController.swift in Sources */,
 				95BBF3142792379B00460158 /* NoniJuice.swift in Sources */,
@@ -463,7 +491,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Carrie Noni/Preview Content\"";
-				DEVELOPMENT_TEAM = YU4J972W6Z;
+				DEVELOPMENT_TEAM = 8U5YU99N6L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Carrie Noni/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
@@ -485,7 +513,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Carrie Noni/Preview Content\"";
-				DEVELOPMENT_TEAM = YU4J972W6Z;
+				DEVELOPMENT_TEAM = 8U5YU99N6L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Carrie Noni/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
