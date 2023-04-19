@@ -265,14 +265,23 @@ struct feed2: View {
                 .padding(.horizontal)
                 .cornerRadius(30)
         }
-            HStack{
-                Image("Title10")
-                    .resizable()
-                    .frame(width:250, height: 25, alignment: .center)
-                    .background(Color(CNColor3))
-                    .clipped()
-            }
-            .padding(.vertical)
+            VStack{
+                HStack{
+                    Text("Content")
+                        .font(.system(size: 21, weight: .bold))
+                        .padding(.trailing, 250.0)
+                        .padding(.bottom, -10.0)
+                }
+            }.padding(.top, 20.0)
+                .padding(.trailing, 50.0)
+            Divider()
+                .padding(.bottom, 2.0)
+                .background(Color("Pink"))
+                .frame(width: 380)
+                .padding(0.0)
+                .shadow(color: Color("Pink"), radius: 3)
+                .padding()
+        
 //-----------------------------------------------------------------------------------------------------------
 //                                   VIDEOS SECTION
 //-----------------------------------------------------------------------------------------------------------
@@ -322,14 +331,23 @@ struct feed2: View {
             
         }
         
-        HStack{
-            Image("Title11")
-                .resizable()
-                .frame(width:180, height: 37, alignment: .center)
-                .background(Color(CNColor3))
-                .clipped()
-        }
-        .padding(.vertical)
+        VStack{
+            HStack{
+                Text("Images")
+                    .font(.system(size: 21, weight: .bold))
+                    .padding(.trailing, 250.0)
+                    .padding(.bottom, -10.0)
+            }
+        }.padding(.top, 20.0)
+            .padding(.trailing, 50.0)
+        Divider()
+            .padding(.bottom, 2.0)
+            .background(Color("Pink"))
+            .frame(width: 380)
+            .padding(0.0)
+            .shadow(color: Color("Pink"), radius: 3)
+            .padding()
+    
         
         ScrollView(.horizontal){
             HStack{
@@ -443,14 +461,23 @@ struct feed2: View {
     
         
         
-        HStack{
-            Image("Title12")
-                .resizable()
-                .frame(width:250, height: 35, alignment: .center)
-                .background(Color(CNColor3))
-                .clipped()
-        }
-        .padding(.vertical)
+        VStack{
+            HStack{
+                Text("Contact Me")
+                    .font(.system(size: 21, weight: .bold))
+                    .padding(.trailing, 200.0)
+                    .padding(.bottom, -10.0)
+            }
+        }.padding(.top, 20.0)
+            .padding(.trailing, 50.0)
+        Divider()
+            .padding(.bottom, 2.0)
+            .background(Color("Pink"))
+            .frame(width: 380)
+            .padding(0.0)
+            .shadow(color: Color("Pink"), radius: 3)
+            .padding()
+    
         
         HStack{
             
