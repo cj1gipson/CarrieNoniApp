@@ -13,8 +13,8 @@ import AVKit
 struct tabBarView: View {
     
     @State var selectedIndex = 0
-    let icons = [ "home4", "Juice", "Nfluence-1", "shop"
-    ]
+    let icons = [ "home4", "Juice", "Nfluence-1", "watchlist"]
+    
     var body: some View {
         
         VStack{
