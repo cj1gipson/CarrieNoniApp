@@ -16,45 +16,62 @@ struct NfluenceView: View {
     
     var body: some View {
         ZStack{
-            Color.black
-                .edgesIgnoringSafeArea(.all)
+            //------------------------- Background -----------------------------
+            RoundedRectangle(cornerRadius: 25.0)
+                .fill(
+                    RadialGradient(gradient: gradient, center: .topLeading, startRadius: 5, endRadius: 250)
+                )
+                .overlay(Color("Dark-Blue")).opacity(0.6)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            //-------------------------- Header ------------------------------
+           
+                VStack{
+                    HStack{
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Image("cn")
+                            .imageScale(.large)
+                            .padding(.leading, 65.0)
+                            .font(Font.system(size:45, weight: .heavy))
+                            .foregroundColor(Color("Pink"))
+                            .shadow(color: Color("Pink"), radius: 3)
+                        Spacer()
+                        Spacer()
+                        Button(action: {
+                            
+                        }) {
+                        Image("Menu")
+                            .imageScale(.large)
+                            .font(Font.system(size:30, weight: .heavy))
+                            .foregroundColor(Color("Faded-Blue"))
+                            .padding(.leading, 30.0)
+                        }
+                        
+                        Spacer()
+                    }
+                    .padding(.bottom, 10.0)
+                    
+                //-------------------------- Feed ------------------------------
+                    ScrollView(){
+                    mainFeed()
+                    }
+                }
+
+        }
+        
+    }
+    
+}
+
+
+struct mainFeed: View {
+    var body: some View {
+        ZStack{
+            
         VStack{
-            HStack{
-                Button(action: {
-                    
-                }) {
-                Image("Menu")
-                    .imageScale(.large)
-                    .font(Font.system(size:30, weight: .heavy))
-                    .foregroundColor(Color(CNColor1))
-                }
-                
-                Spacer()
-                
-                Image("cn")
-                    .imageScale(.large)
-                    .padding(.leading, 0.0)
-                    .font(Font.system(size:45, weight: .heavy))
-                    .foregroundColor(Color(CNColor1))
-                
-                Spacer()
-                
-                Button(action: {
-                    
-                }) {
-                Image(systemName: "message.circle")
-                    .imageScale(.large)
-                    .font(Font.system(size:25, weight: .heavy))
-                    .foregroundColor(Color(CNColor1))
-                }
-            }
-            .padding()
             ZStack{
-                Image("Black-N")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .overlay(Color.black)
-                    .opacity(1.0)
                 VStack{
                 ScrollView(.vertical){
                     VStack{
@@ -83,29 +100,24 @@ struct NfluenceView: View {
 //-----------------------------------------------------------------------------------------------------------
                         HStack{
                         Text("FEATURES")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("Color-2"))
-                            .multilineTextAlignment(.leading)
-                            .lineLimit(nil)
-                            .padding(.trailing, 3.0)
-                            
-                            
+                            .font(.system(size: 21, weight: .bold))
+
                             Image(systemName: "star.fill")
                                 .imageScale(.large)
-                                .font(Font.system(size:17, weight: .heavy))
+                                .font(Font.system(size:15, weight: .heavy))
                                 .foregroundColor(Color("Color-2"))
-                                .padding(.trailing, 200.0)
+                                .padding(.trailing, 215.0)
+                                .shadow(color: Color("Color-2"), radius: 2.5)
 
-                            
                         }.padding(.bottom, 5.0)
                         .padding(.top, 5.0)
                             
                         Divider()
                             .padding(.bottom, 2.0)
-                            .background(Color("Color-4"))
+                            .background(Color("Pink"))
                             .frame(width: 380)
                             .padding(.bottom, 20.0)
+                            .shadow(color: Color("Pink"), radius: 3)
                         
                         Button(action: {
                             
@@ -129,28 +141,26 @@ struct NfluenceView: View {
                     VStack{
                         HStack{
                         Text("VIDEOS")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("Color-2"))
-                            .multilineTextAlignment(.leading)
-                            .lineLimit(nil)
-                            .padding(.trailing, 3.0)
+                                .font(.system(size: 21, weight: .bold))
+
                             
                             
                             Image(systemName: "video.fill")
                                 .imageScale(.large)
-                                .font(Font.system(size:17, weight: .heavy))
+                                .font(Font.system(size:16, weight: .heavy))
                                 .foregroundColor(Color("Color-2"))
-                                .padding(.trailing, 230.0)
+                                .padding(.trailing, 250.0)
+                                .shadow(color: Color("Color-2"), radius: 2.5)
                                 
                         }.padding(.bottom, 5.0)
                         .padding(.top, 5.0)
                         
                         Divider()
                             .padding(.bottom, 2.0)
-                            .background(Color("Color-4"))
+                            .background(Color("Pink"))
                             .frame(width: 380)
                             .padding(.bottom, 20.0)
+                            .shadow(color: Color("Pink"), radius: 3)
                         
                         Text("N'Fluence Countdown Shows")
                             .font(.headline)
@@ -288,12 +298,7 @@ struct NfluenceView: View {
                             
                         
                         Text("WALL OF FAME")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("Color-2"))
-                            .multilineTextAlignment(.leading)
-                            .lineLimit(nil)
-                            .padding(.trailing, 2.0)
+                                .font(.system(size: 21, weight: .bold))
                             
                             
                             
@@ -302,16 +307,19 @@ struct NfluenceView: View {
                                 .font(Font.system(size:17, weight: .heavy))
                                 .foregroundColor(Color("Color-2"))
                                 .padding(.trailing, 130.0)
+                                .shadow(color: Color("Color-2"), radius: 2.5)
                                 
                         }
                         .padding(.bottom, 5.0)
                         .padding(.top, 5.0)
+                        .padding(.trailing, 50.0)
                         
                         Divider()
                             .padding(.bottom, 2.0)
-                            .background(Color("Color-4"))
+                            .background(Color("Pink"))
                             .frame(width: 380)
                             .padding(.bottom, 20.0)
+                            .shadow(color: Color("Pink"), radius: 3)
                         
                         ScrollView(.horizontal){
                             HStack{
@@ -382,32 +390,6 @@ struct NfluenceView: View {
                             
                         }
                     }
-                    
-                    VStack{
-                    HStack{
-                        Text("GAMES")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("Color-2"))
-                            .multilineTextAlignment(.leading)
-                            .lineLimit(nil)
-                            
-                        Image(systemName: "gamecontroller.fill")
-                            .imageScale(.large)
-                            .font(Font.system(size:17, weight: .heavy))
-                            .foregroundColor(Color("Color-2"))
-                            .padding(.trailing, 230.0)
-                        
-                        }
-                        
-                        Divider()
-                            .padding(.bottom, 2.0)
-                            .background(Color("Color-4"))
-                            .frame(width: 380)
-                            .padding(.bottom, 20.0)
-                            
-                    }
-                    
                   
                     VStack{
                     HStack{
@@ -428,9 +410,10 @@ struct NfluenceView: View {
                         
                         Divider()
                             .padding(.bottom, 2.0)
-                            .background(Color("Color-4"))
+                            .background(Color("Pink"))
                             .frame(width: 380)
                             .padding(.bottom, 20.0)
+                            .shadow(color: Color("Pink"), radius: 3)
                         
                         HStack{
                             
@@ -501,9 +484,7 @@ struct NfluenceView: View {
             Spacer()
             
         }
-        
     }
-    
 }
 
 struct ImageOverlay: View {

@@ -12,9 +12,9 @@ import AVKit
 
 struct tabBarView: View {
     
-    @State var selectedIndex = 2
-    let icons = ["NaturalNoni2", "Juice", "home4", "Nfluence-1","shop"
-    ]
+    @State var selectedIndex = 0
+    let icons = [ "home4", "Juice", "Nfluence-1", "watchlist"]
+    
     var body: some View {
         
         VStack{
@@ -23,48 +23,40 @@ struct tabBarView: View {
                 
                 switch selectedIndex{
                 case 0:
-                    NavigationView{
-                        NaturalNoniView()
-                    }
-                case 1:
-                    NavigationView{
-                        noniJuiceView()
-                    }
-                case 2:
-                    NavigationView{
                         ContentView()
-                    }
-                case 3:
-                    NavigationView{
+                case 1:
+                        noniJuiceView()
+                case 2:
                         NfluenceView()
-                    }
-
                 default:
-                    NavigationView{
                         LoginView()
                         //shopview()
-                    }
                 }
             }
-            .padding(.top, -100.0)
-            Spacer()
-            
-            //Divider()
-                
+            //.padding(.top, -150.0)
                 //.background(Color(CNColor1))
-            HStack{
-                ForEach(0..<5, id: \.self){number in
+            HStack(spacing: -9.0){
+                ForEach(0..<4, id: \.self){number in
                     Spacer()
                     Button(action:{self.selectedIndex = number}, label: {
-                        Image(icons[number])
-                            .font(.system(size: 50, weight: .regular, design: .default))
-                            .foregroundColor(selectedIndex == number ? .white : Color(CNColor1))
                         
+                    if(selectedIndex == number){
+                        Image(icons[number])
+                            .font(.system(size: 45, weight: .regular, design: .default)).padding().padding(.horizontal, -6.0)
+                            .foregroundColor(selectedIndex == number ? Color("Pink") : Color("Dark-Blue-1"))
+                            .shadow(color: Color("Pink"), radius: 3)
+                    } else{
+                        Image(icons[number])
+                            .font(.system(size: 45, weight: .regular, design: .default)).padding().padding(.horizontal, -6.0)
+                            .foregroundColor(selectedIndex == number ? Color("Pink") : Color("Dark-Blue-1"))
+                    }
+                            
                     })
                     Spacer()
                 }
-                
-            }
+               
+            }.background(Color("Dark-Blue"))
+            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
         }
     }

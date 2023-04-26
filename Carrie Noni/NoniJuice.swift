@@ -38,253 +38,183 @@ struct noniJuiceView: View {
         
         
         ZStack{
-            Color.black
+            //------------------------- Background -----------------------------
+            RoundedRectangle(cornerRadius: 25.0)
+                .fill(
+                    RadialGradient(gradient: gradient, center: .topLeading, startRadius: 5, endRadius: 250)
+                )
+                .overlay(Color("Dark-Blue")).opacity(0.6)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            
         VStack{
             HStack{
+                Spacer()
+                Spacer()
+                Spacer()
+                Image("cn")
+                    .imageScale(.large)
+                    .padding(.leading, 65.0)
+                    .font(Font.system(size:45, weight: .heavy))
+                    .foregroundColor(Color("Pink"))
+                    .shadow(color: Color("Pink"), radius: 3)
+                Spacer()
+                Spacer()
                 Button(action: {
                     
                 }) {
                 Image("Menu")
                     .imageScale(.large)
                     .font(Font.system(size:30, weight: .heavy))
-                    .foregroundColor(Color(CNColor1))
+                    .foregroundColor(Color("Faded-Blue"))
+                    .padding(.leading, 30.0)
                 }
                 
                 Spacer()
-                
-                Image("cn")
-                    .imageScale(.large)
-                    .padding(.leading, 0.0)
-                    .font(Font.system(size:45, weight: .heavy))
-                    .foregroundColor(Color(CNColor1))
-                
-                Spacer()
-                
-                Button(action: {
-                    
-                }) {
-                Image(systemName: "message.circle")
-                    .imageScale(.large)
-                    .font(Font.system(size:25, weight: .heavy))
-                    .foregroundColor(Color(CNColor1))
-                }
             }
-            .padding()
+            .padding(.bottom, 10.0)
             
             
             ZStack{
-                Color.white
+
                 VStack{
                 ScrollView(.vertical){
                     VStack{
-                            HStack(spacing: 3){
+                            HStack(spacing: 30){
                                 Image("Carrie2")
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width:390, height: 250, alignment: .center)
                                     .background(Color(CNColor1))
                                     .clipped()
-                            }.padding(.bottom, -2.0)
-                        HStack(spacing: 3){
-                            ZStack{
-                            Image("")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:192, height: 195, alignment: .center)
-                                .background(Color(NJColor1))
-                                .clipped()
-                                .padding(.leading, -4.0)
-                                .padding(.trailing, 7.0)
-                                
-                                Image(systemName: "megaphone.fill")
-                                    .imageScale(.large)
-                                    .padding(.bottom, 140.0)
-                                        .padding(0.0)
-                                        .font(Font.system(size:30, weight: .heavy))
-                                    .foregroundColor(Color.black)
-                                        
-                                        
-                                        Text("Media Personality")
-                                            .font(.title2)
-                                            .fontWeight(.bold)
-                                            .foregroundColor(Color.black)
-                                            .multilineTextAlignment(.center)
-                                            .padding(.bottom, 35.0)
-                                            .padding(.trailing, 15.0)
-                                        
-                                        
-                                        Text("- CurlFest")
-                                            .font(.callout)
-                                            .fontWeight(.regular)
-                                            .foregroundColor(Color.black)
-                                            .multilineTextAlignment(.leading)
-                                            .padding(.top, 50.0)
-                                            .padding(.trailing, 100.0)
-                                            
-                                        
-                                        Text("- Summerfest")
-                                            .font(.callout)
-                                            .fontWeight(.regular)
-                                            .foregroundColor(Color.black)
-                                            .multilineTextAlignment(.leading)
-                                            .padding(.top,100.0)
-                                            .padding(.trailing, 73.0)
-                                
-                                Text("- WLMC (Rico Love)")
-                                    .font(.callout)
-                                    .fontWeight(.regular)
-                                    .foregroundColor(Color.black)
-                                    .multilineTextAlignment(.leading)
-                                    .padding(.top,150.0)
-                                    .padding(.trailing, 30.0)
-                            }
-                            
-                            ZStack{
-                            Image("")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:192, height: 195, alignment: .center)
-                                .background(Color.black)
-                                .clipped()
-                                .padding(.leading, -4.0)
-                                .padding(.trailing, -4.0)
-                                
-                            Image(systemName: "mic.fill")
-                                .imageScale(.large)
-                                .padding(.bottom, 133.0)
-                                    .padding(0.0)
-                                    .font(Font.system(size:30, weight: .heavy))
-                                    .foregroundColor(Color(NJColor1))
-                                    
-                                    
-                                    Text("Radio")
-                                        .font(.title2)
-                                        .fontWeight(.bold)
-                                        .foregroundColor(Color(NJColor1))
-                                        .multilineTextAlignment(.center)
-                                        .padding(.bottom, 55.0)
-                                    
-                                    Text("- 101.7 The Truth Producer/ Personailty")
-                                        .font(.callout)
-                                        .fontWeight(.regular)
-                                        .foregroundColor(Color(NJColor1))
-                                        .multilineTextAlignment(.leading)
-                                        .padding(.top, 40.0)
-                                        .padding(.trailing, 12.0)
-                                        
-                                    
-                                    Text("- 103.7 Kiss FM (Intern)")
-                                        .font(.callout)
-                                        .fontWeight(.regular)
-                                        .foregroundColor(Color(NJColor1))
-                                        .multilineTextAlignment(.leading)
-                                        .padding(.top,120.0)
-                                
-                                
-                        }.padding(.bottom, -2.0)
-                        }
+                            }.padding(.bottom, 30.0)
                         
-                        HStack(spacing: 3){
-                            ZStack{
-                            Image("")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:192, height: 195, alignment: .center)
-                                .background(Color.black)
-                                .clipped()
-                                .padding(.leading, -4.0)
-                                .padding(.trailing, 7.0)
-                                
-                            Image(systemName: "pencil")
-                                .imageScale(.large)
-                                .padding(.bottom, 120.0)
-                                .padding(0.0)
-                                .font(Font.system(size:35, weight: .heavy))
-                                .foregroundColor(Color(NJColor1))
-                                
-                                
-                                Text("Journalist")
-                                    .font(.title2)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color(NJColor1))
-                                    .multilineTextAlignment(.center)
-                                    .padding(.bottom, 35.0)
-                                
-                                Text("- Milwaukee Journal Sentinel")
-                                    .font(.callout)
-                                    .fontWeight(.regular)
-                                    .foregroundColor(Color(NJColor1))
-                                    .multilineTextAlignment(.leading)
-                                    .padding(.top, 50.0)
-                                    .padding(.trailing, 15.0)
+                        ScrollView(.horizontal){
+                            HStack(spacing: 5){
+                                Button(action: {
                                     
-                                
-                                Text("- CopyWrite Magazine ")
-                                    .font(.callout)
-                                    .fontWeight(.regular)
-                                    .foregroundColor(Color(NJColor1))
-                                    .multilineTextAlignment(.leading)
-                                    .padding(.top,140.0)
-                                
-                            }
-                            
-                            
-                            ZStack{
-                            Image("")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:192, height: 195, alignment: .top)
-                                .background(Color(NJColor1))
-                                .clipped()
-                                .padding(.leading, -4.0)
-                                .padding(.trailing, -4.0)
-                                
-                                Image(systemName: "play.tv")
-                                    .imageScale(.large)
-                                    .padding(.bottom, 120.0)
-                                        .padding(0.0)
-                                        .font(Font.system(size:30, weight: .heavy))
-                                    .foregroundColor(Color.black)
-                                        
-                                        
-                                        Text("Host")
-                                            .font(.title2)
-                                            .fontWeight(.bold)
-                                            .foregroundColor(Color.black)
-                                            .multilineTextAlignment(.center)
-                                            .padding(.bottom, 35.0)
-                                            .padding(.trailing, 15.0)
-                                        
-                                        
-                                        Text("- MATC Now!")
-                                            .font(.callout)
-                                            .fontWeight(.regular)
-                                            .foregroundColor(Color.black)
-                                            .multilineTextAlignment(.leading)
-                                            .padding(.top, 50.0)
-                                            .padding(.trailing, 70.0)
+                                }) {
+                                    ZStack{
+                                        Image("Carrie3")
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                                .frame(width:230, height: 200, alignment: .center)
+                                                .background(Color("Pink"))
+                                                .clipped()
+                                                .padding(.leading, -4.0)
+                                                .padding(.trailing, 7.0)
+                                                .cornerRadius(20)
+                                                .overlay(Rectangle().cornerRadius(20).foregroundColor(.black).opacity(0.25))
                                             
-                                        
-                                        Text("- Hip-Hop & Health")
-                                            .font(.callout)
-                                            .fontWeight(.regular)
-                                            .foregroundColor(Color.black)
-                                            .multilineTextAlignment(.leading)
-                                            .padding(.top,100.0)
-                                            .padding(.trailing, 26.0)
+                                            
+                                            Text("Journalist")
+                                                .font(.title3)
+                                                        .fontWeight(.bold)
+                                                        .foregroundColor(.white)
+                                                        .multilineTextAlignment(.center)
+                                                        .padding(.bottom, -70.0)
+                                                        .padding(.leading, 5.0)
+                                    }
+                                }
                                 
-                                Text("- N'fluence")
-                                    .font(.callout)
-                                    .fontWeight(.regular)
-                                    .foregroundColor(Color.black)
-                                    .multilineTextAlignment(.leading)
-                                    .padding(.top,150.0)
-                                    .padding(.trailing, 85.0)
- 
+                                
+                                Button(action: {
+                                    
+                                }) {
+                                    ZStack{
+                                    
+                                    Image("The-Truth")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width:230, height: 200, alignment: .center)
+                                        .background(Color("Pink"))
+                                        .clipped()
+                                        .padding(.leading, -4.0)
+                                        .padding(.trailing, 7.0)
+                                        .cornerRadius(20)
+                                        .overlay(Rectangle().cornerRadius(20).foregroundColor(.black).opacity(0.25))
+
+                                        
+                                                Text("Media Personality")
+                                            .font(.title3)
+                                                    .fontWeight(.bold)
+                                                    .foregroundColor(.white)
+                                                    .multilineTextAlignment(.center)
+                                                    .padding(.bottom, -70.0)
+                                                    .padding(.leading, 5.0)
+                                    }
+                                }
+                                
+                                Button(action: {
+                                    
+                                }) {
+                                    ZStack{
+                                    Image("CarrieHost")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width:230, height: 200, alignment: .center)
+                                            .background(Color("Pink"))
+                                            .clipped()
+                                            .padding(.leading, -4.0)
+                                            .padding(.trailing, 7.0)
+                                            .cornerRadius(20)
+                                            .overlay(Rectangle().cornerRadius(20).foregroundColor(.black).opacity(0.25))
+                                        
+//                                        Image(systemName: "play.tv")
+//                                            .imageScale(.large)
+//                                            .padding(.bottom, 70.0)
+//                                            .padding(.leading, 10.0)
+//                                                .font(Font.system(size:30, weight: .heavy))
+//                                            .foregroundColor(Color.black)
+                                                
+                                                
+                                                Text("Host")
+                                                    .font(.title3)
+                                                    .fontWeight(.bold)
+                                                    .foregroundColor(.white)
+                                                    .multilineTextAlignment(.center)
+                                                    .padding(.bottom, -70.0)
+                                                    .padding(.leading, 5.0)
+                                    }
+                                }
+                                
+                                Button(action: {
+                                    
+                                }) {
+                                    ZStack{
+                                    Image("RadioBabe")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width:230, height: 200, alignment: .center)
+                                            .background(Color("Pink"))
+                                            .clipped()
+                                            .padding(.leading, -4.0)
+                                            .padding(.trailing, 7.0)
+                                            .cornerRadius(20)
+                                            .overlay(Rectangle().cornerRadius(20).foregroundColor(.black).opacity(0.25))
+//
+//                                    Image(systemName: "mic.fill")
+//                                            .imageScale(.large)
+//                                            .padding(.bottom, 70.0)
+//                                            .padding(.leading, 10.0)
+//                                                .font(Font.system(size:30, weight: .heavy))
+//                                            .foregroundColor(Color.black)
+                                            
+                                            
+                                            Text("Radio Personality")
+                                                .font(.title3)
+                                                .fontWeight(.bold)
+                                                .foregroundColor(.white)
+                                                .multilineTextAlignment(.center)
+                                                .padding(.bottom, -70.0)
+                                                .padding(.leading, 5.0)
+                                    }
+                                }
+                                
+                                
+                            }.padding(.leading, 20.0)
                         }
-                        }
-                            
+    
                     }
                     .padding(.top, 5.0)
                     
@@ -308,75 +238,50 @@ struct feed2: View {
 
         let url = URL(string:"https://video.wixstatic.com/video/fbc0c1_b1ba0524050043a58ef9089c09a8b736/1080p/mp4/file.mp4")!
         VStack{
-        HStack{
-            Image("NoniLogo")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width:200, height: 200, alignment: .center)
-                
-                .clipped()
-        }.padding(.vertical, 10.0)
+
         
-        HStack{
-            Image("Carrie7")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width:350, height: 500, alignment: .center)
-                .background(Color(CNColor1))
-                .clipped()
-                
-        }
-        Spacer()
-            
-            HStack{
-                Text("ABOUT THE JUICE!")
-                    .font(.largeTitle)
-                    .fontWeight(.black)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(/*@START_MENU_TOKEN@*/[.top, .leading, .trailing]/*@END_MENU_TOKEN@*/)
-            }
-            
-            HStack{
-                Text("Noni Juice is THAT girl for all things entertainment, fun, and exciting!")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            }
-        
-        HStack{
-            Image("Title9")
-                .resizable()
-                .frame(width:250, height: 25, alignment: .center)
-                .background(Color(CNColor3))
-                .clipped()
-        }
-        .padding(.vertical)
+            VStack{
+                HStack{
+                    Text("Media Reel")
+                        .font(.system(size: 21, weight: .bold))
+                        .padding(.trailing, 200.0)
+                        .padding(.bottom, -10.0)
+                }
+            }.padding(.top, 20.0)
+                .padding(.trailing, 50.0)
+            Divider()
+                .padding(.bottom, 2.0)
+                .background(Color("Pink"))
+                .frame(width: 380)
+                .padding(0.0)
+                .shadow(color: Color("Pink"), radius: 3)
+                .padding()
         
         HStack{
             VideoPlayer(player: AVPlayer(url:url), videoOverlay: {
-                Image("mediaReel")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 358, height: 300)
-                    .scaledToFit()
-                    .padding()
                 
             })
                 .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .padding(.horizontal)
                 .cornerRadius(30)
         }
-            HStack{
-                Image("Title10")
-                    .resizable()
-                    .frame(width:250, height: 25, alignment: .center)
-                    .background(Color(CNColor3))
-                    .clipped()
-            }
-            .padding(.vertical)
+            VStack{
+                HStack{
+                    Text("Content")
+                        .font(.system(size: 21, weight: .bold))
+                        .padding(.trailing, 250.0)
+                        .padding(.bottom, -10.0)
+                }
+            }.padding(.top, 20.0)
+                .padding(.trailing, 50.0)
+            Divider()
+                .padding(.bottom, 2.0)
+                .background(Color("Pink"))
+                .frame(width: 380)
+                .padding(0.0)
+                .shadow(color: Color("Pink"), radius: 3)
+                .padding()
+        
 //-----------------------------------------------------------------------------------------------------------
 //                                   VIDEOS SECTION
 //-----------------------------------------------------------------------------------------------------------
@@ -426,14 +331,23 @@ struct feed2: View {
             
         }
         
-        HStack{
-            Image("Title11")
-                .resizable()
-                .frame(width:180, height: 37, alignment: .center)
-                .background(Color(CNColor3))
-                .clipped()
-        }
-        .padding(.vertical)
+        VStack{
+            HStack{
+                Text("Images")
+                    .font(.system(size: 21, weight: .bold))
+                    .padding(.trailing, 250.0)
+                    .padding(.bottom, -10.0)
+            }
+        }.padding(.top, 20.0)
+            .padding(.trailing, 50.0)
+        Divider()
+            .padding(.bottom, 2.0)
+            .background(Color("Pink"))
+            .frame(width: 380)
+            .padding(0.0)
+            .shadow(color: Color("Pink"), radius: 3)
+            .padding()
+    
         
         ScrollView(.horizontal){
             HStack{
@@ -547,14 +461,23 @@ struct feed2: View {
     
         
         
-        HStack{
-            Image("Title12")
-                .resizable()
-                .frame(width:250, height: 35, alignment: .center)
-                .background(Color(CNColor3))
-                .clipped()
-        }
-        .padding(.vertical)
+        VStack{
+            HStack{
+                Text("Contact Me")
+                    .font(.system(size: 21, weight: .bold))
+                    .padding(.trailing, 200.0)
+                    .padding(.bottom, -10.0)
+            }
+        }.padding(.top, 20.0)
+            .padding(.trailing, 50.0)
+        Divider()
+            .padding(.bottom, 2.0)
+            .background(Color("Pink"))
+            .frame(width: 380)
+            .padding(0.0)
+            .shadow(color: Color("Pink"), radius: 3)
+            .padding()
+    
         
         HStack{
             
