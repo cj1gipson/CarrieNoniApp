@@ -29,7 +29,7 @@ struct tabBarView: View {
                 case 2:
                         NfluenceView()
                 default:
-                        LoginView()
+                        WatchList()
                         //shopview()
                 }
             }

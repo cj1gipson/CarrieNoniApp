@@ -11,9 +11,16 @@ import WebKit
 import AVKit
 import UIKit
 
-struct LoginView: View {
+struct WatchList: View{
     
     @State var index = 0
+    
+    public var WatchListTable: UITableView = {
+       let WatchListTable = UITableView()
+        WatchListTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+       return WatchListTable
+   }()
+    
     
     var body: some View {
         
@@ -50,13 +57,58 @@ struct LoginView: View {
                             .foregroundColor(Color("Faded-Blue"))
                             .padding(.leading, 30.0)
                     }
-                    
                     Spacer()
                 }
-                .padding(.bottom, 10.0)
+                Spacer()
+
+
+                
+                
+
+                
+                //.padding(.bottom, 10.0)
             }
             
+            
+
+            //view.addSubview(WatchListTable)
+            ///WatchListTable.dataSource = self
+            //UINavigationItem.setRightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, //action: #selector(<#T##@objc method#>))
+            
+           
+            //func viewDidLoad(){
+                //super.viewDidLoad()
+                //view.addSubview(<#T##view: UIView##UIView#>)
+              //  WatchListTable.dataSource = self
+            //}
+            
+            
+            
+            
+            ///error Closure containing a declaration cannot be used with result builder 'ViewBuilder'
+            ///
+           
+            
         }
+        
+    
     }
+
+    ///trying to get  table on the sceen to get a list to display our watch list of videos when selected an confimed
+    
+    //func tableView(_ tablesView: UITableView, numberOfROwsInSection section: Int) -> Int {
+    //    0
+    //}
+    
+    //func viewDidLayoutSubViews(){
+    //super.viewDidLayoutSubViews()
+    //  WatchListTable.frame = self
+    //}
+    
+    //func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
+    //UITableViewCell {
+    //    _ = tableView.dequeueReusableCell(withIdentifier: "cell", for: <#T##IndexPath#>)
+    //}
+    
 }
 
