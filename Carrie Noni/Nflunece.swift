@@ -421,24 +421,26 @@ struct mainFeed: View {
                                 
                             }) {
                                 
-                                Image("NInsta")
+                                Image("ig-1")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width:180, height: 180, alignment: .center)
+                                    .frame(width:200, height: 200, alignment: .center)
                                     .clipped()
                                     .cornerRadius(12)
+                                    .shadow(color: Color("Pink"), radius: 3)
                             }
                             
                                 
                             Button(action: {
                                 
                             }) {
-                                Image("NBook")
+                                Image("fb-1")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width:180, height: 180, alignment: .center)
+                                    .frame(width:200, height: 200, alignment: .center)
                                     .clipped()
                                     .cornerRadius(12)
+                                    .shadow(color: Color("Faded-Blue"), radius: 3)
                             }
                             
                         }
@@ -448,26 +450,29 @@ struct mainFeed: View {
                             Button(action: {
                                 
                             }) {
-                                Image("NTwitter")
+                                Image("twitter-1")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width:180, height: 180, alignment: .center)
+                                    .frame(width:200, height: 200, alignment: .center)
                                     .clipped()
                                     .cornerRadius(12)
+                                    .shadow(color: Color("Faded-Blue"), radius: 3)
                             }
                             
                             Button(action: {
                                 
                             }) {
-                                Image("NYT")
+                                Image("yt-1")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width:180, height: 180, alignment: .center)
+                                    .frame(width:200, height: 200, alignment: .center)
                                     .clipped()
                                     .cornerRadius(12)
+                                    .shadow(color: Color("Pink"), radius: 3)
                             }
 
-                        }.padding(.bottom, 35.0)
+
+                        }.padding(.bottom, 32.0)
                             
                     }
 

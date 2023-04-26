@@ -291,19 +291,23 @@ struct feed2: View {
             VideoView(videoID: "moY_h85RZ6g")
                 .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(12)
-                .padding(.horizontal, 20.0)
+                .padding(.trailing, 5.0)
+                .padding(.leading, 20.0)
             VideoView(videoID: "JQAJOlYYZ4g")
                 .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(12)
-                .padding(.horizontal, 20.0)
+                .padding(.trailing, 5.0)
+                .padding(.leading, 20.0)
             VideoView(videoID: "7dAQXvUDzM8")
                 .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(12)
-                .padding(.horizontal, 20.0)
+                .padding(.trailing, 5.0)
+                .padding(.leading, 20.0)
             VideoView(videoID: "Zw57CgDOU1o")
                 .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(12)
-                .padding(.horizontal, 20.0)
+                .padding(.trailing, 5.0)
+                .padding(.leading, 20.0)
         }
         .padding(.bottom)
         }
@@ -312,19 +316,23 @@ struct feed2: View {
                 VideoView(videoID: "kOOfHxZcI6g")
                     .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .cornerRadius(12)
-                    .padding(.horizontal, 20.0)
+                    .padding(.trailing, 5.0)
+                    .padding(.leading, 20.0)
                 VideoView(videoID: "ypKotCCZkc4")
                     .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .cornerRadius(12)
-                    .padding(.horizontal, 20.0)
+                    .padding(.trailing, 5.0)
+                    .padding(.leading, 20.0)
                 VideoView(videoID: "PCV3rdirymU")
                     .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .cornerRadius(12)
-                    .padding(.horizontal, 20.0)
+                    .padding(.trailing, 5.0)
+                    .padding(.leading, 20.0)
                 VideoView(videoID: "zOXhBVOlnPw")
                     .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .cornerRadius(12)
-                    .padding(.horizontal, 20.0)
+                    .padding(.trailing, 5.0)
+                    .padding(.leading, 20.0)
                
                 }
             }
@@ -350,8 +358,41 @@ struct feed2: View {
     
         
         ScrollView(.horizontal){
+            
+           
             HStack{
+                Group {
+                Image("Wade")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .padding(.trailing, 20.0)
+                    .padding(.leading, 10.0)
+                    .frame(width:320, height: 450, alignment: .center)
+                    .background(Color.purple)
+                    .clipped()
+                    .cornerRadius(12)
+                    
+                    Image("Hudson")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .padding(.trailing, 20.0)
+                        .padding(.leading, 10.0)
+                        .frame(width:320, height: 450, alignment: .center)
+                        .background(Color.purple)
+                        .clipped()
+                        .cornerRadius(12)
+                
                 Image("Carrie9")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .padding(.trailing, 20.0)
+                    .padding(.leading, 10.0)
+                    .frame(width:320, height: 450, alignment: .center)
+                    .background(Color.purple)
+                    .clipped()
+                    .cornerRadius(12)
+                
+                Image("BrandonJ")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .padding(.trailing, 20.0)
@@ -382,6 +423,21 @@ struct feed2: View {
                     .background(Color.purple)
                     .clipped()
                     .cornerRadius(12)
+                    
+                    Image("Jones")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .padding(.trailing, 20.0)
+                        .padding(.leading, 10.0)
+                        .frame(width:320, height: 450, alignment: .center)
+                        .background(Color.purple)
+                        .clipped()
+                        .cornerRadius(12)
+                    
+                    
+            }
+                
+            Group{
                 
                 Image("Carrie26")
                     .resizable()
@@ -413,7 +469,8 @@ struct feed2: View {
                     .clipped()
                     .cornerRadius(12)
                     
-                Image("Carrie19")
+                
+                Image("Carrie20")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .padding(.trailing, 20.0)
@@ -423,7 +480,7 @@ struct feed2: View {
                     .clipped()
                     .cornerRadius(12)
                 
-                Image("Carrie20")
+                Image("Lobel")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .padding(.trailing, 20.0)
@@ -443,6 +500,26 @@ struct feed2: View {
                     .clipped()
                     .cornerRadius(12)
                 
+                Image("Iggy")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .padding(.trailing, 20.0)
+                    .padding(.leading, 10.0)
+                    .frame(width:320, height: 450, alignment: .center)
+                    .background(Color.purple)
+                    .clipped()
+                    .cornerRadius(12)
+                
+                Image("Bango")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .padding(.trailing, 20.0)
+                    .padding(.leading, 10.0)
+                    .frame(width:320, height: 450, alignment: .center)
+                    .background(Color.purple)
+                    .clipped()
+                    .cornerRadius(12)
+                
                 Image("Carrie15")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -452,6 +529,7 @@ struct feed2: View {
                     .background(Color.purple)
                     .clipped()
                     .cornerRadius(12)
+                }
                 
 
             }.padding(.horizontal, 35.0)
@@ -485,24 +563,28 @@ struct feed2: View {
                 
             }) {
                 
-                Image("NJInsta")
+                Image("ig-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width:180, height: 180, alignment: .center)
+                    .background(Color("Faded-Blue"))
+                    .frame(width:200, height: 200, alignment: .center)
                     .clipped()
                     .cornerRadius(12)
+                    .shadow(color: Color("Pink"), radius: 3)
             }
             
                 
             Button(action: {
                 
             }) {
-                Image("NJBook2")
+                Image("fb-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width:180, height: 180, alignment: .center)
+                    .background(Color("Pink"))
+                    .frame(width:200, height: 200, alignment: .center)
                     .clipped()
                     .cornerRadius(12)
+                    .shadow(color: Color("Faded-Blue"), radius: 3)
             }
             
         }
@@ -512,26 +594,31 @@ struct feed2: View {
             Button(action: {
                 
             }) {
-                Image("NJTwitter2")
+                Image("twitter-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width:180, height: 180, alignment: .center)
+                    .background(Color("Pink"))
+                    .frame(width:200, height: 200, alignment: .center)
                     .clipped()
                     .cornerRadius(12)
+                    .shadow(color: Color("Faded-Blue"), radius: 3)
             }
             
             Button(action: {
                 
             }) {
-                Image("NJYT")
+                Image("yt-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width:180, height: 180, alignment: .center)
+                    .background(Color("Faded-Blue"))
+                    .frame(width:200, height: 200, alignment: .center)
                     .clipped()
                     .cornerRadius(12)
+                    .shadow(color: Color("Pink"), radius: 3)
             }
 
-        }.padding(.bottom, 35.0)
+
+        }.padding(.bottom, 32.0)
         
     }
 }

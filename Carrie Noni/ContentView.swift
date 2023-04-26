@@ -425,24 +425,28 @@ struct feed: View {
                 
             }) {
                 
-                Image("CNInsta")
+                Image("ig-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width:180, height: 180, alignment: .center)
+                    .frame(width:200, height: 200, alignment: .center)
+                    .background(Color("Faded-Blue"))
                     .clipped()
                     .cornerRadius(12)
+                    .shadow(color: Color("Pink"), radius: 3)
             }
             
                 
             Button(action: {
                 
             }) {
-                Image("CNBook2")
+                Image("fb-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width:180, height: 180, alignment: .center)
+                    .frame(width:200, height: 200, alignment: .center)
+                    .background(Color("Pink"))
                     .clipped()
                     .cornerRadius(12)
+                    .shadow(color: Color("Faded-Blue"), radius: 3)
             }
             
         }
@@ -452,27 +456,31 @@ struct feed: View {
             Button(action: {
                 
             }) {
-                Image("CNTwitter2")
+                Image("twitter-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width:180, height: 180, alignment: .center)
+                    .frame(width:200, height: 200, alignment: .center)
+                    .background(Color("Pink"))
                     .clipped()
                     .cornerRadius(12)
+                    .shadow(color: Color("Faded-Blue"), radius: 3)
             }
             
             Button(action: {
                 
             }) {
-                Image("CNYT")
+                Image("yt-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width:180, height: 180, alignment: .center)
+                    .frame(width:200, height: 200, alignment: .center)
+                    .background(Color("Faded-Blue"))
                     .clipped()
                     .cornerRadius(12)
+                    .shadow(color: Color("Pink"), radius: 3)
             }
 
 
-        }.padding(.bottom, 35.0)
+        }.padding(.bottom, 32.0)
         
     }
 }
