@@ -39,12 +39,12 @@ struct tabBarView: View {
                         
                     if(selectedIndex == number){
                         Image(icons[number])
-                            .font(.system(size: 45, weight: .regular, design: .default)).padding().padding(.horizontal, -6.0)
+                            .font(.system(size: 55, weight: .regular, design: .default)).padding().padding(.horizontal, -6.0)
                             .foregroundColor(selectedIndex == number ? Color("Pink") : Color("Dark-Blue-1"))
                             .shadow(color: Color("Pink"), radius: 3)
                     } else{
                         Image(icons[number])
-                            .font(.system(size: 45, weight: .regular, design: .default)).padding().padding(.horizontal, -6.0)
+                            .font(.system(size: 55, weight: .regular, design: .default)).padding().padding(.horizontal, -6.0)
                             .foregroundColor(selectedIndex == number ? Color("Pink") : Color("Dark-Blue-1"))
                     }
                             
