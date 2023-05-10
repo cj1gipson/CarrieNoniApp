@@ -12,8 +12,8 @@ import AVKit
 
 struct tabBarView: View {
     
-    @State var selectedIndex = 0
-    let icons = [ "home4", "Juice", "Nfluence-1", "watchlist"]
+    @State var selectedIndex = 1
+    let icons = ["Juice", "home4", "Nfluence-1"]
     
     var body: some View {
         
@@ -23,20 +23,17 @@ struct tabBarView: View {
                 
                 switch selectedIndex{
                 case 0:
-                        ContentView()
+                    noniJuiceView()
                 case 1:
-                        noniJuiceView()
-                case 2:
-                        NfluenceView()
+                    ContentView()
                 default:
-                        WatchList()
-                        //shopview()
+                        NfluenceView()
                 }
             }
             //.padding(.top, -150.0)
                 //.background(Color(CNColor1))
             HStack(spacing: -9.0){
-                ForEach(0..<4, id: \.self){number in
+                ForEach(0..<3, id: \.self){number in
                     Spacer()
                     Button(action:{self.selectedIndex = number}, label: {
                         
