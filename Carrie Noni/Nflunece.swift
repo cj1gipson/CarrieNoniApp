@@ -81,7 +81,7 @@ struct mainFeed: View {
                                 VideoView(videoID: "xtV00tteIN4")
                                     .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     .cornerRadius(12)
-                                    .padding(.horizontal, 20.0)
+                                    .padding(.horizontal, 35.0)
                             }
                             
                         }
@@ -120,7 +120,12 @@ struct mainFeed: View {
                             .shadow(color: Color("Pink"), radius: 3)
                         
                         Button(action: {
-                            
+                            guard let pilot = URL(string: "https://www.youtube.com/watch?v=yyFAicc_Q5I"),
+                                  UIApplication.shared.canOpenURL(pilot)
+                            else{
+                                return
+                            }
+                            UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
                         }) {
                         Image("WaveInt")
                             .resizable()
@@ -171,7 +176,12 @@ struct mainFeed: View {
                         HStack{
 
                             Button(action: {
-                                
+                                guard let winter = URL(string: "https://youtu.be/HSoHHFgFj9Y"),
+                                      UIApplication.shared.canOpenURL(winter)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(winter,options: [:], completionHandler: nil)
                             }) {
                             Image("WinterNfluence")
                                 .resizable()
@@ -181,10 +191,17 @@ struct mainFeed: View {
                                 .clipped()
                                 .cornerRadius(12)
                                 .overlay(ImageOverlay5(), alignment: .bottomTrailing)
+                                
                             }
+                            .padding(.leading)
 
                             Button(action: {
-                                
+                                guard let fall = URL(string: "https://www.youtube.com/watch?v=_UCq2FUYpHI"),
+                                      UIApplication.shared.canOpenURL(fall)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(fall,options: [:], completionHandler: nil)
                             }) {
                             Image("FallNfluence")
                                 .resizable()
@@ -196,8 +213,14 @@ struct mainFeed: View {
                                 .overlay(ImageOverlay6(), alignment: .bottomTrailing)
                             }
                             
+                            
                             Button(action: {
-                                
+                                guard let Summer = URL(string: "https://www.youtube.com/watch?v=_OtitJzTRI4"),
+                                      UIApplication.shared.canOpenURL(Summer)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(Summer,options: [:], completionHandler: nil)
                             }) {
                             Image("SummerNfluence")
                                 .resizable()
@@ -210,7 +233,13 @@ struct mainFeed: View {
                             }
                             
                             Button(action: {
-                                
+                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=8pW0H1_F8Ls"),
+                                      UIApplication.shared.canOpenURL(pilot)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
+
                             }) {
                             Image("nfluenceep1")
                                 .resizable()
@@ -237,7 +266,13 @@ struct mainFeed: View {
                         ScrollView(.horizontal){
                         HStack{
                             Button(action: {
-                                
+                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=MSYZMXFcRgA"),
+                                      UIApplication.shared.canOpenURL(pilot)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
+
                             }) {
                             Image("LeeksInt")
                                 .resizable()
@@ -246,10 +281,17 @@ struct mainFeed: View {
                                 .background(Color.purple)
                                 .clipped()
                                 .cornerRadius(12)
+                                
                             }
+                            .padding(.leading)
                             
                             Button(action: {
-                                
+                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=S33Xc_ds6ws"),
+                                      UIApplication.shared.canOpenURL(pilot)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
                             }) {
                             Image("EliInt")
                                 .resizable()
@@ -262,7 +304,12 @@ struct mainFeed: View {
                             }
                             
                             Button(action: {
-                                
+                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=-q1SYdB3MwU"),
+                                      UIApplication.shared.canOpenURL(pilot)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
                             }) {
                             Image("ErnieInt")
                                 .resizable()
@@ -274,7 +321,12 @@ struct mainFeed: View {
                             }
                             
                             Button(action: {
-                                
+                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=yyFAicc_Q5I"),
+                                      UIApplication.shared.canOpenURL(pilot)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
                             }) {
                             Image("WaveInt")
                                 .resizable()
@@ -324,7 +376,12 @@ struct mainFeed: View {
                         ScrollView(.horizontal){
                             HStack{
                                 Button(action: {
-                                    
+                                    guard let pilot = URL(string: "https://instagram.com/luhleeks?igshid=MzRlODBiNWFlZA=="),
+                                          UIApplication.shared.canOpenURL(pilot)
+                                    else{
+                                        return
+                                    }
+                                    UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
                                 }) {
                                 Image("Leeks")
                                     .resizable()
@@ -337,9 +394,15 @@ struct mainFeed: View {
                                     .cornerRadius(12)
                                     .overlay(ImageOverlay4(), alignment: .bottomTrailing)
                                 }
+                                .padding(.leading)
                                 
                                 Button(action: {
-                                    
+                                    guard let pilot = URL(string: "https://instagram.com/elistizzy?igshid=MzRlODBiNWFlZA=="),
+                                          UIApplication.shared.canOpenURL(pilot)
+                                    else{
+                                        return
+                                    }
+                                    UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
                                 }) {
                                 Image("Eli")
                                     .resizable()
@@ -353,8 +416,14 @@ struct mainFeed: View {
                                     .overlay(ImageOverlay3(), alignment: .bottomTrailing)
                                 }
                                 
+                                
                                 Button(action: {
-                                    
+                                    guard let pilot = URL(string: "https://instagram.com/itserniez?igshid=MzRlODBiNWFlZA=="),
+                                          UIApplication.shared.canOpenURL(pilot)
+                                    else{
+                                        return
+                                    }
+                                    UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
                                 }) {
                                 Image("ERNIEZ")
                                     .resizable()
@@ -370,7 +439,12 @@ struct mainFeed: View {
                                 }
                                 
                                 Button(action: {
-                                    
+                                    guard let pilot = URL(string: "https://instagram.com/_camwill?igshid=MzRlODBiNWFlZA=="),
+                                          UIApplication.shared.canOpenURL(pilot)
+                                    else{
+                                        return
+                                    }
+                                    UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
                                 }) {
                                 Image("CAMWILL")
                                     .resizable()
@@ -418,13 +492,19 @@ struct mainFeed: View {
                         HStack{
                             
                             Button(action: {
-                                
+                                guard let instagram = URL(string: "https://instagram.com/the.nfluence?igshid=MzRlODBiNWFlZA=="),
+                                      UIApplication.shared.canOpenURL(instagram)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(instagram,options: [:], completionHandler: nil)
                             }) {
                                 
                                 Image("ig-1")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width:200, height: 200, alignment: .center)
+                                    .background(Color("Faded-Blue"))
                                     .clipped()
                                     .cornerRadius(12)
                                     .shadow(color: Color("Pink"), radius: 3)
@@ -432,12 +512,18 @@ struct mainFeed: View {
                             
                                 
                             Button(action: {
-                                
+                                guard let facebook = URL(string: "https://www.facebook.com/Noni.Sophia?mibextid=LQQJ4d"),
+                                      UIApplication.shared.canOpenURL(facebook)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(facebook,options: [:], completionHandler: nil)
                             }) {
                                 Image("fb-1")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width:200, height: 200, alignment: .center)
+                                    .background(Color("Pink"))
                                     .clipped()
                                     .cornerRadius(12)
                                     .shadow(color: Color("Faded-Blue"), radius: 3)
@@ -448,24 +534,36 @@ struct mainFeed: View {
                         HStack{
                             
                             Button(action: {
-                                
+                                guard let twitter = URL(string: "https://twitter.com/carrienoni?s=11&t=q8nT6GEL6IjPaPXlCibpVw"),
+                                      UIApplication.shared.canOpenURL(twitter)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(twitter,options: [:], completionHandler: nil)
                             }) {
                                 Image("twitter-1")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width:200, height: 200, alignment: .center)
+                                    .background(Color("Pink"))
                                     .clipped()
                                     .cornerRadius(12)
                                     .shadow(color: Color("Faded-Blue"), radius: 3)
                             }
                             
                             Button(action: {
-                                
+                                guard let youtube = URL(string: "https://www.youtube.com/@nfluence381"),
+                                      UIApplication.shared.canOpenURL(youtube)
+                                else{
+                                    return
+                                }
+                                UIApplication.shared.open(youtube,options: [:], completionHandler: nil)
                             }) {
                                 Image("yt-1")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width:200, height: 200, alignment: .center)
+                                    .background(Color("Faded-Blue"))
                                     .clipped()
                                     .cornerRadius(12)
                                     .shadow(color: Color("Pink"), radius: 3)

@@ -560,14 +560,19 @@ struct feed2: View {
         HStack{
             
             Button(action: {
-                
+                guard let instagram = URL(string: "https://instagram.com/carrienoni_?igshid=MzRlODBiNWFlZA=="),
+                      UIApplication.shared.canOpenURL(instagram)
+                else{
+                    return
+                }
+                UIApplication.shared.open(instagram,options: [:], completionHandler: nil)
             }) {
                 
                 Image("ig-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .background(Color("Faded-Blue"))
                     .frame(width:200, height: 200, alignment: .center)
+                    .background(Color("Faded-Blue"))
                     .clipped()
                     .cornerRadius(12)
                     .shadow(color: Color("Pink"), radius: 3)
@@ -575,13 +580,18 @@ struct feed2: View {
             
                 
             Button(action: {
-                
+                guard let facebook = URL(string: "https://www.facebook.com/Noni.Sophia?mibextid=LQQJ4d"),
+                      UIApplication.shared.canOpenURL(facebook)
+                else{
+                    return
+                }
+                UIApplication.shared.open(facebook,options: [:], completionHandler: nil)
             }) {
                 Image("fb-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .background(Color("Pink"))
                     .frame(width:200, height: 200, alignment: .center)
+                    .background(Color("Pink"))
                     .clipped()
                     .cornerRadius(12)
                     .shadow(color: Color("Faded-Blue"), radius: 3)
@@ -592,26 +602,36 @@ struct feed2: View {
         HStack{
             
             Button(action: {
-                
+                guard let twitter = URL(string: "https://twitter.com/carrienoni?s=11&t=q8nT6GEL6IjPaPXlCibpVw"),
+                      UIApplication.shared.canOpenURL(twitter)
+                else{
+                    return
+                }
+                UIApplication.shared.open(twitter,options: [:], completionHandler: nil)
             }) {
                 Image("twitter-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .background(Color("Pink"))
                     .frame(width:200, height: 200, alignment: .center)
+                    .background(Color("Pink"))
                     .clipped()
                     .cornerRadius(12)
                     .shadow(color: Color("Faded-Blue"), radius: 3)
             }
             
             Button(action: {
-                
+                guard let youtube = URL(string: "https://youtube.com/@CarrieNoni"),
+                      UIApplication.shared.canOpenURL(youtube)
+                else{
+                    return
+                }
+                UIApplication.shared.open(youtube,options: [:], completionHandler: nil)
             }) {
                 Image("yt-1")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .background(Color("Faded-Blue"))
                     .frame(width:200, height: 200, alignment: .center)
+                    .background(Color("Faded-Blue"))
                     .clipped()
                     .cornerRadius(12)
                     .shadow(color: Color("Pink"), radius: 3)
@@ -619,7 +639,6 @@ struct feed2: View {
 
 
         }.padding(.bottom, 32.0)
-        
     }
 }
 
