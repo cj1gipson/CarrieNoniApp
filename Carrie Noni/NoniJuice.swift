@@ -63,12 +63,12 @@ struct noniJuiceView: View {
                 Button(action: {
                     
                 }) {
-                Image("Menu")
-                    .imageScale(.large)
-                    .font(Font.system(size:30, weight: .heavy))
-                    .foregroundColor(Color("Faded-Blue"))
-                    .padding(.leading, 30.0)
-                }
+                    Image("Settings")
+                        .imageScale(.large)
+                        .font(Font.system(size:45, weight: .heavy))
+                        .foregroundColor(Color("Faded-Blue"))
+                        .padding(.leading, 20.0)
+                    }
                 
                 Spacer()
             }
