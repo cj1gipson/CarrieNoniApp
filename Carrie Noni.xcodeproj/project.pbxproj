@@ -22,6 +22,8 @@
 		952AFD93278CC2E7009D6F15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952AFD92278CC2E7009D6F15 /* Preview Assets.xcassets */; };
 		952AFD9E278CC2E7009D6F15 /* Carrie_NoniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952AFD9D278CC2E7009D6F15 /* Carrie_NoniTests.swift */; };
 		952AFDA9278CC2E7009D6F15 /* Carrie_NoniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952AFDA8278CC2E7009D6F15 /* Carrie_NoniUITests.swift */; };
+		955C654D2A27B4100002FC4E /* PullUpSubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955C654C2A27B4100002FC4E /* PullUpSubPage.swift */; };
+		955C654F2A27B45D0002FC4E /* WhatsPoppinSubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955C654E2A27B45D0002FC4E /* WhatsPoppinSubPage.swift */; };
 		95BBF3142792379B00460158 /* NoniJuice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBF3132792379B00460158 /* NoniJuice.swift */; };
 		95CDB11527909A1800A43119 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CDB11427909A1800A43119 /* TabBarView.swift */; };
 		95CDB1192790A0BA00A43119 /* Nflunece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CDB1182790A0BA00A43119 /* Nflunece.swift */; };
@@ -66,6 +68,8 @@
 		952AFDA4278CC2E7009D6F15 /* Carrie NoniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carrie NoniUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		952AFDA8278CC2E7009D6F15 /* Carrie_NoniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrie_NoniUITests.swift; sourceTree = "<group>"; };
 		952AFDAA278CC2E7009D6F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		955C654C2A27B4100002FC4E /* PullUpSubPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullUpSubPage.swift; sourceTree = "<group>"; };
+		955C654E2A27B45D0002FC4E /* WhatsPoppinSubPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsPoppinSubPage.swift; sourceTree = "<group>"; };
 		95BBF3132792379B00460158 /* NoniJuice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoniJuice.swift; sourceTree = "<group>"; };
 		95CDB11427909A1800A43119 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		95CDB1182790A0BA00A43119 /* Nflunece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nflunece.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				95BBF3132792379B00460158 /* NoniJuice.swift */,
 				952AFD8D278CC2E6009D6F15 /* ContentView.swift */,
 				95CDB11427909A1800A43119 /* TabBarView.swift */,
+				955C654C2A27B4100002FC4E /* PullUpSubPage.swift */,
+				955C654E2A27B45D0002FC4E /* WhatsPoppinSubPage.swift */,
 				95CDB1182790A0BA00A43119 /* Nflunece.swift */,
 				952AFD8F278CC2E7009D6F15 /* Assets.xcassets */,
 				952AFD94278CC2E7009D6F15 /* Info.plist */,
@@ -322,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5271236A29D2941F006C0F76 /* Landmark.swift in Sources */,
+				955C654F2A27B45D0002FC4E /* WhatsPoppinSubPage.swift in Sources */,
 				952AFD8E278CC2E6009D6F15 /* ContentView.swift in Sources */,
 				951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */,
 				95CDB1192790A0BA00A43119 /* Nflunece.swift in Sources */,
@@ -329,6 +336,7 @@
 				5223A0B92A0C02A600CCD7BA /* UIView.swift in Sources */,
 				5271236C29D2975D006C0F76 /* Modeldata.swift in Sources */,
 				952AFD8C278CC2E6009D6F15 /* Carrie_NoniApp.swift in Sources */,
+				955C654D2A27B4100002FC4E /* PullUpSubPage.swift in Sources */,
 				52DB14B02971AB70000BD7D2 /* NoniController.swift in Sources */,
 				95BBF3142792379B00460158 /* NoniJuice.swift in Sources */,
 				52517F5729AEE0F5006AF9F4 /* CreateUser.swift in Sources */,
