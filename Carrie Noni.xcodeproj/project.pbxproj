@@ -10,6 +10,7 @@
 		5223A0B92A0C02A600CCD7BA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5223A0B82A0C02A500CCD7BA /* UIView.swift */; };
 		52517F5729AEE0F5006AF9F4 /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52517F5629AEE0F5006AF9F4 /* CreateUser.swift */; };
 		52517F5929AEE1BD006AF9F4 /* CD_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52517F5829AEE1BD006AF9F4 /* CD_API.swift */; };
+		5269AB292A27B01400A0BBD1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5269AB282A27B01400A0BBD1 /* SettingsView.swift */; };
 		5271236829D293D8006C0F76 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5271236729D293D8006C0F76 /* landmarkData.json */; };
 		5271236A29D2941F006C0F76 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271236929D2941F006C0F76 /* Landmark.swift */; };
 		5271236C29D2975D006C0F76 /* Modeldata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271236B29D2975D006C0F76 /* Modeldata.swift */; };
@@ -48,6 +49,7 @@
 		5223A0B82A0C02A500CCD7BA /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		52517F5629AEE0F5006AF9F4 /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateUser.swift; path = API/CreateUser.swift; sourceTree = "<group>"; };
 		52517F5829AEE1BD006AF9F4 /* CD_API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CD_API.swift; path = API/CD_API.swift; sourceTree = "<group>"; };
+		5269AB282A27B01400A0BBD1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		5271236729D293D8006C0F76 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		5271236929D2941F006C0F76 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		5271236B29D2975D006C0F76 /* Modeldata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modeldata.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				52517F5829AEE1BD006AF9F4 /* CD_API.swift */,
 				5271236E29D297DA006C0F76 /* Model */,
 				5271236D29D297C2006C0F76 /* Reources */,
+				5269AB282A27B01400A0BBD1 /* SettingsView.swift */,
 			);
 			path = "Carrie Noni";
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				95BBF3142792379B00460158 /* NoniJuice.swift in Sources */,
 				52517F5729AEE0F5006AF9F4 /* CreateUser.swift in Sources */,
 				52517F5929AEE1BD006AF9F4 /* CD_API.swift in Sources */,
+				5269AB292A27B01400A0BBD1 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

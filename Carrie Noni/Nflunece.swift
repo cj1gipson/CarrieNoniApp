@@ -12,6 +12,7 @@ import AVKit
 let icons = ["hair", "Juice", "home4", "nfluence","shop"
 ]
 
+
 struct NfluenceView: View {
     
     var body: some View {
@@ -25,7 +26,8 @@ struct NfluenceView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
             //-------------------------- Header ------------------------------
-           
+            NavigationView{ // Step 1
+                
                 VStack{
                     HStack{
                         Spacer()
@@ -39,26 +41,27 @@ struct NfluenceView: View {
                             .shadow(color: Color("Pink"), radius: 3)
                         Spacer()
                         Spacer()
+                        
                         Button(action: {
-                            
                         }) {
                             Image("Settings")
                                 .imageScale(.large)
                                 .font(Font.system(size:45, weight: .heavy))
                                 .foregroundColor(Color("Faded-Blue"))
                                 .padding(.leading, 20.0)
-                            }
+                            
+                        }
                         
                         Spacer()
                     }
                     .padding(.bottom, 10.0)
                     
-                //-------------------------- Feed ------------------------------
+                    //-------------------------- Feed ------------------------------
                     ScrollView(){
-                    mainFeed()
+                        mainFeed()
                     }
                 }
-
+            }
         }
         
     }
