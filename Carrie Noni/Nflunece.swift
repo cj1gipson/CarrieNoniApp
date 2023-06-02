@@ -14,7 +14,8 @@ let icons = ["hair", "Juice", "home4", "nfluence","shop"
 
 
 struct NfluenceView: View {
-    
+    @State private var showSettings = false
+
     var body: some View {
         ZStack{
             //------------------------- Background -----------------------------
@@ -26,8 +27,6 @@ struct NfluenceView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
             //-------------------------- Header ------------------------------
-            NavigationView{ // Step 1
-                
                 VStack{
                     HStack{
                         Spacer()
@@ -42,14 +41,20 @@ struct NfluenceView: View {
                         Spacer()
                         Spacer()
                         
-                        Button(action: {
-                        }) {
+                        //---------------- Setting button ------------------------------
+
+                        Button(action:{
+                            print("Settings pressed")
+
+                            showSettings.toggle()
+                        }){
                             Image("Settings")
                                 .imageScale(.large)
                                 .font(Font.system(size:45, weight: .heavy))
                                 .foregroundColor(Color("Faded-Blue"))
                                 .padding(.leading, 20.0)
-                            
+                        }.sheet(isPresented: $showSettings) {
+                            SheetView()
                         }
                         
                         Spacer()
@@ -61,13 +66,27 @@ struct NfluenceView: View {
                         mainFeed()
                     }
                 }
-            }
         }
         
     }
     
 }
+struct SheetView: View {
+    @Environment(\.dismiss) var dismiss
 
+       var body: some View {
+           RoundedRectangle(cornerRadius: 25.0)
+               .fill(
+                   RadialGradient(gradient: gradient, center: .topLeading, startRadius: 5, endRadius: 250)
+               )
+               .overlay(Color("Dark-Blue")).opacity(0.6)
+               .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+           Button("Dismiss") {
+               dismiss()
+           }
+           .font(.title)
+       }
+}
 
 struct mainFeed: View {
     var body: some View {
