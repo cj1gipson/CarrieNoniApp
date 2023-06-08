@@ -33,6 +33,8 @@ let NJColor4 = UIColor(red:136/255.0,
 
 
 struct noniJuiceView: View {
+    @State private var showSettings = false
+
     var body: some View {
         
         
@@ -68,6 +70,8 @@ struct noniJuiceView: View {
                         .font(Font.system(size:45, weight: .heavy))
                         .foregroundColor(Color("Faded-Blue"))
                         .padding(.leading, 20.0)
+                    }.sheet(isPresented: $showSettings) {
+                        SettingsView()
                     }
                 
                 Spacer()
