@@ -48,6 +48,8 @@ let gradient = Gradient(colors: [Color("Light-Blue"), Color("Dark-Blue")])
 
 
 struct ContentView: View {
+    @State private var showSettings = false
+
     var body: some View {
         
         ZStack{
@@ -82,6 +84,8 @@ struct ContentView: View {
                             .font(Font.system(size:45, weight: .heavy))
                             .foregroundColor(Color("Faded-Blue"))
                             .padding(.leading, 20.0)
+                        }.sheet(isPresented: $showSettings) {
+                            SettingsView()
                         }
                         
                         Spacer()
