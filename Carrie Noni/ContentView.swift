@@ -193,11 +193,9 @@ struct feed: View {
                     .frame(width: 380)
                     .padding(.bottom, 10.0)
                     .shadow(color: Color("Pink"), radius: 3)
-                
-                
-                //NavigationView {
+
                 Button(action: {
-                    ShowPullUpSubPage = true
+                    ShowPullUpSubPage.toggle()
                 }) {
                     ZStack{
                         Rectangle()
@@ -221,9 +219,11 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
+                }.sheet(isPresented: $ShowPullUpSubPage) {
+                    PullUpSubPage()
                 }
-                NavigationLink("", destination:  PullUpSubPage())
-                //}
+                
+                // Issue with subscreen cant push anything screen on top of screen.
                 
                 Button(action: {
                     
@@ -555,14 +555,6 @@ struct VideoView2: UIViewRepresentable{
         uiView.load(URLRequest(url: youtubeURL))
     }
 }
-
-
-
-
-
-
-
-
 
 
 struct ContentView_Previews: PreviewProvider {
