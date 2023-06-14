@@ -62,8 +62,9 @@ struct noniJuiceView: View {
                     .shadow(color: Color("Pink"), radius: 3)
                 Spacer()
                 Spacer()
+            //-------------------------- Settings Button ------------------------------
                 Button(action: {
-                    
+                    showSettings.toggle()
                 }) {
                     Image("Settings")
                         .imageScale(.large)
