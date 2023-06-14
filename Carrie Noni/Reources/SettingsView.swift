@@ -10,21 +10,34 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(\.dismiss) var dismiss
 
-       var body: some View {
-           
-
-           List{
-               
-               ForEach(settingList) { list in
-                   /*@START_MENU_TOKEN@*/Text(list.label)/*@END_MENU_TOKEN@*/
+    var body: some View {
+           List(settingList) { settingList in
+               NavigationLink{
+                   SettingsDetail()
+               } label: {
+                   Text(settingList.label)
                }
+               
            }
-           
+           // -------------- Setting up clickable list options ------------
            Button("Dismiss") {
                dismiss()
            }
            .font(.title)
        }
+}
+
+struct SettingsDetail: View {
+    var body: some View {
+        Text("Hello, World!")
+    }
+}
+
+
+struct SettingsDetail_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingsDetail()
+    }
 }
 
 
