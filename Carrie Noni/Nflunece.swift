@@ -40,9 +40,7 @@ struct NfluenceView: View {
                             .shadow(color: Color("Pink"), radius: 3)
                         Spacer()
                         Spacer()
-                        
-          //---------------- Setting button ------------------------------
-
+          //---------------- Setting Button ------------------------------
                         Button(action:{
                             showSettings.toggle()
                         }){

@@ -76,8 +76,10 @@ struct ContentView: View {
                             .shadow(color: Color("Pink"), radius: 3)
                         Spacer()
                         Spacer()
+            //-------------------------- Settings Button ------------------------------
                         Button(action: {
-                            
+                            showSettings.toggle()
+                            print("Content view clicked")
                         }) {
                         Image("Settings")
                             .imageScale(.large)
