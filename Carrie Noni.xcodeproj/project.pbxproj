@@ -18,6 +18,7 @@
 		52DB14B02971AB70000BD7D2 /* NoniController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB14AF2971AB6F000BD7D2 /* NoniController.swift */; };
 		951BB1402791CBD500744B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BB13F2791CBD500744B16 /* Main.storyboard */; };
 		951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BB1412791D55B00744B16 /* NSAttributedString.swift */; };
+		95253F592A3A3D59005A85F3 /* NfluenceSubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95253F582A3A3D59005A85F3 /* NfluenceSubPage.swift */; };
 		952AFD8C278CC2E6009D6F15 /* Carrie_NoniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */; };
 		952AFD8E278CC2E6009D6F15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952AFD8D278CC2E6009D6F15 /* ContentView.swift */; };
 		952AFD90278CC2E7009D6F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952AFD8F278CC2E7009D6F15 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		52DB14AF2971AB6F000BD7D2 /* NoniController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoniController.swift; sourceTree = "<group>"; };
 		951BB13F2791CBD500744B16 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		951BB1412791D55B00744B16 /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		95253F582A3A3D59005A85F3 /* NfluenceSubPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfluenceSubPage.swift; sourceTree = "<group>"; };
 		952AFD88278CC2E6009D6F15 /* Carrie Noni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carrie Noni.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		952AFD8B278CC2E6009D6F15 /* Carrie_NoniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrie_NoniApp.swift; sourceTree = "<group>"; };
 		952AFD8D278CC2E6009D6F15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,8 +161,9 @@
 				95BBF3132792379B00460158 /* NoniJuice.swift */,
 				952AFD8D278CC2E6009D6F15 /* ContentView.swift */,
 				95CDB11427909A1800A43119 /* TabBarView.swift */,
-				955C654C2A27B4100002FC4E /* PullUpSubPage.swift */,
 				955C654E2A27B45D0002FC4E /* WhatsPoppinSubPage.swift */,
+				955C654C2A27B4100002FC4E /* PullUpSubPage.swift */,
+				95253F582A3A3D59005A85F3 /* NfluenceSubPage.swift */,
 				95CDB1182790A0BA00A43119 /* Nflunece.swift */,
 				952AFD8F278CC2E7009D6F15 /* Assets.xcassets */,
 				952AFD94278CC2E7009D6F15 /* Info.plist */,
@@ -336,6 +339,7 @@
 				5235CFDA2A3A2D5D008BF8A8 /* SettingsDetailedContent.swift in Sources */,
 				5271236A29D2941F006C0F76 /* Landmark.swift in Sources */,
 				955C654F2A27B45D0002FC4E /* WhatsPoppinSubPage.swift in Sources */,
+				95253F592A3A3D59005A85F3 /* NfluenceSubPage.swift in Sources */,
 				952AFD8E278CC2E6009D6F15 /* ContentView.swift in Sources */,
 				951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */,
 				95CDB1192790A0BA00A43119 /* Nflunece.swift in Sources */,

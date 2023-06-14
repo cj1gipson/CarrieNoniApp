@@ -11,6 +11,7 @@ import AVKit
 
 
 struct WhatsPoppinSubPage: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack{
             //------------------------- Background -----------------------------
@@ -30,22 +31,14 @@ struct WhatsPoppinSubPage: View {
                         Spacer()
                         Image("cn")
                             .imageScale(.large)
-                            .padding(.leading, 65.0)
+                            .padding(.leading, 45.0)
+                            .padding(.top)
                             .font(Font.system(size:45, weight: .heavy))
                             .foregroundColor(Color("Pink"))
                             .shadow(color: Color("Pink"), radius: 3)
                         Spacer()
                         Spacer()
-                        Button(action: {
-                            
-                        }) {
-                            Image("Settings")
-                                .imageScale(.large)
-                                .font(Font.system(size:45, weight: .heavy))
-                                .foregroundColor(Color("Faded-Blue"))
-                                .padding(.leading, 20.0)
-                            }
-                        
+                        Spacer()
                         Spacer()
                     }
                     .padding(.bottom, 10.0)
@@ -53,18 +46,166 @@ struct WhatsPoppinSubPage: View {
                 //-------------------------- Feed ------------------------------
                     ScrollView(){
                     mainFeedWPsub()
+                        .preferredColorScheme(.dark)
                     }
                 }
-
         }
-        
     }
 }
 
 struct mainFeedWPsub: View {
     var body: some View {
-        ZStack{
+        
+        Button(action: {
+            
+        }) {
+            ZStack{
+                VStack{
+                    Image("Whats-Poppin")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width:355, height: 355, alignment: .center)
+                        .clipped()
+                        .cornerRadius(20)
+                }.padding(.trailing, 10.0)
+                
+            }.padding(.bottom, 5.0)
         }
+        
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Carrie6")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Carrie6")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Carrie6")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Carrie6")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+
+        
     }
 }
 

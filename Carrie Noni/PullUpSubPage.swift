@@ -206,6 +206,162 @@ struct mainFeedPullUpSub: View {
     }
 }
 
+struct mainFeedNfluenceSub: View {
+    var body: some View {
+        
+        Button(action: {
+            
+        }) {
+            ZStack{
+                VStack{
+                    Image("Whats-Poppin")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width:355, height: 355, alignment: .center)
+                        .clipped()
+                        .cornerRadius(20)
+                }.padding(.trailing, 10.0)
+                
+            }.padding(.bottom, 5.0)
+        }
+        
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Carrie6")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Carrie6")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Carrie6")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Carrie6")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+
+        
+    }
+}
+
 struct PullUpSubPage_Previews: PreviewProvider {
     static var previews: some View {
         PullUpSubPage()

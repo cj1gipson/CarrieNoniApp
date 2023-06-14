@@ -226,7 +226,7 @@ struct feed: View {
                 // Issue with subscreen cant push anything screen on top of screen.
                 
                 Button(action: {
-                    
+                    ShowPullUpSubPage.toggle()
                 }) {
                     ZStack{
                         Rectangle()
@@ -255,10 +255,12 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
+                }.sheet(isPresented: $ShowPullUpSubPage) {
+                    WhatsPoppinSubPage()
                 }
                 
                 Button(action: {
-                    
+                    ShowPullUpSubPage.toggle()
                 }) {
                     ZStack{
                         Rectangle()
@@ -287,10 +289,12 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
+                }.sheet(isPresented: $ShowPullUpSubPage) {
+                    WhatsPoppinSubPage()
                 }
                 
                 Button(action: {
-                    
+                    ShowPullUpSubPage.toggle()
                 }) {
                     ZStack{
                         Rectangle()
@@ -319,6 +323,8 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
+                }.sheet(isPresented: $ShowPullUpSubPage) {
+                    WhatsPoppinSubPage()
                 }
                 
             }
@@ -326,7 +332,7 @@ struct feed: View {
             Group{
                 
                 Button(action: {
-                    
+                    ShowPullUpSubPage.toggle()
                 }) {
                     ZStack{
                         Rectangle()
@@ -350,10 +356,12 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
+                }.sheet(isPresented: $ShowPullUpSubPage) {
+                    WhatsPoppinSubPage()
                 }
                 
                 Button(action: {
-                    
+                    ShowPullUpSubPage.toggle()
                 }) {
                     ZStack{
                         Rectangle()
@@ -377,12 +385,14 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
+                }.sheet(isPresented: $ShowPullUpSubPage) {
+                    WhatsPoppinSubPage()
                 }
                 
                 
                 
                 Button(action: {
-                    
+                    ShowPullUpSubPage.toggle()
                 }) {
                     ZStack{
                         Rectangle()
@@ -406,6 +416,8 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
+                }.sheet(isPresented: $ShowPullUpSubPage) {
+                    WhatsPoppinSubPage()
                 }
             }
                 
