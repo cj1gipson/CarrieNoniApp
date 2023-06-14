@@ -43,57 +43,46 @@ struct PullUpSubPage: View {
                 //-------------------------- Feed ------------------------------
                     ScrollView(){
                     mainFeedPullUpSub()
-                        Button("Dismiss") {
-                            dismiss()
-                        }
-                        .font(.title)
+                        .preferredColorScheme(.dark)
                     }
                 }
-
-            // Issue with subscreen cant push anything screen on top of screen.
-            
-            RoundedRectangle(cornerRadius: 25.0)
-                .fill(
-                    RadialGradient(gradient: gradient, center: .topLeading, startRadius: 5, endRadius: 250)
-                )
-                .overlay(Color("Dark-Blue")).opacity(0.6)
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         }
     }
 }
 
 struct mainFeedPullUpSub: View {
     var body: some View {
-        ZStack{
+        
+        Button(action: {
+            
+        }) {
+            ZStack{
+                VStack{
+                    Image("Whats-Poppin")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width:355, height: 355, alignment: .center)
+                        .clipped()
+                        .cornerRadius(20)
+                }.padding(.trailing, 10.0)
+                
+            }.padding(.bottom, 5.0)
+        }
+        
+        HStack{
             Button(action: {
                 
             }) {
                 ZStack{
-                    Rectangle()
-                        .frame(width: 360, height: 120)
-                        .cornerRadius(12)
-                        .foregroundColor(Color("Faded-Blue"))
-                        .opacity(0.7)
                     VStack{
                         Image("Whats-Poppin")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width:125, height: 125, alignment: .center)
+                            .frame(width:175, height: 175, alignment: .center)
                             .clipped()
                             .cornerRadius(20)
-                    }.padding(.trailing, 240.0)
+                    }.padding(.trailing, 10.0)
                     
-                    VStack{
-                        Text("Whats Poppin")
-                            .fontWeight(.semibold)
-                            .padding(.leading, 25.0)
-                            .foregroundColor(.white)
-                        Text("Series")
-                            .fontWeight(.semibold)
-                            .padding(.leading, -35.0)
-                            .padding(.top, 0.1)
-                            .foregroundColor(.white)
-                    }
                 }.padding(.bottom, 5.0)
             }
             
@@ -101,31 +90,32 @@ struct mainFeedPullUpSub: View {
                 
             }) {
                 ZStack{
-                    Rectangle()
-                        .frame(width: 360, height: 120)
-                        .cornerRadius(12)
-                        .foregroundColor(Color("Faded-Blue"))
-                        .opacity(0.7)
                     VStack{
                         Image("Carrie6")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width:125, height: 125, alignment: .center)
+                            .frame(width:175, height: 175, alignment: .center)
                             .clipped()
                             .cornerRadius(20)
-                    }.padding(.trailing, 240.0)
-                    
-                    VStack{
-                        Text(" Nfluence")
-                            .fontWeight(.semibold)
-                            .padding(.leading, -18.0)
-                            .foregroundColor(.white)
-                        Text("Series")
-                            .fontWeight(.semibold)
-                            .padding(.leading, -35.0)
-                            .padding(.top, 0.1)
-                            .foregroundColor(.white)
                     }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
                 }.padding(.bottom, 5.0)
             }
             
@@ -133,34 +123,86 @@ struct mainFeedPullUpSub: View {
                 
             }) {
                 ZStack{
-                    Rectangle()
-                        .frame(width: 360, height: 120)
-                        .cornerRadius(12)
-                        .foregroundColor(Color("Faded-Blue"))
-                        .opacity(0.7)
                     VStack{
-                        Image("Carrie1")
+                        Image("Carrie6")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width:125, height: 125, alignment: .center)
+                            .frame(width:175, height: 175, alignment: .center)
                             .clipped()
                             .cornerRadius(20)
-                    }.padding(.trailing, 240.0)
-                    
-                    VStack{
-                        Text("Bucks")
-                            .fontWeight(.semibold)
-                            .padding(.leading, -35.0)
-                            .foregroundColor(.white)
-                        Text("Ambassador")
-                            .fontWeight(.semibold)
-                            .padding(.leading, 18.0)
-                            .padding(.top, 0.1)
-                            .foregroundColor(.white)
                     }
+                    
                 }.padding(.bottom, 5.0)
             }
         }
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Carrie6")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Carrie6")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
+
+        
     }
 }
 
