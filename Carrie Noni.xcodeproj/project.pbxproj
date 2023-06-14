@@ -115,6 +115,7 @@
 		5271236D29D297C2006C0F76 /* Reources */ = {
 			isa = PBXGroup;
 			children = (
+				5269AB282A27B01400A0BBD1 /* SettingsView.swift */,
 				5271236929D2941F006C0F76 /* Landmark.swift */,
 			);
 			path = Reources;
@@ -161,7 +162,6 @@
 				955C654C2A27B4100002FC4E /* PullUpSubPage.swift */,
 				955C654E2A27B45D0002FC4E /* WhatsPoppinSubPage.swift */,
 				95CDB1182790A0BA00A43119 /* Nflunece.swift */,
-				5269AB282A27B01400A0BBD1 /* SettingsView.swift */,
 				952AFD8F278CC2E7009D6F15 /* Assets.xcassets */,
 				952AFD94278CC2E7009D6F15 /* Info.plist */,
 				952AFD91278CC2E7009D6F15 /* Preview Content */,

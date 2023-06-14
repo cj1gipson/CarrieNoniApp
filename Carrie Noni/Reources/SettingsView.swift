@@ -15,15 +15,8 @@ struct SettingsView: View {
 
            List{
                
-               ForEach(settingList) { text in
-                   Text(text.label)
-               }
                ForEach(settingList) { list in
-                   Section(header: Text(text.label)){
-                       NavigationLink(destination: SettingsDetailedContent(list:list)){
-                           
-                       }
-                   }
+                   /*@START_MENU_TOKEN@*/Text(list.label)/*@END_MENU_TOKEN@*/
                }
            }
            
