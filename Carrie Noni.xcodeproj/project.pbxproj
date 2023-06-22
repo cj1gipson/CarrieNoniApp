@@ -16,6 +16,10 @@
 		5271236A29D2941F006C0F76 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271236929D2941F006C0F76 /* Landmark.swift */; };
 		5271236C29D2975D006C0F76 /* Modeldata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5271236B29D2975D006C0F76 /* Modeldata.swift */; };
 		52DB14B02971AB70000BD7D2 /* NoniController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DB14AF2971AB6F000BD7D2 /* NoniController.swift */; };
+		9509DB522A44C7B1004B79CF /* BucksAmbassador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9509DB512A44C7B1004B79CF /* BucksAmbassador.swift */; };
+		9509DB542A44C987004B79CF /* The-Truth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9509DB532A44C987004B79CF /* The-Truth.swift */; };
+		9509DB562A44C9C9004B79CF /* CopyWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9509DB552A44C9C9004B79CF /* CopyWrite.swift */; };
+		9509DB582A44CA1F004B79CF /* Freelance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9509DB572A44CA1F004B79CF /* Freelance.swift */; };
 		951BB1402791CBD500744B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BB13F2791CBD500744B16 /* Main.storyboard */; };
 		951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BB1412791D55B00744B16 /* NSAttributedString.swift */; };
 		95253F592A3A3D59005A85F3 /* NfluenceSubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95253F582A3A3D59005A85F3 /* NfluenceSubPage.swift */; };
@@ -59,6 +63,10 @@
 		5271236929D2941F006C0F76 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		5271236B29D2975D006C0F76 /* Modeldata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modeldata.swift; sourceTree = "<group>"; };
 		52DB14AF2971AB6F000BD7D2 /* NoniController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoniController.swift; sourceTree = "<group>"; };
+		9509DB512A44C7B1004B79CF /* BucksAmbassador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucksAmbassador.swift; sourceTree = "<group>"; };
+		9509DB532A44C987004B79CF /* The-Truth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "The-Truth.swift"; sourceTree = "<group>"; };
+		9509DB552A44C9C9004B79CF /* CopyWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyWrite.swift; sourceTree = "<group>"; };
+		9509DB572A44CA1F004B79CF /* Freelance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freelance.swift; sourceTree = "<group>"; };
 		951BB13F2791CBD500744B16 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		951BB1412791D55B00744B16 /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
 		95253F582A3A3D59005A85F3 /* NfluenceSubPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfluenceSubPage.swift; sourceTree = "<group>"; };
@@ -161,7 +169,11 @@
 				95BBF3132792379B00460158 /* NoniJuice.swift */,
 				952AFD8D278CC2E6009D6F15 /* ContentView.swift */,
 				95CDB11427909A1800A43119 /* TabBarView.swift */,
+				9509DB572A44CA1F004B79CF /* Freelance.swift */,
+				9509DB552A44C9C9004B79CF /* CopyWrite.swift */,
+				9509DB532A44C987004B79CF /* The-Truth.swift */,
 				955C654E2A27B45D0002FC4E /* WhatsPoppinSubPage.swift */,
+				9509DB512A44C7B1004B79CF /* BucksAmbassador.swift */,
 				955C654C2A27B4100002FC4E /* PullUpSubPage.swift */,
 				95253F582A3A3D59005A85F3 /* NfluenceSubPage.swift */,
 				95CDB1182790A0BA00A43119 /* Nflunece.swift */,
@@ -336,9 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9509DB562A44C9C9004B79CF /* CopyWrite.swift in Sources */,
 				5235CFDA2A3A2D5D008BF8A8 /* SettingsDetailedContent.swift in Sources */,
 				5271236A29D2941F006C0F76 /* Landmark.swift in Sources */,
+				9509DB582A44CA1F004B79CF /* Freelance.swift in Sources */,
 				955C654F2A27B45D0002FC4E /* WhatsPoppinSubPage.swift in Sources */,
+				9509DB522A44C7B1004B79CF /* BucksAmbassador.swift in Sources */,
+				9509DB542A44C987004B79CF /* The-Truth.swift in Sources */,
 				95253F592A3A3D59005A85F3 /* NfluenceSubPage.swift in Sources */,
 				952AFD8E278CC2E6009D6F15 /* ContentView.swift in Sources */,
 				951BB1422791D55B00744B16 /* NSAttributedString.swift in Sources */,

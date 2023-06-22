@@ -58,7 +58,7 @@ struct mainFeedPullUpSub: View {
         }) {
             ZStack{
                 VStack{
-                    Image("Whats-Poppin")
+                    Image("Pull-Up")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width:355, height: 355, alignment: .center)

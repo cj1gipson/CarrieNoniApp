@@ -1,13 +1,13 @@
 //
-//  NfluenceSubPage.swift
+//  BucksAmbassador.swift
 //  Carrie Noni
 //
-//  Created by Corey Gipson on 6/14/23.
+//  Created by Corey Gipson on 6/22/23.
 //
 
 import SwiftUI
 
-struct NfluenceSubPage: View {
+struct BucksAmbassador: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack{
@@ -42,7 +42,7 @@ struct NfluenceSubPage: View {
                     
                 //-------------------------- Feed ------------------------------
                     ScrollView(){
-                    mainFeedNFsub()
+                    mainFeedBAsub()
                         .preferredColorScheme(.dark)
                     }
                 }
@@ -50,7 +50,7 @@ struct NfluenceSubPage: View {
     }
 }
 
-struct mainFeedNFsub: View {
+struct mainFeedBAsub: View {
     var body: some View {
         
         Button(action: {
@@ -58,7 +58,7 @@ struct mainFeedNFsub: View {
         }) {
             ZStack{
                 VStack{
-                    Image("Carrie5")
+                    Image("Whats-Poppin")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width:355, height: 355, alignment: .center)
@@ -75,39 +75,6 @@ struct mainFeedNFsub: View {
             }) {
                 ZStack{
                     VStack{
-                        Image("Carrie6")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width:175, height: 175, alignment: .center)
-                            .clipped()
-                            .cornerRadius(20)
-                    }.padding(.trailing, 10.0)
-                    
-                }.padding(.bottom, 5.0)
-            }
-            
-            Button(action: {
-                
-            }) {
-                ZStack{
-                    VStack{
-                        Image("Whats-Poppin")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width:175, height: 175, alignment: .center)
-                            .clipped()
-                            .cornerRadius(20)
-                    }
-                    
-                }.padding(.bottom, 5.0)
-            }
-        }
-        HStack{
-            Button(action: {
-                
-            }) {
-                ZStack{
-                    VStack{
                         Image("Whats-Poppin")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
@@ -201,13 +168,44 @@ struct mainFeedNFsub: View {
                 }.padding(.bottom, 5.0)
             }
         }
-
-        
+        HStack{
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 10.0)
+                    
+                }.padding(.bottom, 5.0)
+            }
+            
+            Button(action: {
+                
+            }) {
+                ZStack{
+                    VStack{
+                        Image("Whats-Poppin")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:175, height: 175, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }
+                    
+                }.padding(.bottom, 5.0)
+            }
+        }
     }
 }
 
-struct NfluenceSubPage_Previews: PreviewProvider {
+struct BucksAmbassador_Previews: PreviewProvider {
     static var previews: some View {
-        NfluenceSubPage()
+        BucksAmbassador()
     }
 }

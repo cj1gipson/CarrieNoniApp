@@ -1,13 +1,13 @@
 //
-//  NfluenceSubPage.swift
+//  Freelance.swift
 //  Carrie Noni
 //
-//  Created by Corey Gipson on 6/14/23.
+//  Created by Corey Gipson on 6/22/23.
 //
 
 import SwiftUI
 
-struct NfluenceSubPage: View {
+struct Freelance: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack{
@@ -42,7 +42,7 @@ struct NfluenceSubPage: View {
                     
                 //-------------------------- Feed ------------------------------
                     ScrollView(){
-                    mainFeedNFsub()
+                    mainFeedFLsub()
                         .preferredColorScheme(.dark)
                     }
                 }
@@ -50,7 +50,7 @@ struct NfluenceSubPage: View {
     }
 }
 
-struct mainFeedNFsub: View {
+struct mainFeedFLsub: View {
     var body: some View {
         
         Button(action: {
@@ -58,7 +58,7 @@ struct mainFeedNFsub: View {
         }) {
             ZStack{
                 VStack{
-                    Image("Carrie5")
+                    Image("Whats-Poppin")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width:355, height: 355, alignment: .center)
@@ -75,7 +75,7 @@ struct mainFeedNFsub: View {
             }) {
                 ZStack{
                     VStack{
-                        Image("Carrie6")
+                        Image("Whats-Poppin")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width:175, height: 175, alignment: .center)
@@ -206,8 +206,8 @@ struct mainFeedNFsub: View {
     }
 }
 
-struct NfluenceSubPage_Previews: PreviewProvider {
+struct Freelance_Previews: PreviewProvider {
     static var previews: some View {
-        NfluenceSubPage()
+        Freelance()
     }
 }

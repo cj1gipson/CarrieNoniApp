@@ -94,7 +94,7 @@ struct mainFeedWPsub: View {
             }) {
                 ZStack{
                     VStack{
-                        Image("Carrie6")
+                        Image("Whats-Poppin")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width:175, height: 175, alignment: .center)
@@ -127,7 +127,7 @@ struct mainFeedWPsub: View {
             }) {
                 ZStack{
                     VStack{
-                        Image("Carrie6")
+                        Image("Whats-Poppin")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width:175, height: 175, alignment: .center)
@@ -160,7 +160,7 @@ struct mainFeedWPsub: View {
             }) {
                 ZStack{
                     VStack{
-                        Image("Carrie6")
+                        Image("Whats-Poppin")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width:175, height: 175, alignment: .center)
@@ -193,7 +193,7 @@ struct mainFeedWPsub: View {
             }) {
                 ZStack{
                     VStack{
-                        Image("Carrie6")
+                        Image("Whats-Poppin")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(width:175, height: 175, alignment: .center)
