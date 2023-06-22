@@ -11,13 +11,13 @@ struct SettingsView: View {
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
+        
            List(settingList) { settingList in
                NavigationLink{
                    SettingsDetail()
                } label: {
                    Text(settingList.label)
                }
-               
            }
            // -------------- Setting up clickable list options ------------
            Button("Dismiss") {
