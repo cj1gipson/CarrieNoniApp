@@ -51,6 +51,7 @@ struct The_Truth: View {
 }
 
 struct mainFeedTTsub: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         
         Button(action: {
@@ -201,8 +202,13 @@ struct mainFeedTTsub: View {
                 }.padding(.bottom, 5.0)
             }
         }
-
-        
+        Button("Dismiss") {
+            dismiss()
+        }
+        .padding(.top, 20.0)
+        .font(.title)
+        .foregroundColor(Color("Pink"))
+        .shadow(color: Color("Pink"), radius: 3)
     }
 }
 

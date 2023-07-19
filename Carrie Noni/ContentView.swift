@@ -178,50 +178,52 @@ struct feed: View {
             }
             //-------------------------- Recommended ------------------------------
             
-            Group{
-                VStack{
-                    HStack{
-                        Text("Recommended")
-                            .font(.system(size: 21, weight: .bold))
-                            .padding(.trailing, 200.0)
-                    }
-                }.padding(.top, 40.0)
-                    .padding(.trailing, 5.0)
-                Divider()
-                    .padding(.bottom, 2.0)
-                    .background(Color("Pink"))
-                    .frame(width: 380)
-                    .padding(.bottom, 10.0)
-                    .shadow(color: Color("Pink"), radius: 3)
-
-                Button(action: {
-                    ShowPullUpSubPage.toggle()
-                }) {
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 360, height: 120)
-                            .cornerRadius(12)
-                            .foregroundColor(Color("Faded-Blue"))
-                            .opacity(0.7)
-                        VStack{
-                            Image("Pull-Up")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:130, height: 125, alignment: .center)
-                                .clipped()
-                                .cornerRadius(20)
-                        }.padding(.trailing, 240.0)
-                        
-                        VStack{
-                            Text("Pull-Up Series")
-                                .fontWeight(.semibold)
-                                .padding(.leading, 35.0)
-                                .foregroundColor(.white)
-                        }
-                    }.padding(.bottom, 5.0)
-                }.sheet(isPresented: $ShowPullUpSubPage) {
-                    PullUpSubPage()
+        Group{
+            VStack{
+                HStack{
+                    Text("Recommended")
+                        .font(.system(size: 21, weight: .bold))
+                        .padding(.trailing, 200.0)
                 }
+            }.padding(.top, 40.0)
+                .padding(.trailing, 5.0)
+            Divider()
+                .padding(.bottom, 2.0)
+                .background(Color("Pink"))
+                .frame(width: 380)
+                .padding(.bottom, 10.0)
+                .shadow(color: Color("Pink"), radius: 3)
+            
+            Button(action: {
+                ShowPullUpSubPage.toggle()
+            }) {
+                ZStack{
+                    Rectangle()
+                        .frame(width: 360, height: 120)
+                        .cornerRadius(12)
+                        .foregroundColor(Color("Faded-Blue"))
+                        .opacity(0.7)
+                    VStack{
+                        Image("Pull-Up")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:130, height: 125, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 240.0)
+                    
+                    VStack{
+                        Text("Pull-Up Series")
+                            .fontWeight(.semibold)
+                            .padding(.leading, 35.0)
+                            .foregroundColor(.white)
+                    }
+                }.padding(.bottom, 5.0)
+                //                }.sheet(isPresented: $ShowPullUpSubPage) {
+                //                    PullUpSubPage()
+            }.fullScreenCover(isPresented: $ShowPullUpSubPage){
+                PullUpSubPage()
+            }
                 
                 // Issue with subscreen cant push anything screen on top of screen.
                 
@@ -255,7 +257,7 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
-                }.sheet(isPresented: $ShowPullUpSubPage) {
+                }.fullScreenCover(isPresented: $ShowPullUpSubPage) {
                     WhatsPoppinSubPage()
                 }
                 
@@ -289,7 +291,7 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
-                }.sheet(isPresented: $ShowPullUpSubPage) {
+                }.fullScreenCover(isPresented: $ShowPullUpSubPage) {
                     WhatsPoppinSubPage()
                 }
                 
@@ -323,7 +325,7 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
-                }.sheet(isPresented: $ShowPullUpSubPage) {
+                }.fullScreenCover(isPresented: $ShowPullUpSubPage) {
                     WhatsPoppinSubPage()
                 }
                 
@@ -356,7 +358,7 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
-                }.sheet(isPresented: $ShowPullUpSubPage) {
+                }.fullScreenCover(isPresented: $ShowPullUpSubPage) {
                     WhatsPoppinSubPage()
                 }
                 
@@ -385,7 +387,7 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
-                }.sheet(isPresented: $ShowPullUpSubPage) {
+                }.fullScreenCover(isPresented: $ShowPullUpSubPage) {
                     WhatsPoppinSubPage()
                 }
                 
@@ -416,7 +418,7 @@ struct feed: View {
                                 .foregroundColor(.white)
                         }
                     }.padding(.bottom, 5.0)
-                }.sheet(isPresented: $ShowPullUpSubPage) {
+                }.fullScreenCover(isPresented: $ShowPullUpSubPage) {
                     WhatsPoppinSubPage()
                 }
             }

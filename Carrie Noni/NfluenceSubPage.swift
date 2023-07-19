@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct NfluenceSubPage: View {
-    @Environment(\.dismiss) var dismiss
     var body: some View {
         ZStack{
             //------------------------- Background -----------------------------
@@ -51,6 +50,7 @@ struct NfluenceSubPage: View {
 }
 
 struct mainFeedNFsub: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         
         Button(action: {
@@ -201,7 +201,13 @@ struct mainFeedNFsub: View {
                 }.padding(.bottom, 5.0)
             }
         }
-
+        Button("Dismiss") {
+            dismiss()
+        }
+        .padding(.top, 20.0)
+        .font(.title)
+        .foregroundColor(Color("Pink"))
+        .shadow(color: Color("Pink"), radius: 3)
         
     }
 }

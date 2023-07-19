@@ -51,6 +51,7 @@ struct PullUpSubPage: View {
 }
 
 struct mainFeedPullUpSub: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         
         Button(action: {
@@ -202,11 +203,19 @@ struct mainFeedPullUpSub: View {
             }
         }
 
+        Button("Dismiss") {
+            dismiss()
+        }
+        .padding(.top, 20.0)
+        .font(.title)
+        .foregroundColor(Color("Pink"))
+        .shadow(color: Color("Pink"), radius: 3)
         
     }
 }
 
 struct mainFeedNfluenceSub: View {
+    
     var body: some View {
         
         Button(action: {
