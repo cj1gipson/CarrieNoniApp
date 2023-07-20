@@ -27,7 +27,7 @@ struct tabBarView: View {
                 case 1:
                     ContentView()
                 default:
-                        NfluenceView()
+                    NfluenceView()
                 }
             }
             //.padding(.top, -150.0)

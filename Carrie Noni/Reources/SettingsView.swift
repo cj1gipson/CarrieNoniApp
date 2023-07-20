@@ -14,7 +14,7 @@ struct SettingsView: View {
         
            List(settingList) { settingList in
                NavigationLink{
-                   SettingsDetail()
+                   Text(settingList.description)
                } label: {
                    Text(settingList.label)
                }
@@ -173,5 +173,6 @@ var settingList = [
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
+            .preferredColorScheme(.dark)
     }
 }
