@@ -12,7 +12,6 @@ import AVKit
 let icons = ["hair", "Juice", "home4", "nfluence","shop"
 ]
 
-
 struct NfluenceView: View {
     @State private var showSettings = false
 
@@ -79,8 +78,8 @@ struct mainFeed: View {
                     VStack{
                         ScrollView(.horizontal){
                             HStack(spacing: 3){
-                                
-                                VideoView(videoID: "xtV00tteIN4")
+                               
+                                VideoView(videoID: "M4fuh98KpzQ")
                                     .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     .cornerRadius(12)
                                     .padding(.horizontal, 35.0)
@@ -121,23 +120,10 @@ struct mainFeed: View {
                             .padding(.bottom, 20.0)
                             .shadow(color: Color("Pink"), radius: 3)
                         
-                        Button(action: {
-                            guard let pilot = URL(string: "https://www.youtube.com/watch?v=yyFAicc_Q5I"),
-                                  UIApplication.shared.canOpenURL(pilot)
-                            else{
-                                return
-                            }
-                            UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
-                        }) {
-                        Image("WaveInt")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width:390, height: 250, alignment: .center)
-                            .background(Color.purple)
-                            .clipped()
+                        VideoView(videoID: "M4fuh98KpzQ")
+                            .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .cornerRadius(12)
-                            .padding(.bottom, 20.0)
-                    }.padding(.top, 7.0)
+                            .padding(.horizontal, 35.0)
                     }
                      
                     
@@ -177,24 +163,10 @@ struct mainFeed: View {
                         ScrollView(.horizontal){
                         HStack{
 
-                            Button(action: {
-                                guard let winter = URL(string: "https://youtu.be/HSoHHFgFj9Y"),
-                                      UIApplication.shared.canOpenURL(winter)
-                                else{
-                                    return
-                                }
-                                UIApplication.shared.open(winter,options: [:], completionHandler: nil)
-                            }) {
-                            Image("WinterNfluence")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:390, height: 250, alignment: .center)
-                                .background(Color.purple)
-                                .clipped()
+                            VideoView(videoID: "M4fuh98KpzQ")
+                                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(12)
-                                .overlay(ImageOverlay5(), alignment: .bottomTrailing)
-                                
-                            }
+                                .padding(.horizontal, 35.0)
                             .padding(.leading)
 
                             Button(action: {
@@ -592,6 +564,9 @@ struct mainFeed: View {
     }
 }
 
+
+
+
 struct ImageOverlay: View {
     var body: some View {
         ZStack {
@@ -735,6 +710,7 @@ struct Button1: View {
 
 
 
+
 struct NfluenceView_Previews: PreviewProvider {
     static var previews: some View {
         NfluenceView()
@@ -742,3 +718,8 @@ struct NfluenceView_Previews: PreviewProvider {
     }
     
 }
+
+
+
+
+

@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Carrie_Noni
+//@testable import Carrie_Noni
 
 class Carrie_NoniTests: XCTestCase {
 
