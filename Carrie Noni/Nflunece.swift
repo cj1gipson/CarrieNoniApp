@@ -75,39 +75,40 @@ struct mainFeed: View {
             ZStack{
                 VStack{
                 ScrollView(.vertical){
-                    VStack{
-                        ScrollView(.horizontal){
-                            HStack(spacing: 3){
-                               
-                                VideoView(videoID: "M4fuh98KpzQ")
-                                    .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                    .cornerRadius(12)
-                                    .padding(.horizontal, 35.0)
-                            }
-                            
-                        }
-                        Text("Winter 2021 Winner Luh Leeks")
-                            .font(.body)
-                            .fontWeight(.bold)
-                    }
-                    .padding(.top, 3.0)
-                    .padding(.bottom, 11.0)
+//                    VStack{
+//                        ScrollView(.horizontal){
+//                            HStack(spacing: 3){
+//                               
+//                                VideoView(videoID: "M4fuh98KpzQ")
+//                                    .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                                    .cornerRadius(12)
+//                                    .padding(.horizontal, 35.0)
+//                            }
+//                            
+//                        }
+//                        Text("Winter 2021 Winner Luh Leeks")
+//                            .font(.body)
+//                            .fontWeight(.bold)
+//                    }
+//                    .padding(.top, 3.0)
+//                    .padding(.bottom, 11.0)
 
                     Spacer()
                     
-                    VStack{
+                   
 //-----------------------------------------------------------------------------------------------------------
 //                                   FEATURED SECTION
 //-----------------------------------------------------------------------------------------------------------
-                        HStack{
-                        Text("FEATURES")
+                    VStack{
+                    HStack{
+                        Text("New Vlog")
                             .font(.system(size: 21, weight: .bold))
 
                             Image(systemName: "star.fill")
                                 .imageScale(.large)
                                 .font(Font.system(size:15, weight: .heavy))
                                 .foregroundColor(Color("Color-2"))
-                                .padding(.trailing, 215.0)
+                                .padding(.trailing, 230.0)
                                 .shadow(color: Color("Color-2"), radius: 2.5)
 
                         }.padding(.bottom, 5.0)
@@ -155,164 +156,144 @@ struct mainFeed: View {
                             .padding(.bottom, 20.0)
                             .shadow(color: Color("Pink"), radius: 3)
                         
-                        Text("N'Fluence Countdown Shows")
-                            .font(.headline)
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
+                        
                         
                         ScrollView(.horizontal){
                         HStack{
+                            
+//                            VideoView(videoID: "M4fuh98KpzQ")
+//                                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                                .cornerRadius(12)
+//                                .padding(.horizontal, 35.0)
+//                            .padding(.leading)
 
-                            VideoView(videoID: "M4fuh98KpzQ")
+                            
+                            VideoView(videoID: "3zfRSTD8Jlg")
                                 .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(12)
-                                .padding(.horizontal, 35.0)
+                                .padding(.horizontal, 16.0)
                             .padding(.leading)
+                            
+                            VideoView(videoID: "jFk2Q1hBHRA")
+                                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .cornerRadius(12)
+                                .padding(.horizontal, 16.0)
+                            .padding(.leading)
+                            
+                            VideoView(videoID: "ux80NQvEraw")
+                                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .cornerRadius(12)
+                                .padding(.horizontal, 16.0)
+                            .padding(.leading)
+                            
+                            VideoView(videoID: "p9eU_5vYTtg")
+                                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .cornerRadius(12)
+                                .padding(.horizontal, 16.0)
+                            .padding(.leading)
+                            
+                            VideoView(videoID: "LIrTOkzrp_I")
+                                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .cornerRadius(12)
+                                .padding(.horizontal, 16.0)
+                            .padding(.leading)
+                            
+                            VideoView(videoID: "1M4hjH4SnyA")
+                                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .cornerRadius(12)
+                                .padding(.horizontal, 16.0)
+                            .padding(.leading)
+                            
 
-                            Button(action: {
-                                guard let fall = URL(string: "https://www.youtube.com/watch?v=_UCq2FUYpHI"),
-                                      UIApplication.shared.canOpenURL(fall)
-                                else{
-                                    return
-                                }
-                                UIApplication.shared.open(fall,options: [:], completionHandler: nil)
-                            }) {
-                            Image("FallNfluence")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:390, height: 250, alignment: .center)
-                                .background(Color.purple)
-                                .clipped()
+                            VideoView(videoID: "ng4FOHO_tCg")
+                                .frame(minWidth: 10, idealWidth: 350, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 250, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(12)
-                                .overlay(ImageOverlay6(), alignment: .bottomTrailing)
-                            }
-                            
-                            
-                            Button(action: {
-                                guard let Summer = URL(string: "https://www.youtube.com/watch?v=_OtitJzTRI4"),
-                                      UIApplication.shared.canOpenURL(Summer)
-                                else{
-                                    return
-                                }
-                                UIApplication.shared.open(Summer,options: [:], completionHandler: nil)
-                            }) {
-                            Image("SummerNfluence")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:390, height: 250, alignment: .center)
-                                .background(Color.purple)
-                                .clipped()
-                                .cornerRadius(12)
-                                .overlay(ImageOverlay7(), alignment: .bottomTrailing)
-                            }
-                            
-                            Button(action: {
-                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=8pW0H1_F8Ls"),
-                                      UIApplication.shared.canOpenURL(pilot)
-                                else{
-                                    return
-                                }
-                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
-
-                            }) {
-                            Image("nfluenceep1")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:390, height: 250, alignment: .center)
-                                .background(Color.purple)
-                                .clipped()
-                                .cornerRadius(12)
-                                .overlay(ImageOverlay8(), alignment: .bottomTrailing)
-                            }
-                        }
-                            
-                            
-                        }
-                        
-                        Text("N'Fluence Interviews")
-                                .font(.headline)
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-                            .padding(.vertical, 10.0)
-                    
-                        
-                        
-                        ScrollView(.horizontal){
-                        HStack{
-                            Button(action: {
-                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=MSYZMXFcRgA"),
-                                      UIApplication.shared.canOpenURL(pilot)
-                                else{
-                                    return
-                                }
-                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
-
-                            }) {
-                            Image("LeeksInt")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:390, height: 250, alignment: .center)
-                                .background(Color.purple)
-                                .clipped()
-                                .cornerRadius(12)
+                                .padding(.horizontal, 16.0)
+                            .padding(.leading)
+                                                                                                                                                                                                                                                                                    
                                 
-                            }
-                            .padding(.leading)
-                            
-                            Button(action: {
-                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=S33Xc_ds6ws"),
-                                      UIApplication.shared.canOpenURL(pilot)
-                                else{
-                                    return
-                                }
-                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
-                            }) {
-                            Image("EliInt")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:390, height: 250, alignment: .center)
-                                .background(Color.purple)
-                                .clipped()
-                                .cornerRadius(12)
-                            
-                            }
-                            
-                            Button(action: {
-                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=-q1SYdB3MwU"),
-                                      UIApplication.shared.canOpenURL(pilot)
-                                else{
-                                    return
-                                }
-                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
-                            }) {
-                            Image("ErnieInt")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:390, height: 250, alignment: .center)
-                                .background(Color.purple)
-                                .clipped()
-                                .cornerRadius(12)
-                            }
-                            
-                            Button(action: {
-                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=yyFAicc_Q5I"),
-                                      UIApplication.shared.canOpenURL(pilot)
-                                else{
-                                    return
-                                }
-                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
-                            }) {
-                            Image("WaveInt")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:390, height: 250, alignment: .center)
-                                .background(Color.purple)
-                                .clipped()
-                                .cornerRadius(12)
-                            }
                         }
-                        }.padding(.bottom, 20.0)
-                        .padding(.top, 10.0)
+                            
+                            
+                        }
+                        
+                        
+//                        ScrollView(.horizontal){
+//                        HStack{
+//                            Button(action: {
+//                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=MSYZMXFcRgA"),
+//                                      UIApplication.shared.canOpenURL(pilot)
+//                                else{
+//                                    return
+//                                }
+//                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
+//
+//                            }) {
+//                            Image("LeeksInt")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fill)
+//                                .frame(width:390, height: 250, alignment: .center)
+//                                .background(Color.purple)
+//                                .clipped()
+//                                .cornerRadius(12)
+//                                
+//                            }
+//                            .padding(.leading)
+//                            
+//                            Button(action: {
+//                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=S33Xc_ds6ws"),
+//                                      UIApplication.shared.canOpenURL(pilot)
+//                                else{
+//                                    return
+//                                }
+//                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
+//                            }) {
+//                            Image("EliInt")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fill)
+//                                .frame(width:390, height: 250, alignment: .center)
+//                                .background(Color.purple)
+//                                .clipped()
+//                                .cornerRadius(12)
+//                            
+//                            }
+//                            
+//                            Button(action: {
+//                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=-q1SYdB3MwU"),
+//                                      UIApplication.shared.canOpenURL(pilot)
+//                                else{
+//                                    return
+//                                }
+//                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
+//                            }) {
+//                            Image("ErnieInt")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fill)
+//                                .frame(width:390, height: 250, alignment: .center)
+//                                .background(Color.purple)
+//                                .clipped()
+//                                .cornerRadius(12)
+//                            }
+//                            
+//                            Button(action: {
+//                                guard let pilot = URL(string: "https://www.youtube.com/watch?v=yyFAicc_Q5I"),
+//                                      UIApplication.shared.canOpenURL(pilot)
+//                                else{
+//                                    return
+//                                }
+//                                UIApplication.shared.open(pilot,options: [:], completionHandler: nil)
+//                            }) {
+//                            Image("WaveInt")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fill)
+//                                .frame(width:390, height: 250, alignment: .center)
+//                                .background(Color.purple)
+//                                .clipped()
+//                                .cornerRadius(12)
+//                            }
+//                        }
+//                        }.padding(.bottom, 20.0)
+//                        .padding(.top, 10.0)
 
                     }
                    
