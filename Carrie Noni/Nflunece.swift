@@ -8,6 +8,7 @@
 import SwiftUI
 import WebKit
 import AVKit
+import Combine
 
 let icons = ["hair", "Juice", "home4", "nfluence","shop"
 ]
@@ -304,8 +305,8 @@ struct mainFeed: View {
                         HStack{
                             
                         
-                        Text("WALL OF FAME")
-                                .font(.system(size: 21, weight: .bold))
+                        Text("Keepin' It Juicy")
+                                .font(.system(size: 20, weight: .bold))
                             
                             
                             
@@ -330,6 +331,21 @@ struct mainFeed: View {
                         
                         ScrollView(.horizontal){
                             HStack{
+                                
+                                @ObservedObject var viewModel = InstagramViewModel()
+                                
+                                List(viewModel.mediaItems) { media in
+                                            if media.media_type == "IMAGE" {
+                                                AsyncImage(url: URL(string: media.media_url))
+                                                    .frame(height: 200)
+                                                    .clipped()
+                                            }
+                                        }
+                                        .onAppear {
+                                            viewModel.fetchInstagramPhotos(accessToken: "YOUR_ACCESS_TOKEN")
+                                        }
+
+                                
                                 Button(action: {
                                     guard let pilot = URL(string: "https://instagram.com/luhleeks?igshid=MzRlODBiNWFlZA=="),
                                           UIApplication.shared.canOpenURL(pilot)
@@ -679,6 +695,35 @@ struct VideoView3: UIViewRepresentable{
         uiView.load(URLRequest(url: youtubeURL))
     }
 }
+
+
+struct InstagramMedia: Identifiable, Codable {
+    let id: String
+    let media_type: String
+    let media_url: String
+}
+
+class InstagramViewModel: ObservableObject {
+    @Published var mediaItems: [InstagramMedia] = []
+    var cancellables = Set<AnyCancellable>()
+    
+    func fetchInstagramPhotos(accessToken: String) {
+        let urlString = "https://graph.instagram.com/me/media?fields=id,media_type,media_url&access_token=\(accessToken)"
+        guard let url = URL(string: urlString) else { return }
+        
+        URLSession.shared.dataTaskPublisher(for: url)
+            .map { $0.data }
+            .decode(type: [String: [InstagramMedia]].self, decoder: JSONDecoder())
+            .map { $0["data"] ?? [] }
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] media in
+                self?.mediaItems = media
+            })
+            .store(in: &cancellables)
+    }
+}
+
+
 
 
 struct Button1: View {
