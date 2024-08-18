@@ -79,7 +79,6 @@ struct ContentView: View {
             //-------------------------- Settings Button ------------------------------
                         Button(action: {
                             showSettings.toggle()
-                            print("Content view clicked")
                         }) {
                         Image("Settings")
                             .imageScale(.large)
@@ -120,18 +119,8 @@ struct feed: View {
                     HStack{
                         Text("Trending")
                             .font(.system(size: 21, weight: .bold))
-                            .padding(.trailing, 170.0)
-                        
-                        Button(action: {
-                            
-                        }) {
-
-
-                        Text("View More")
-                            .foregroundColor(Color("Pink"))
-                            .shadow(color: Color("Pink"), radius: 3)
-                        }
-                        
+                            .padding(.leading, 23) // Aligns the text to the left
+                            .frame(maxWidth: .infinity, alignment: .leading) //
                     }
                     Divider()
                         .padding(.bottom, 2.0)
