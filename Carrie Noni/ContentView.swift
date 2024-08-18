@@ -104,14 +104,12 @@ struct ContentView: View {
 }
 
 
-
-
 struct feed: View {
     
     @State private var ShowPullUpSubPage = false
-    
+
     var body: some View {
-        
+
         
             //-------------------------- Trending ------------------------------
             Group{
@@ -168,6 +166,7 @@ struct feed: View {
             //-------------------------- Recommended ------------------------------
             
         Group{
+            
             VStack{
                 HStack{
                     Text("Recommended")
@@ -182,6 +181,39 @@ struct feed: View {
                 .frame(width: 380)
                 .padding(.bottom, 10.0)
                 .shadow(color: Color("Pink"), radius: 3)
+            
+            Button(action: {
+                guard let Jammin = URL(string: "https://www.youtube.com/@JamminWithJuice"),
+                      UIApplication.shared.canOpenURL(Jammin)
+                else{
+                    return
+                }
+                UIApplication.shared.open(Jammin,options: [:], completionHandler: nil)
+
+            }) {
+                ZStack{
+                    Rectangle()
+                        .frame(width: 360, height: 120)
+                        .cornerRadius(12)
+                        .foregroundColor(Color("Faded-Blue"))
+                        .opacity(0.7)
+                    VStack{
+                        Image("The-Truth")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width:125, height: 125, alignment: .center)
+                            .clipped()
+                            .cornerRadius(20)
+                    }.padding(.trailing, 240.0)
+                    
+                    VStack{
+                        Text("Jammin With Juice")
+                            .fontWeight(.semibold)
+                            .padding(.leading, 65)
+                            .foregroundColor(.white)
+                    }
+                }.padding(.bottom, 5.0)
+            }
             
             Button(action: {
                 ShowPullUpSubPage.toggle()
@@ -321,35 +353,6 @@ struct feed: View {
             }
             
             Group{
-                
-                Button(action: {
-                    ShowPullUpSubPage.toggle()
-                }) {
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 360, height: 120)
-                            .cornerRadius(12)
-                            .foregroundColor(Color("Faded-Blue"))
-                            .opacity(0.7)
-                        VStack{
-                            Image("The-Truth")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width:125, height: 125, alignment: .center)
-                                .clipped()
-                                .cornerRadius(20)
-                        }.padding(.trailing, 240.0)
-                        
-                        VStack{
-                            Text("The Truth")
-                                .fontWeight(.semibold)
-                                .padding(.leading, 2.0)
-                                .foregroundColor(.white)
-                        }
-                    }.padding(.bottom, 5.0)
-                }.fullScreenCover(isPresented: $ShowPullUpSubPage) {
-                    WhatsPoppinSubPage()
-                }
                 
                 Button(action: {
                     ShowPullUpSubPage.toggle()
@@ -516,9 +519,9 @@ struct feed: View {
 
 
             }.padding(.bottom, 32.0)
+        
         }
-        
-        
+    
     }
 
 
