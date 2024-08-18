@@ -4,47 +4,47 @@
 //
 //  Created by Deangelo Stewart on 5/31/23.
 //
-
 import SwiftUI
 
 struct SettingsView: View {
     @Environment(\.dismiss) var dismiss
-
+    
     var body: some View {
-        
-           List(settingList) { settingList in
-               NavigationLink{
-                   Text(settingList.description)
-               } label: {
-                   Text(settingList.label)
-               }
-           }
-           // -------------- Setting up clickable list options ------------
-           Button("Dismiss") {
-               dismiss()
-           }
-           .font(.title)
-       }
-}
-
-struct SettingsDetail: View {
-    var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List(settingList) { setting in
+                NavigationLink(destination: SettingDetailView(setting: setting)) {
+                    Text(setting.label)
+                }
+            }
+            .navigationTitle("Settings")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Dismiss") {
+                        dismiss()
+                    }
+                }
+            }
+        }
     }
 }
 
-
-struct SettingsDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsDetail()
-    }
-}
-
-
-struct SettingLabel: Identifiable{
+struct SettingLabel: Identifiable {
     let id = UUID()
     var label: String
     var description: String
+}
+
+struct SettingDetailView: View {
+    let setting: SettingLabel
+    
+    var body: some View {
+        ScrollView {
+            Text(setting.description)
+                .padding()
+        }
+        .navigationTitle(setting.label)
+        .navigationBarTitleDisplayMode(.inline)
+    }
 }
 
 var settingList = [
